@@ -8,14 +8,14 @@ export const aboutPage = {
   intro:
     'Camp Indigo Point is a premier summer camp experience where queer and trans youth build friendships, explore nature, and celebrate their truest selves. It is a place that feels like "the most home they have ever felt."',
   heroMedia: {
-    src: '/images/families/hero-collage.jpg',
+    src: '/images/gallery/camp-photo-5.jpg',
     alt: 'Campers laughing and enjoying activities at Camp Indigo Point.',
   },
   campLifePhotos: [
-    { src: '/images/families/hero-collage.jpg', alt: 'Campers at the lake' },
-    { src: '/images/families/hero-collage.jpg', alt: 'Campers at a campfire' },
-    { src: '/images/families/hero-collage.jpg', alt: 'Campers playing games' },
-    { src: '/images/families/hero-collage.jpg', alt: 'Campers laughing together' },
+    { src: '/images/gallery/camp-photo-6.jpg', alt: 'Campers at the lake' },
+    { src: '/images/gallery/camp-photo-7.jpg', alt: 'Campers at a campfire' },
+    { src: '/images/gallery/camp-photo-8.jpg', alt: 'Campers playing games' },
+    { src: '/images/gallery/camp-photo-9.jpg', alt: 'Campers laughing together' },
   ],
   campLife: {
     heading: 'The Magic of a Camp Day',

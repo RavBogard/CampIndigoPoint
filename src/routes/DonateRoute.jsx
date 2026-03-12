@@ -19,7 +19,7 @@ const DonateRoute = () => {
       title={donatePage.title}
       intro={donatePage.intro}
       media={{
-        src: "/images/families/hero-collage.jpg",
+        src: "/images/gallery/camp-photo-2.jpg",
         alt: "Camp staff and campers sharing a joyful, intergenerational moment.",
       }}
       cta={donatePage.cta}

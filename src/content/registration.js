@@ -8,7 +8,7 @@ export const registrationPage = {
   primaryActionId: actionLinks.register.id,
   intro: `We can't wait to see you at camp! Camp Indigo Point is a summer safe haven where every child can feel like the heart of the community. Here is everything you need to know to start your journey.`,
   heroMedia: {
-    src: '/images/families/hero-collage.jpg',
+    src: '/images/gallery/camp-photo-3.jpg',
     alt: 'Moments of connection and joy at Camp Indigo Point.',
   },
   cta: actionLinks.register,

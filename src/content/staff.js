@@ -8,7 +8,7 @@ export const staffPage = {
   intro:
     'Join a chosen family. Build a sanctuary. At Camp Indigo Point, you aren\'t just a counselor—you are an ancestor, showing our campers a vision of what the future could and should be.',
   heroMedia: {
-    src: '/images/families/hero-collage.jpg', // Using the authentic, high-energy photo
+    src: '/images/gallery/camp-photo-4.jpg', // Using the authentic, high-energy photo
     alt: 'Staff and campers sharing an unforgettable, high-energy moment.',
   },
   cta: actionLinks.apply,

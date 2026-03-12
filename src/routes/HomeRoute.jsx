@@ -12,8 +12,8 @@ const HomeRoute = () => {
       title={homePage.hero.heading}
       intro={homePage.hero.summary}
       media={{
-        src: "/images/families/hero-collage.jpg",
-        alt: "A collage of joyful moments from Camp Indigo Point.",
+        src: "/images/gallery/camp-photo-1.jpg",
+        alt: "Joyful moments at Camp Indigo Point.",
       }}
     >
       <section aria-labelledby="home-gateway-title" className="pb-8">
