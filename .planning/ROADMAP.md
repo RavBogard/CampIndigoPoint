@@ -1,0 +1,150 @@
+# Roadmap: Camp Indigo Point Website Redesign
+
+**Created:** 2026-03-12
+**Requirements mapped:** 22 of 22
+**Granularity:** Standard
+
+## Overview
+
+This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust-critical content first, then builds the shared shell and audience pathways needed for families, donors, and staff. External registration, donation, and application systems remain in place, so the roadmap prioritizes persuasive, trustworthy handoffs rather than replacing backend workflows.
+
+## Phase Summary
+
+| Phase | Name | Goal | Requirements |
+|-------|------|------|--------------|
+| 1 | Content Foundation | Preserve and structure the camp's core copy, facts, and outbound actions in a maintainable format | OPS-01, OPS-02, QUAL-03 |
+| 2 | Site Shell and Audience Routing | Replace the portfolio shell with a responsive, accessible site framework and strong audience pathing | NAV-01, NAV-02, NAV-03, QUAL-01, QUAL-02 |
+| 3 | Family Trust and Registration Journey | Deliver the family-facing experience that explains camp life, community care, scholarships, and registration | FAM-01, FAM-02, FAM-03, FAM-04, FAM-05, TRST-01, TRST-03 |
+| 4 | Donor Scholarship Journey | Build a donor path that explains scholarship impact and the Ashrei Foundation handoff clearly | DON-01, DON-02, DON-03 |
+| 5 | Staff Recruiting and Contact Journey | Build the staff recruitment path and clear human follow-up options | STAF-01, STAF-02, STAF-03, TRST-02 |
+
+## Phase Details
+
+### Phase 1: Content Foundation
+
+**Goal:** Create the structured content and metadata foundation so the redesign can preserve critical legacy facts while staying easy to update.
+
+**Requirements:** OPS-01, OPS-02, QUAL-03
+
+**Execution status:** Complete - 3 of 3 plans complete (`01-01-SUMMARY.md`, `01-02-SUMMARY.md`, `01-03-SUMMARY.md`)
+
+**Why first:**
+- The biggest project risk is losing trust-critical details during migration from WordPress.
+- Centralized content and action-link definitions prevent broken handoffs later.
+- Metadata and content structure need to exist before route/page production can scale cleanly.
+
+**Success criteria:**
+1. Legacy WordPress copy is inventoried and migrated into centralized content modules with trust-critical facts preserved intentionally.
+2. Registration, donation, and staff application URLs are defined once in a shared source of truth with descriptive labels and destination context.
+3. A lightweight announcement/content pattern exists for seasonal updates such as registration open or hiring season.
+4. Core page metadata patterns are defined so routes can ship with consistent titles, descriptions, and social previews.
+
+### Phase 2: Site Shell and Audience Routing
+
+**Goal:** Build the shared site framework, responsive navigation, and accessible audience-routing patterns that the rest of the site will use.
+
+**Requirements:** NAV-01, NAV-02, NAV-03, QUAL-01, QUAL-02
+
+**Execution status:** Complete - 3 of 3 plans complete (`02-01-SUMMARY.md`, `02-02-SUMMARY.md`, `02-03-SUMMARY.md`)
+
+**Why now:**
+- Families, donors, and staff need a clear way to self-select early.
+- Accessibility and mobile behavior should be established at the system level, not patched later.
+- Shared shell work reduces duplication when building the route-specific journeys.
+
+**Success criteria:**
+1. The site uses a route-based shell with persistent desktop/mobile navigation for all primary pages.
+2. The homepage clearly presents family, donor, and staff pathways above the fold.
+3. Register and Donate calls to action remain visible and consistent across high-intent routes.
+4. The shared component system supports responsive layouts, keyboard navigation, readable contrast, alt text, and reduced-motion behavior.
+
+### Phase 3: Family Trust and Registration Journey
+
+**Goal:** Publish the core camp pages that help families understand camp, trust the experience, and confidently click through to register.
+
+**Requirements:** FAM-01, FAM-02, FAM-03, FAM-04, FAM-05, TRST-01, TRST-03
+
+**Why this phase matters most:**
+- Family confidence is the primary prerequisite for camper conversion.
+- The current WordPress site already contains strong copy about camp life, community care, and scholarship access that should be modernized without losing specificity.
+- This phase creates the heart of the public story and most of the trust scaffolding for the full site.
+
+**Success criteria:**
+1. Families can understand who camp is for, what daily life is like, and how the residential experience works from the homepage and core camp pages.
+2. Community care, affirming practices, and accommodation-minded support are explained concretely enough to reduce uncertainty for families.
+3. Scholarship and affordability messaging clearly states cost context and the camp's commitment to financial accessibility.
+4. FAQ and history content answer common practical and mission questions without forcing direct outreach.
+5. The registration handoff page explains what happens next and links reliably to the official external registration flow.
+
+### Phase 4: Donor Scholarship Journey
+
+**Goal:** Build a donor experience that treats scholarship giving as a first-class path and makes the fiscal sponsorship handoff trustworthy.
+
+**Requirements:** DON-01, DON-02, DON-03
+
+**Why it deserves its own phase:**
+- Donors are a priority audience and should not be treated as a footer afterthought.
+- External donation tooling means the real conversion work happens before the click.
+- This phase can share content and layout patterns from the family journey while sharpening the donor-specific message.
+
+**Success criteria:**
+1. Donors can understand how gifts support scholarships and camper access before leaving the site.
+2. The Ashrei Foundation relationship is explained in plain language so the DonorPerfect handoff feels official and trustworthy.
+3. Donation calls to action appear on the homepage and donor-focused sections with consistent wording and visual prominence.
+
+### Phase 5: Staff Recruiting and Contact Journey
+
+**Goal:** Build the staff recruiting experience and human follow-up path that support seasonal hiring and stakeholder outreach.
+
+**Requirements:** STAF-01, STAF-02, STAF-03, TRST-02
+
+**Why last:**
+- It depends on the shared shell, trust patterns, and content system from earlier phases.
+- Staff recruiting has distinct messaging needs, but the core design and handoff patterns will already be proven by earlier audience journeys.
+
+**Success criteria:**
+1. Staff applicants can understand available roles, values, expectations, and reasons to join before opening the application.
+2. The external staff application handoff is clear, intentional, and tested.
+3. Contact pathways are easy to find for families, donors, staff applicants, and partners who need follow-up.
+4. Staff and contact content feels aligned with the camp's overall tone without losing operational clarity.
+
+## Coverage Validation
+
+| Requirement | Phase |
+|-------------|-------|
+| OPS-01 | Phase 1 |
+| OPS-02 | Phase 1 |
+| QUAL-03 | Phase 1 |
+| NAV-01 | Phase 2 |
+| NAV-02 | Phase 2 |
+| NAV-03 | Phase 2 |
+| QUAL-01 | Phase 2 |
+| QUAL-02 | Phase 2 |
+| FAM-01 | Phase 3 |
+| FAM-02 | Phase 3 |
+| FAM-03 | Phase 3 |
+| FAM-04 | Phase 3 |
+| FAM-05 | Phase 3 |
+| TRST-01 | Phase 3 |
+| TRST-03 | Phase 3 |
+| DON-01 | Phase 4 |
+| DON-02 | Phase 4 |
+| DON-03 | Phase 4 |
+| STAF-01 | Phase 5 |
+| STAF-02 | Phase 5 |
+| STAF-03 | Phase 5 |
+| TRST-02 | Phase 5 |
+
+**Coverage:**
+- v1 requirements: 22
+- Mapped to phases: 22
+- Unmapped: 0
+
+## Recommended Next Step
+
+`$gsd-plan-phase 3`
+
+Move into Phase 3 to build the family trust and registration journey on top of the completed shell, routing, and content foundation.
+
+---
+*Last updated: 2026-03-12 after phase 2 completion*

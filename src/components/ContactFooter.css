@@ -1,0 +1,87 @@
+.footer-section {
+    background-color: var(--color-bio-bg);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 4rem 0 2rem;
+}
+
+body.dark-mode .footer-section {
+    background-color: var(--color-bio-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.footer-brand h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+body.dark-mode .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text-primary);
+}
+
+.social-link:hover {
+    background-color: var(--color-tech-bg);
+    color: white;
+}
+
+body.dark-mode .social-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.tiktok {
+    background-color: black;
+    color: white;
+}
+
+.tiktok:hover {
+    background-color: #333;
+}
+
+.verified-badge {
+    color: #3b82f6;
+    /* Blue check color */
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
