@@ -3,6 +3,23 @@
 **Defined:** 2026-03-12
 **Core Value:** Visitors should quickly understand why Camp Indigo Point matters, feel the camp's joyful and affirming spirit, and take the next right action to register, donate, or apply.
 
+## v1.1 Requirements (UI and Layout Refactor)
+
+### Technical Architecture
+- [ ] **ARCH-01**: Migrate the core styling methodology to Tailwind CSS to eliminate cascading layout bugs.
+- [ ] **ARCH-02**: Port all existing brand tokens (Teal, Orange, Sand colors; Montserrat, Quicksand fonts) into the central Tailwind configuration.
+
+### Layout & Spacing
+- [ ] **LAY-01**: Replace arbitrary pixel values with a predictable, scale-based spacing system across all pages.
+- [ ] **LAY-02**: Refactor broken flexbox and grid implementations in shared components to ensure consistent structural behavior.
+
+### Responsive Quality
+- [ ] **RES-01**: Guarantee perfect responsive behavior down to a 320px viewport without horizontal scrolling or overlapping elements.
+- [ ] **RES-02**: Implement fluid typography so headings scale proportionately between mobile and desktop sizes.
+
+### Brand Preservation
+- [ ] **BRND-01**: Preserve the "Soul & Story" visual aesthetic (organic wavy backgrounds, affirming accents) throughout the migration process.
+
 ## v1 Requirements
 
 ### Navigation
