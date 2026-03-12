@@ -1,42 +1,46 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-current_phase: Project Complete
-status: v1 finished
-last_updated: "2026-03-12T23:30:00.000Z"
+milestone: v1.1
+milestone_name: UI and Layout Refactor
+current_phase: Not started
+status: researching
+last_updated: "2026-03-12T23:45:00.000Z"
 progress:
-  total_phases: 5
-  completed_phases: 5
-  total_plans: 15
-  completed_plans: 15
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
 ---
 
 # State
 
 **Updated:** 2026-03-12
-**Current phase:** Project Complete
-**Current status:** All 5 phases of the v1 website redesign are complete and verified.
+**Current phase:** Not started (researching)
+**Current status:** Researching UI/CSS architecture
+**Last activity:** 2026-03-12 — Milestone v1.1 started
+
+## Current Position
+
+Phase: Not started (researching)
+Plan: —
+Status: Researching UI/CSS architecture
+Last activity: 2026-03-12 — Milestone v1.1 started
 
 ## Project Reference
 
 See: `.planning/PROJECT.md` (updated 2026-03-12)
 
 **Core value:** Visitors should quickly understand why Camp Indigo Point matters, feel the camp's joyful and affirming spirit, and take the next right action to register, donate, or apply.
-**Current focus:** The core v1 implementation is complete.
+**Current focus:** Fix layout and formatting issues by completely refactoring the UI/CSS architecture.
 
 ## Completed Artifacts
 
 - PROJECT.md initialized
 - config.json created
-- research docs created for stack, features, architecture, pitfalls, and summary
-- REQUIREMENTS.md defined and mapped
-- ROADMAP.md created
-- Phase 1: Content Foundation (Verified)
-- Phase 2: Site Shell and Audience Routing (Verified)
-- Phase 3: Family Trust and Registration Journey (Verified)
-- Phase 4: Donor Scholarship Journey (Verified)
-- Phase 5: Staff Recruiting and Contact Journey (Verified)
+- research docs created for stack, features, architecture, pitfalls, and summary (from v1.0)
+- REQUIREMENTS.md defined and mapped (from v1.0)
+- ROADMAP.md created (from v1.0)
+- v1.0 Phases 1-5 completed and verified.
 
 ## Decisions Made (Project Summary)
 
@@ -49,17 +53,14 @@ See: `.planning/PROJECT.md` (updated 2026-03-12)
 
 ## Next Actions
 
-1. Review the completed local site.
-2. Deploy the v1 site.
+1. Complete research on Tailwind CSS vs other plugins/methods for the layout refactor.
+2. Define Requirements for Milestone v1.1.
 
 ## Known Risks
 
-- None remaining for v1.
+- Significant CSS changes could break currently working visual components if not careful.
 
 ## Session Resume
 
-- Stopped at: Project Complete
-- Resume file: None. Ready for launch.
-
----
-*Last updated: 2026-03-12 after gathering phase 3 context*
+- Stopped at: Milestone v1.1 initialization
+- Resume action: Researching layout approaches

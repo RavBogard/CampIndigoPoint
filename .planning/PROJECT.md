@@ -1,5 +1,15 @@
 # Camp Indigo Point Website Redesign
 
+## Current Milestone: v1.1 UI and Layout Refactor
+
+**Goal:** Complete UI/CSS refactor to fix layout and formatting issues, standardize styling, and ensure responsive behavior, potentially migrating to Tailwind CSS.
+
+**Target features:**
+- Standardize spacing, responsive layouts, and alignment across all pages.
+- Fix broken CSS grids and flexbox behaviors causing visual bugs.
+- Potentially migrate to Tailwind CSS or implement a robust CSS architecture for long-term maintainability.
+- Polish the visual "Soul & Story" design system to ensure it renders flawlessly on all screen sizes.
+
 ## What This Is
 
 This project replaces Camp Indigo Point's dated WordPress website with a modern, playful, donor-aware marketing site that better reflects the camp's energy and mission. The site needs to speak clearly to three core audiences: prospective campers and their families, prospective donors supporting scholarships, and prospective staff members looking to apply.
