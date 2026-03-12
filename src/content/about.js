@@ -14,8 +14,12 @@ export const aboutPage = {
   campLifePhotos: [
     { src: '/images/gallery/camp-photo-6.jpg', alt: 'Campers at the lake' },
     { src: '/images/gallery/camp-photo-7.jpg', alt: 'Campers at a campfire' },
+    { src: '/images/gallery/camp-photo-16.jpg', alt: 'Campers exploring nature' },
     { src: '/images/gallery/camp-photo-8.jpg', alt: 'Campers playing games' },
+    { src: '/images/gallery/camp-photo-17.jpg', alt: 'A moment of deep connection' },
     { src: '/images/gallery/camp-photo-9.jpg', alt: 'Campers laughing together' },
+    { src: '/images/gallery/camp-photo-18.jpg', alt: 'Celebrating identity outdoors' },
+    { src: '/images/gallery/camp-photo-19.jpg', alt: 'The joy of summer camp' },
   ],
   campLife: {
     heading: 'The Magic of a Camp Day',
