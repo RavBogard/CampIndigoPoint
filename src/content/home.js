@@ -8,11 +8,12 @@ export const homePage = {
   primaryActionId: actionLinks.register.id,
   heroGallery: [
     { src: '/images/gallery/camp-photo-1.jpg', alt: 'Joyful moments at Camp Indigo Point' },
-    { src: '/images/gallery/camp-photo-10.jpg', alt: 'Campers laughing together' },
-    { src: '/images/gallery/camp-photo-13.jpg', alt: 'The magic of summer camp' },
-    { src: '/images/gallery/camp-photo-14.jpg', alt: 'Kids being kids' },
+    { src: '/images/gallery/camp-photo-16.jpg', alt: 'Campers exploring nature' },
     { src: '/images/gallery/camp-photo-11.jpg', alt: 'A supportive camp moment' },
+    { src: '/images/gallery/camp-photo-14.jpg', alt: 'Kids being kids' },
+    { src: '/images/gallery/camp-photo-7.jpg', alt: 'Campers at a campfire' },
     { src: '/images/gallery/camp-photo-15.jpg', alt: 'A vibrant queer community' },
+    { src: '/images/gallery/camp-photo-18.jpg', alt: 'Celebrating identity outdoors' },
     { src: '/images/gallery/camp-photo-12.jpg', alt: 'Intergenerational queer community' }
   ],
   hero: {
