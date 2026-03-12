@@ -22,7 +22,8 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | 8 | Resource Hub | Upgrade the FAQ into an interactive, filterable Resource Hub. | HUB-01 |
 | 9 | High-Impact Media & Language Integration | Perform a site-wide language audit and inject a significant volume of authentic photography to elevate the overall tone and visual impact. | MEDIA-01, LANG-01 |
 | 10 | Hero Slideshow & Media Density | Implement a crossfading hero slideshow on the homepage and systematically increase photo density across all pages. | MEDIA-02, MEDIA-03 |
-| 11 | Conversion UX Optimization | Implement a persistent Sticky Action Bar to keep primary conversion actions accessible on long scroll pages. | CONV-01 |
+| 11 | Conversion UX Optimization | Implement a persistent Sticky Action Bar to keep primary conversion actions accessible on long scroll pages. | CONV-01, CONV-02 |
+| 12 | Headless CMS Integration | Integrate Decap CMS to empower non-technical team members to manage site content independently. | OPS-03 |
 
 ## Phase Details
 
@@ -190,6 +191,20 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 2. The action bar intelligently displays the most relevant CTA for the current route (e.g., "Donate" on the Donate page, "Register" on the About page).
 3. The "Camp Life" section on the About page is refactored into a visually engaging interactive timeline.
 
+### Phase 12: Headless CMS Integration
+
+**Goal:** Integrate Decap CMS to empower non-technical team members to manage site content independently.
+
+**Requirements:** OPS-03
+
+**Why next:**
+- With the site's layout and content solidified, adding a CMS allows the camp team to make updates without needing developer intervention.
+
+**Success criteria:**
+1. Decap CMS is integrated into the Vite build.
+2. A user-friendly dashboard is available for editing content.
+3. Content changes are automatically deployed.
+
 ## Coverage Validation
 
 | Requirement | Phase |
@@ -235,13 +250,14 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | MEDIA-03 | Phase 10 |
 | CONV-01 | Phase 11 |
 | CONV-02 | Phase 11 |
+| OPS-03 | Phase 12 |
 
 **Coverage:**
 - v1 requirements: 22
 - v1.1 requirements: 7
 - v1.2 requirements: 10
-- v1.3 requirements: 2
-- Total mapped to phases: 41
+- v1.3 requirements: 3
+- Total mapped to phases: 42
 - Unmapped: 0
 
 ## Recommended Next Step

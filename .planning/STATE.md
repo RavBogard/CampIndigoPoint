@@ -44,12 +44,13 @@ See: `.planning/PROJECT.md` (updated 2026-03-13)
 - **Architecture:** Tailwind CSS v4, React Router, centralized content layer (`src/content/`). External handoffs maintained.
 - **Brand/Vibe:** Vibrant "Soul & Story" aesthetic (Teal/Orange palettes, organic shapes).
 - **Safety & Story:** Integrated Bento Box grids, Donor Dashboards, Interactive FAQs, and high-impact media/language.
-- **Conversion Strategy:** The user selected the "Sticky Action Bar on Scroll" feature to keep primary CTAs one click away.
+- **Conversion Strategy:** Implement Sticky Action Bar and interactive "Day in the Life" Timeline.
+- **Content Operations:** Integrate Decap CMS for easy content management without touching code.
 
 ## Next Actions
 
-1. Update ROADMAP.md with Phase 11.
-2. Complete research and planning for Phase 11 (Conversion UX).
+1. Update ROADMAP.md with Phase 11 and Phase 12.
+2. Complete research and planning for Phase 11 (Conversion UX) and Phase 12 (Headless CMS).
 
 ## Known Risks
 

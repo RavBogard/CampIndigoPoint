@@ -3,11 +3,14 @@
 **Defined:** 2026-03-12
 **Core Value:** Visitors should quickly understand why Camp Indigo Point matters, feel the camp's joyful and affirming spirit, and take the next right action to register, donate, or apply.
 
-## v1.3 Requirements (Conversion UX)
+## v1.3 Requirements (Conversion UX & CMS)
 
 ### Frictionless Actions
 - [ ] **CONV-01**: Implement a persistent, scroll-aware Sticky Action Bar that displays the relevant primary CTA (Register, Donate, or Apply) based on the user's current route.
 - [ ] **CONV-02**: Build an interactive "Day in the Life" timeline component on the About page to increase engagement and emotional conversion for families.
+
+### Content Operations
+- [ ] **OPS-03**: Integrate a lightweight Headless CMS (e.g., Decap CMS) to allow non-technical team members to manage core site content and media without directly editing code.
 
 ## v1.2 Requirements (Story and Safety Expansion)
 

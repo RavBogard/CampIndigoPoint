@@ -2,11 +2,12 @@
 
 ## Current Milestone: v1.3 Conversion UX
 
-**Goal:** Implement targeted User Experience (UX) improvements designed to increase conversion rates across all three primary audiences (Families, Donors, Staff) by reducing friction to the primary calls to action.
+**Goal:** Implement targeted User Experience (UX) improvements designed to increase conversion rates across all three primary audiences (Families, Donors, Staff) by reducing friction to the primary calls to action. Integrate a Headless CMS to empower non-technical team members to manage site content independently.
 
 **Target features:**
 - **Sticky "Action Bar" on Scroll:** Implement a persistent bottom/top bar that appears as users scroll deep into pages, keeping the "Register / Donate / Apply" buttons exactly one click away at all times without cluttering the main content.
 - **Interactive "Day in the Life" Timeline:** Upgrade the "Camp Life" section from a static list into a highly visual, clickable interactive timeline to help families and staff truly visualize the magic of the daily routine.
+- **Headless CMS Integration:** Connect a lightweight Headless CMS (like Decap CMS or Sanity) to the repository, providing a user-friendly dashboard for updating text, seasonal dates, and photos without touching code.
 
 ## What This Is
 
