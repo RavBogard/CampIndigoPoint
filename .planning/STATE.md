@@ -2,65 +2,64 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI and Layout Refactor
-current_phase: Not started
-status: researching
-last_updated: "2026-03-12T23:45:00.000Z"
+current_phase: Phase 6 - UI and Tailwind CSS Refactor
+status: planning complete
+last_updated: "2026-03-12T23:55:00.000Z"
 progress:
-  total_phases: 0
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_phases: 6
+  completed_phases: 5
+  total_plans: 18
+  completed_plans: 15
 ---
 
 # State
 
 **Updated:** 2026-03-12
-**Current phase:** Not started (researching)
-**Current status:** Researching UI/CSS architecture
-**Last activity:** 2026-03-12 — Milestone v1.1 started
+**Current phase:** Phase 6 - UI and Tailwind CSS Refactor
+**Current status:** Phase 6 planning complete, ready for execution
 
 ## Current Position
 
-Phase: Not started (researching)
+Phase: Phase 6 - UI and Tailwind CSS Refactor
 Plan: —
-Status: Researching UI/CSS architecture
-Last activity: 2026-03-12 — Milestone v1.1 started
+Status: Planning complete, ready for execution
+Last activity: 2026-03-12 — Phase 6 context gathered and plans created
 
 ## Project Reference
 
 See: `.planning/PROJECT.md` (updated 2026-03-12)
 
 **Core value:** Visitors should quickly understand why Camp Indigo Point matters, feel the camp's joyful and affirming spirit, and take the next right action to register, donate, or apply.
-**Current focus:** Fix layout and formatting issues by completely refactoring the UI/CSS architecture.
+**Current focus:** Execute a full CSS rewrite using Tailwind CSS to establish a stable, responsive, and predictable layout system.
 
 ## Completed Artifacts
 
-- PROJECT.md initialized
-- config.json created
-- research docs created for stack, features, architecture, pitfalls, and summary (from v1.0)
-- REQUIREMENTS.md defined and mapped (from v1.0)
-- ROADMAP.md created (from v1.0)
-- v1.0 Phases 1-5 completed and verified.
+- PROJECT.md updated for v1.1
+- REQUIREMENTS.md updated with ARCH, LAY, RES, BRND requirements
+- ROADMAP.md updated with Phase 6
+- Phase 6 context gathered (06-CONTEXT.md)
+- Phase 6 research completed (06-RESEARCH.md)
+- Phase 6 validation strategy defined (06-VALIDATION.md)
+- Phase 6 plans created (06-01-PLAN.md, 06-02-PLAN.md, 06-03-PLAN.md)
 
-## Decisions Made (Project Summary)
+## Decisions Made
 
-- **Architecture:** Used React Router and a centralized content layer (`src/content/`) to maintain the site easily. Maintained all external handoffs (Active Camps, DonorPerfect, Google Forms) to reduce v1 scope risk.
-- **Brand/Vibe:** Evolved from a generic "business" layout to a vibrant "Soul & Story" camp aesthetic. Used Teal/Orange palettes, organic wavy shapes, and high-energy photography.
-- **Family Trust:** Led with "No One Turned Away" affordability and a clear explanation of affirming community care.
-- **Donor Gravity:** Shifted from "support our charity" to "save lives with marshmallows" (The Ancestor narrative) with explicit impact tiers.
-- **Staff Reality:** Balanced the "Magic" of being an ancestor with the "Mud" of yurt life.
-- **Authority:** Explicitly routed contact inquiries and highlighted national press coverage.
+- **Migration Strategy:** Full rewrite. We will replace almost all custom classes with inline Tailwind utilities for long-term maintainability.
+- **Layout System:** Pragmatic mix. Grid for structural columns, Flexbox for component alignment.
+- **Visual Identity:** Port core brand tokens (Teal, Orange, Sand, fonts) to Tailwind config. Attempt to preserve organic shapes using utility classes, but prioritize layout stability over complex custom CSS blobs.
+- **Responsive Rules:** Strict mobile-first approach. Zero tolerance for horizontal scrolling.
 
 ## Next Actions
 
-1. Complete research on Tailwind CSS vs other plugins/methods for the layout refactor.
-2. Define Requirements for Milestone v1.1.
+1. Execute Phase 6 - Plan 01: Tailwind Architecture Initialization.
+2. Install Tailwind and configure the brand theme.
 
 ## Known Risks
 
-- Significant CSS changes could break currently working visual components if not careful.
+- Stripping global CSS (`index.css`) will temporarily break the site visually until all utility classes are applied.
+- Recreating complex wavy borders with pure utility classes may be challenging and require subtle design compromises.
 
 ## Session Resume
 
-- Stopped at: Milestone v1.1 initialization
-- Resume action: Researching layout approaches
+- Stopped at: Phase 6 planning complete
+- Resume file: `.planning/phases/06-ui-and-tailwind-css-refactor/06-01-PLAN.md`
