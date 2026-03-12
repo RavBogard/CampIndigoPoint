@@ -1,14 +1,14 @@
 # Camp Indigo Point Website Redesign
 
-## Current Milestone: v1.1 UI and Layout Refactor
+## Current Milestone: v1.2 Story and Safety Expansion
 
-**Goal:** Complete UI/CSS refactor to fix layout and formatting issues, standardize styling, and ensure responsive behavior, potentially migrating to Tailwind CSS.
+**Goal:** Elevate the site from a functional brochure to a world-class digital experience by implementing immersive storytelling, advanced safety UX, and data-driven donor impact, using only existing assets and front-end engineering.
 
 **Target features:**
-- Standardize spacing, responsive layouts, and alignment across all pages.
-- Fix broken CSS grids and flexbox behaviors causing visual bugs.
-- Potentially migrate to Tailwind CSS or implement a robust CSS architecture for long-term maintainability.
-- Polish the visual "Soul & Story" design system to ensure it renders flawlessly on all screen sizes.
+- **"Bento Box" Storytelling:** Redesign key layouts (and fix weird homepage copy) using modern, scannable grids that weave extracted media quotes and camper testimonials directly into the narrative flow.
+- **Youth Safety UX ("Quick Exit"):** Implement a persistent, keyboard-accessible "Quick Exit" button for vulnerable youth browsing in unsupportive environments.
+- **Donor Impact Dashboard:** Build a visual, data-driven section on the Donate page to highlight camp metrics (states represented, staff count, etc.).
+- **Interactive Resource Hub:** Upgrade the static FAQ into a filterable, tag-based resource center.
 
 ## What This Is
 
