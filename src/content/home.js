@@ -29,12 +29,12 @@ export const homePage = {
   },
   pressQuotes: [
     {
-      quote: "A space to not feel like an outsider",
-      source: "Camp Parent",
+      quote: "It's just this little oasis for LGBTQ youth... a spot where these kids are able to just be kids.",
+      source: "Good Morning America",
       color: "var(--color-camp-orange)",
     },
     {
-      quote: "Liberated freedom of expression.",
+      quote: "An opportunity to immerse myself in queer and trans joy.",
       source: "The Washington Post",
       color: "var(--color-camp-teal)",
     },
@@ -46,7 +46,7 @@ export const homePage = {
       body: 'In a world that can feel overwhelming, Indigo Point is a place where kids aren\'t the "other"—they are the heart of the community.',
       bullets: [
         'Campers build lasting friendships, take healthy risks, and get to be unabashedly queer in the great outdoors.',
-        'A daily rhythm of "trading screens for sunsets," creative play, and professional LGBTQ+ care.',
+        'A daily rhythm of trading screens for sunsets, reminding us to play and to grow throughout our play.',
         'A reprieve from the rhetoric of the outside world, where the soundtrack of the summer is laughter.',
       ],
     },
@@ -57,7 +57,7 @@ export const homePage = {
       bullets: [
         'Equity: ensuring every camper has the specific support they need to feel valued and secure.',
         'Community: LGBTQ+ and adjacent adults creating a world where queer youth can thrive.',
-        'Affirmation: a place where names, pronouns, and identities are celebrated as a default.',
+        'Affirmation: a place where kids can just be their authentic selves and flourish.',
       ],
     },
   ],

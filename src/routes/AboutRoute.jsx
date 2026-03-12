@@ -30,6 +30,15 @@ const AboutRoute = () => {
         </ul>
       </section>
 
+      {/* Media Grid */}
+      <section aria-label="Camp Life Gallery" className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        {aboutPage.campLifePhotos.map((photo, i) => (
+          <div key={i} className="aspect-square rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src={photo.src} alt={photo.alt} className="w-full h-full object-cover" />
+          </div>
+        ))}
+      </section>
+
       <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-[minmax(160px,auto)]">
         {/* Story Block 1 - Belonging */}
         <article aria-labelledby="about-belonging-title" className="bg-pink-50 border-l-8 border-pink-600 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start md:col-span-2 lg:col-span-2 xl:col-span-2 lg:row-span-2">

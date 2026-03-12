@@ -6,18 +6,24 @@ export const aboutPage = {
   audience: 'families',
   primaryActionId: actionLinks.register.id,
   intro:
-    'Camp Indigo Point is a premier summer camp experience where queer and trans youth build friendships, explore nature, and celebrate their truest selves in a place that feels like "the most home they have ever felt."',
+    'Camp Indigo Point is a premier summer camp experience where queer and trans youth build friendships, explore nature, and celebrate their truest selves. It is a place that feels like "the most home they have ever felt."',
   heroMedia: {
     src: '/images/families/hero-collage.jpg',
     alt: 'Campers laughing and enjoying activities at Camp Indigo Point.',
   },
+  campLifePhotos: [
+    { src: '/images/families/hero-collage.jpg', alt: 'Campers at the lake' },
+    { src: '/images/families/hero-collage.jpg', alt: 'Campers at a campfire' },
+    { src: '/images/families/hero-collage.jpg', alt: 'Campers playing games' },
+    { src: '/images/families/hero-collage.jpg', alt: 'Campers laughing together' },
+  ],
   campLife: {
     heading: 'The Magic of a Camp Day',
-    summary: 'From morning polar bear plunges to evening campfires, we trade screens for sunsets and the noise of the world for the soundtrack of laughter.',
+    summary: 'From morning polar bear plunges to evening campfires, we trade screens for sunsets. We are here to play, and to grow throughout our play, replacing the noise of the world with the soundtrack of laughter.',
     bullets: [
       'Morning polar bear plunges and breakfast with a community that understands you.',
       'A "beautifully liberated freedom of expression" across all-camp activities and bunk rotations.',
-      'Intentional low-tech time: trader screens for friendship bracelets and face-to-face fun.',
+      'Intentional low-tech time: trading screens for friendship bracelets and face-to-face fun.',
       'Daily "Rest Hour" for reading, writing, and recharging in a sanctuary of peers.',
       'Evening activities like Capture the Flag, Silent Discos, and our legendary Queer Prom.',
     ],
@@ -28,8 +34,8 @@ export const aboutPage = {
       source: "Camper",
     },
     {
-      quote: "Unabashedly queer in the great outdoors.",
-      source: "Camper",
+      quote: "It’s hard to put into words what it is to know that there’s a space for your kid not to feel like an outsider, but to be one of a group.",
+      source: "Camp Parent (via Kveller)",
     }
   ],
   belonging: {
@@ -64,7 +70,7 @@ export const aboutPage = {
   },
   history: {
     heading: 'Our Story',
-    body: 'Founded in 2021 by a team of parents and activists, Camp Indigo Point was created to be a sanctuary for youth across the Midwest and beyond.',
+    body: 'Founded in 2021 by a team of parents, rabbis, and activists, Camp Indigo Point was created to be a sanctuary for youth across the Midwest and beyond.',
     milestones: [
       'Started in 2022 to provide a "joyful reprieve" for queer and trans youth.',
       'Grown to serve 140+ campers from 30 states with a staff of 50+ queer leaders.',
