@@ -17,6 +17,7 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | 3 | Family Trust and Registration Journey | Deliver the family-facing experience that explains camp life, community care, scholarships, and registration | FAM-01, FAM-02, FAM-03, FAM-04, FAM-05, TRST-01, TRST-03 |
 | 4 | Donor Scholarship Journey | Build a donor path that explains scholarship impact and the Ashrei Foundation handoff clearly | DON-01, DON-02, DON-03 |
 | 5 | Staff Recruiting and Contact Journey | Build the staff recruitment path and clear human follow-up options | STAF-01, STAF-02, STAF-03, TRST-02 |
+| 6 | UI and Tailwind CSS Refactor | Completely refactor the site's styling methodology to Tailwind CSS to fix layout bugs and ensure long-term responsive stability. | ARCH-01, ARCH-02, LAY-01, LAY-02, RES-01, RES-02, BRND-01 |
 
 ## Phase Details
 
@@ -108,6 +109,23 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 3. Contact pathways are easy to find for families, donors, staff applicants, and partners who need follow-up.
 4. Staff and contact content feels aligned with the camp's overall tone without losing operational clarity.
 
+### Phase 6: UI and Tailwind CSS Refactor
+
+**Goal:** Completely refactor the site's styling methodology to Tailwind CSS to fix layout bugs and ensure long-term responsive stability without losing the "Soul & Story" aesthetic.
+
+**Requirements:** ARCH-01, ARCH-02, LAY-01, LAY-02, RES-01, RES-02, BRND-01
+
+**Why next:**
+- The functional and content aspects of the v1 site are complete.
+- Global cascading CSS is causing visual bugs and alignment issues.
+- Establishing a strict utility-first methodology now prevents future tech debt.
+
+**Success criteria:**
+1. Tailwind CSS is integrated into the Vite build pipeline.
+2. All current brand colors and typography are successfully ported to the Tailwind configuration.
+3. Brittle grid and flexbox implementations in the `PageFrame` and `HomeRoute` are replaced with Tailwind utility classes.
+4. The site renders perfectly on mobile viewports (320px) without overflow issues.
+
 ## Coverage Validation
 
 | Requirement | Phase |
@@ -134,17 +152,25 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | STAF-02 | Phase 5 |
 | STAF-03 | Phase 5 |
 | TRST-02 | Phase 5 |
+| ARCH-01 | Phase 6 |
+| ARCH-02 | Phase 6 |
+| LAY-01 | Phase 6 |
+| LAY-02 | Phase 6 |
+| RES-01 | Phase 6 |
+| RES-02 | Phase 6 |
+| BRND-01 | Phase 6 |
 
 **Coverage:**
 - v1 requirements: 22
-- Mapped to phases: 22
+- v1.1 requirements: 7
+- Total mapped to phases: 29
 - Unmapped: 0
 
 ## Recommended Next Step
 
-`$gsd-plan-phase 3`
+`/gsd:plan-phase 6`
 
-Move into Phase 3 to build the family trust and registration journey on top of the completed shell, routing, and content foundation.
+Move into Phase 6 to begin the Tailwind CSS migration and UI layout polish.
 
 ---
 *Last updated: 2026-03-12 after phase 2 completion*
