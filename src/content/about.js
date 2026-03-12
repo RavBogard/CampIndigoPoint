@@ -24,12 +24,27 @@ export const aboutPage = {
   campLife: {
     heading: 'The Magic of a Camp Day',
     summary: 'From morning polar bear plunges to evening campfires, we trade screens for sunsets. We are here to play, and to grow throughout our play, replacing the noise of the world with the soundtrack of laughter.',
-    bullets: [
-      'Morning polar bear plunges and breakfast with a community that understands you.',
-      'A "beautifully liberated freedom of expression" across all-camp activities and bunk rotations.',
-      'Intentional low-tech time: trading screens for friendship bracelets and face-to-face fun.',
-      'Daily "Rest Hour" for reading, writing, and recharging in a sanctuary of peers.',
-      'Evening activities like Capture the Flag, Silent Discos, and our legendary Queer Prom.',
+    schedule: [
+      {
+        time: "Morning",
+        title: "Wake Up & Plunge",
+        description: "Morning polar bear plunges in the lake, followed by breakfast with a community that understands you."
+      },
+      {
+        time: "Mid-Day",
+        title: "Activity Rotations",
+        description: "A beautifully liberated freedom of expression across all-camp activities and bunk rotations. Trading screens for friendship bracelets and face-to-face fun."
+      },
+      {
+        time: "Afternoon",
+        title: "Rest Hour",
+        description: "Daily 'Rest Hour' for reading, writing, and recharging in a sanctuary of peers."
+      },
+      {
+        time: "Evening",
+        title: "Camp Traditions",
+        description: "Evening activities like Capture the Flag, Silent Discos, and our legendary Queer Prom."
+      }
     ],
   },
   testimonials: [

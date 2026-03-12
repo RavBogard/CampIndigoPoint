@@ -1,4 +1,5 @@
 import PageFrame from "../components/site/PageFrame";
+import CampTimeline from "../components/site/CampTimeline";
 import { aboutPage } from "../content/about";
 import { usePageMetadata } from "../lib/metadata";
 
@@ -15,19 +16,15 @@ const AboutRoute = () => {
     >
       <section
         aria-labelledby="about-camp-life-title"
-        className="bg-[var(--color-camp-sun)] rounded-[3rem_1.5rem_4rem_2rem] p-8 md:p-14 border-b-8 border-[var(--color-camp-orange)] shadow-xl grid gap-4 mb-8"
+        className="bg-[var(--color-camp-sun)] rounded-[3rem_1.5rem_4rem_2rem] p-8 md:p-14 border-b-8 border-[var(--color-camp-orange)] shadow-xl grid gap-8 mb-8"
       >
-        <h2 id="about-camp-life-title" className="text-3xl md:text-4xl font-extrabold text-[var(--color-camp-text)] font-serif tracking-tight content-title--underline">
-          {aboutPage.campLife.heading}
-        </h2>
-        <p className="text-lg text-[var(--color-camp-text)] leading-relaxed">{aboutPage.campLife.summary}</p>
-        <ul className="grid gap-4 mt-2">
-          {aboutPage.campLife.bullets.map((bullet) => (
-            <li key={bullet} className="pl-8 relative font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-extrabold before:text-xl before:absolute before:left-0 before:-top-1.5">
-              {bullet}
-            </li>
-          ))}
-        </ul>
+        <div className="grid gap-4 max-w-3xl mx-auto text-center">
+          <h2 id="about-camp-life-title" className="text-3xl md:text-4xl font-extrabold text-[var(--color-camp-text)] font-serif tracking-tight content-title--underline">
+            {aboutPage.campLife.heading}
+          </h2>
+          <p className="text-lg text-[var(--color-camp-text)] leading-relaxed">{aboutPage.campLife.summary}</p>
+        </div>
+        <CampTimeline schedule={aboutPage.campLife.schedule} />
       </section>
 
       {/* Media Grid */}

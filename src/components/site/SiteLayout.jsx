@@ -4,6 +4,7 @@ import { siteSettings } from "../../content/site";
 import AnnouncementBar from "./AnnouncementBar";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
+import StickyActionBar from "./StickyActionBar";
 
 const SiteLayout = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -56,13 +57,14 @@ const SiteLayout = () => {
           </div>
         </header>
 
-        <main className="flex-1 relative overflow-hidden focus:outline-none" id="main-content" tabIndex={-1}>
+        <main className="flex-1 relative overflow-hidden focus:outline-none pb-24" id="main-content" tabIndex={-1}>
           <div className="absolute w-[30rem] h-[30rem] rounded-full blur-[80px] -z-10 opacity-10 top-[10%] -left-[10%] bg-[var(--color-camp-teal)]" aria-hidden="true" />
           <div className="absolute w-[30rem] h-[30rem] rounded-full blur-[80px] -z-10 opacity-10 bottom-[10%] -right-[10%] bg-[var(--color-camp-orange)]" aria-hidden="true" />
           <Outlet />
         </main>
 
         <SiteFooter />
+        <StickyActionBar />
       </div>
     </div>
   );
