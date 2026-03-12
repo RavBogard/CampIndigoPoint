@@ -22,6 +22,16 @@ export const aboutPage = {
       'Evening activities like Capture the Flag, Silent Discos, and our legendary Queer Prom.',
     ],
   },
+  testimonials: [
+    {
+      quote: "The most home I have ever felt.",
+      source: "Camper",
+    },
+    {
+      quote: "Unabashedly queer in the great outdoors.",
+      source: "Camper",
+    }
+  ],
   belonging: {
     heading: 'A Home for Every Identity',
     body: 'We don\'t just "accept" our campers—we celebrate them. Every detail is built on the foundations of affirmation, so every child can be "wholeheartedly themselves."',

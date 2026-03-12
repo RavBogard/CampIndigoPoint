@@ -15,6 +15,19 @@ describe("Donor Journey", () => {
     expect(screen.getByText(/From Black and White to Color/i)).toBeInTheDocument();
   });
 
+  it("renders the impact dashboard metrics", () => {
+    render(
+      <MemoryRouter>
+        <DonateRoute />
+      </MemoryRouter>
+    );
+    expect(screen.getByText("Impact Dashboard")).toBeInTheDocument();
+    donatePage.impactMetrics.forEach(metric => {
+      expect(screen.getByText(metric.value)).toBeInTheDocument();
+      expect(screen.getByText(metric.label)).toBeInTheDocument();
+    });
+  });
+
   it("renders the impact tiers", () => {
     render(
       <MemoryRouter>
@@ -45,3 +58,4 @@ describe("Donor Journey", () => {
     expect(screen.getAllByText(/Faith Sponsorships/i).length).toBeGreaterThan(0);
   });
 });
+

@@ -23,6 +23,22 @@ export const homePage = {
     'Queer and trans youth entering grades 2nd-11th',
     'Scholarships available for every family who asks',
   ],
+  gateway: {
+    eyebrow: 'Your Next Step',
+    heading: 'Step Into the Magic',
+  },
+  pressQuotes: [
+    {
+      quote: "A space to not feel like an outsider",
+      source: "Camp Parent",
+      color: "var(--color-camp-orange)",
+    },
+    {
+      quote: "Liberated freedom of expression.",
+      source: "The Washington Post",
+      color: "var(--color-camp-teal)",
+    },
+  ],
   sections: [
     {
       id: 'why-camp',

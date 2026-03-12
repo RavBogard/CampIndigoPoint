@@ -1,6 +1,14 @@
 import PageFrame from "../components/site/PageFrame";
 import { donatePage } from "../content/donate";
 import { usePageMetadata } from "../lib/metadata";
+import { Users, Map, Heart, Sun } from "lucide-react";
+
+const iconMap = {
+  Users: <Users className="text-[var(--color-camp-orange)] mb-2" size={32} />,
+  Map: <Map className="text-[var(--color-camp-orange)] mb-2" size={32} />,
+  Heart: <Heart className="text-[var(--color-camp-orange)] mb-2" size={32} />,
+  Sun: <Sun className="text-[var(--color-camp-orange)] mb-2" size={32} />,
+};
 
 const DonateRoute = () => {
   usePageMetadata("donate");
@@ -16,6 +24,19 @@ const DonateRoute = () => {
       }}
       cta={donatePage.cta}
     >
+      <section aria-labelledby="donate-dashboard-title" className="mb-8">
+        <h2 id="donate-dashboard-title" className="sr-only">Impact Dashboard</h2>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {donatePage.impactMetrics.map((metric) => (
+            <div key={metric.label} className="bg-white/90 border-t-4 border-[var(--color-camp-teal)] shadow-lg rounded-xl p-6 flex flex-col items-center text-center hover:-translate-y-1 transition-transform">
+              {iconMap[metric.icon]}
+              <p className="text-3xl md:text-4xl font-extrabold text-[var(--color-camp-teal)] font-serif tracking-tight">{metric.value}</p>
+              <p className="text-sm uppercase tracking-widest font-bold text-[var(--color-camp-muted)] mt-1">{metric.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section
         aria-labelledby="donate-lifeline-title"
         className="bg-[var(--color-camp-sun)] rounded-[3rem_1.5rem_4rem_2rem] p-8 md:p-14 border-b-8 border-[var(--color-camp-orange)] shadow-xl grid gap-4"

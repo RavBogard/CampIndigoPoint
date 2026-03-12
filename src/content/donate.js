@@ -8,6 +8,12 @@ export const donatePage = {
   intro:
     'We are literally saving lives with marshmallows, campfires, and intergenerational queer community. Your gift provides the lifeline our youth need to thrive.',
   cta: actionLinks.donate,
+  impactMetrics: [
+    { label: "Campers Served", value: "140+", icon: "Users" },
+    { label: "States Represented", value: "30", icon: "Map" },
+    { label: "Queer Staff", value: "50+", icon: "Heart" },
+    { label: "Turned Away for Funds", value: "0", icon: "Sun" }
+  ],
   lifeline: {
     heading: 'From Black and White to Color',
     body: 'Parents tell us every year: they send us kids who live in black and white, whose only friends are strangers on the internet. In just two weeks, we send them back kids who live in color, who are confident, and who have built lifelong relationships with other campers.',

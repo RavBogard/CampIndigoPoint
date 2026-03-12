@@ -15,7 +15,7 @@ const AboutRoute = () => {
     >
       <section
         aria-labelledby="about-camp-life-title"
-        className="bg-[var(--color-camp-sun)] rounded-[3rem_1.5rem_4rem_2rem] p-8 md:p-14 border-b-8 border-[var(--color-camp-orange)] shadow-xl grid gap-4"
+        className="bg-[var(--color-camp-sun)] rounded-[3rem_1.5rem_4rem_2rem] p-8 md:p-14 border-b-8 border-[var(--color-camp-orange)] shadow-xl grid gap-4 mb-8"
       >
         <h2 id="about-camp-life-title" className="text-3xl md:text-4xl font-extrabold text-[var(--color-camp-text)] font-serif tracking-tight content-title--underline">
           {aboutPage.campLife.heading}
@@ -30,8 +30,9 @@ const AboutRoute = () => {
         </ul>
       </section>
 
-      <section className="grid gap-6 md:gap-8 md:grid-cols-2">
-        <article aria-labelledby="about-belonging-title" className="bg-pink-50 border-l-8 border-pink-600 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start">
+      <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-[minmax(160px,auto)]">
+        {/* Story Block 1 - Belonging */}
+        <article aria-labelledby="about-belonging-title" className="bg-pink-50 border-l-8 border-pink-600 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start md:col-span-2 lg:col-span-2 xl:col-span-2 lg:row-span-2">
           <h2 id="about-belonging-title" className="text-2xl md:text-3xl font-bold font-serif text-pink-900">{aboutPage.belonging.heading}</h2>
           <p className="leading-relaxed text-pink-950/80 font-medium">{aboutPage.belonging.body}</p>
           <ul className="grid gap-4 mt-2 text-pink-950">
@@ -43,15 +44,36 @@ const AboutRoute = () => {
           </ul>
         </article>
 
+        {/* Quote Block 1 */}
+        <article className="bg-[var(--color-camp-teal)] text-white shadow-xl rounded-[1.4rem] p-6 md:p-8 flex flex-col justify-center md:col-span-1 lg:col-span-1 xl:col-span-2">
+          <blockquote className="text-2xl font-bold font-serif leading-tight">
+            "{aboutPage.testimonials[0].quote}"
+          </blockquote>
+          <cite className="block mt-4 text-sm uppercase tracking-wider font-bold opacity-80 not-italic">
+            — {aboutPage.testimonials[0].source}
+          </cite>
+        </article>
+
+        {/* Quote Block 2 */}
+        <article className="bg-[var(--color-camp-orange)] text-white shadow-xl rounded-[1.4rem] p-6 md:p-8 flex flex-col justify-center md:col-span-1 lg:col-span-1 xl:col-span-1">
+          <blockquote className="text-xl font-bold font-serif leading-tight">
+            "{aboutPage.testimonials[1].quote}"
+          </blockquote>
+          <cite className="block mt-4 text-sm uppercase tracking-wider font-bold opacity-80 not-italic">
+            — {aboutPage.testimonials[1].source}
+          </cite>
+        </article>
+
+        {/* Story Block 2 - Activities */}
         <article
           aria-labelledby="about-activities-title"
-          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
+          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start md:col-span-2 lg:col-span-2 xl:col-span-3"
         >
           <h2 id="about-activities-title" className="text-2xl md:text-3xl font-bold font-serif">{aboutPage.activities.heading}</h2>
           <p className="leading-relaxed">{aboutPage.activities.summary}</p>
-          <ul className="grid gap-4 mt-2">
+          <ul className="grid gap-3 mt-2 md:grid-cols-2">
             {aboutPage.activities.highlights.map((highlight) => (
-              <li key={highlight} className="pl-8 relative font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-extrabold before:text-xl before:absolute before:left-0 before:-top-1.5">
+              <li key={highlight} className="pl-8 relative text-sm font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-extrabold before:text-xl before:absolute before:left-0 before:-top-1.5">
                 {highlight}
               </li>
             ))}
@@ -59,7 +81,7 @@ const AboutRoute = () => {
         </article>
       </section>
 
-      <div className="grid gap-6 md:gap-8 md:grid-cols-2">
+      <div className="grid gap-6 md:gap-8 md:grid-cols-2 mt-8">
         <section
           aria-labelledby="community-care-title"
           className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
