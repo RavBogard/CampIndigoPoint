@@ -16,7 +16,7 @@ progress:
 
 **Updated:** 2026-03-12
 **Current phase:** Phase 3 - Family Trust and Registration Journey
-**Current status:** Phase 2 complete, ready to plan or execute Phase 3
+**Current status:** Phase 3 context gathered, ready to plan
 
 ## Project Reference
 
@@ -41,6 +41,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-12)
 - Phase 2 plan 02 completed with desktop/mobile navigation, homepage audience routing, and announcement-driven shell actions
 - Phase 2 plan 03 completed with shell accessibility hardening, responsive tuning, and automated regression coverage
 - Phase 2 verification report created and passed
+- Phase 3 context captured for family trust, community care framing, affordability, and the registration handoff
 
 ## Decisions Made
 
@@ -58,10 +59,13 @@ See: `.planning/PROJECT.md` (updated 2026-03-12)
 - Treat mobile navigation as an accessible dialog with keyboard handling, Escape support, and focus return.
 - Use global focus-visible and reduced-motion defaults so later phases inherit shell quality rules automatically.
 - Verify the shell through a lightweight memory-router test harness instead of lint/build-only checks.
+- Lead the family journey with belonging and overnight trust, supported by vivid camp-life detail and concrete systems.
+- Treat community care as a core trust promise, with direct names/pronouns language and competent, caring accommodation framing.
+- Keep affordability heartfelt and strategically repeated, with the clearest cost details on the registration page and human contact as a visible fallback.
 
 ## Next Actions
 
-1. Start Phase 3 planning/execution for the family trust and registration journey.
+1. Run `$gsd-plan-phase 3` to turn the new family-trust context into executable plans.
 2. Carry the routed shell, persistent CTAs, and accessibility baseline into the family-facing pages rather than creating page-specific variants.
 3. Confirm the logo assets, brand colors, and any social profile URLs before or during later route/page implementation.
 
@@ -72,8 +76,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-12)
 
 ## Session Resume
 
-- Stopped at: Completed phase 2 verification
-- Resume file: `.planning/ROADMAP.md`
+- Stopped at: Phase 3 context gathered
+- Resume file: `.planning/phases/03-family-trust-and-registration-journey/03-CONTEXT.md`
 
 ---
-*Last updated: 2026-03-12 after completing phase 2*
+*Last updated: 2026-03-12 after gathering phase 3 context*
