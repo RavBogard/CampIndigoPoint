@@ -1,6 +1,6 @@
 ---
 phase: 08
-slug: youth-safety-and-resource-hub
+slug: resource-hub
 status: draft
 nyquist_compliant: false
 wave_0_complete: false
@@ -38,10 +38,10 @@ created: 2026-03-12
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 08-01-01 | 01 | 1 | SAFE-01, SAFE-02 | render smoke | `npm run test` | ❌ W0 | ⬜ pending |
-| 08-02-01 | 02 | 2 | HUB-01 | content smoke | `npm run test` | ❌ W0 | ⬜ pending |
-| 08-02-02 | 02 | 2 | HUB-01 | render smoke | `npm run test` | ❌ W0 | ⬜ pending |
-| 08-03-01 | 03 | 3 | SAFE-01, HUB-01 | a11y/regression | `npm run build && npm run test` | ❌ W0 | ⬜ pending |
+| 08-01-01 | 01 | 1 | HUB-01 | content smoke | `npm run test` | ❌ W0 | ⬜ pending |
+| 08-01-02 | 01 | 1 | HUB-01 | render smoke | `npm run test` | ❌ W0 | ⬜ pending |
+| 08-01-03 | 01 | 1 | HUB-01 | render smoke | `npm run test` | ❌ W0 | ⬜ pending |
+| 08-02-01 | 02 | 2 | HUB-01 | a11y/regression | `npm run build && npm run test` | ❌ W0 | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -49,7 +49,6 @@ created: 2026-03-12
 
 ## Wave 0 Requirements
 
-- [ ] Add assertions to `site-shell.test.jsx` to ensure the `<QuickExit />` component renders on all routes.
 - [ ] Ensure Vitest does not fail when `framer-motion` is imported in the FAQ route.
 
 ---
@@ -58,8 +57,6 @@ created: 2026-03-12
 
 | Behavior | Requirement | Why Manual | Test Instructions |
 |----------|-------------|------------|-------------------|
-| Quick Exit Redirect | SAFE-01 | Browser API | Click the Quick Exit button and verify it immediately loads weather.com. |
-| Quick Exit Esc Key | SAFE-01 | Keyboard Event | Hit the 'Escape' key three times rapidly and verify the redirect triggers. |
 | FAQ Animation | HUB-01 | Visual Polish | Click different category filters on the FAQ page and ensure items fade in/out smoothly without jarring layout shifts. |
 
 ---

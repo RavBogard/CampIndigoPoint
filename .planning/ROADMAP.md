@@ -19,7 +19,7 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | 5 | Staff Recruiting and Contact Journey | Build the staff recruitment path and clear human follow-up options | STAF-01, STAF-02, STAF-03, TRST-02 |
 | 6 | UI and Tailwind CSS Refactor | Completely refactor the site's styling methodology to Tailwind CSS to fix layout bugs and ensure long-term responsive stability. | ARCH-01, ARCH-02, LAY-01, LAY-02, RES-01, RES-02, BRND-01 |
 | 7 | Bento Storytelling & Impact | Redesign core pages using Bento Box grids and add a data-driven Donor Impact Dashboard. | STORY-01, STORY-02, IMP-01 |
-| 8 | Youth Safety UX & Resource Hub | Implement a "Quick Exit" panic button and an interactive, filterable FAQ Resource Hub. | SAFE-01, SAFE-02, HUB-01 |
+| 8 | Resource Hub | Upgrade the FAQ into an interactive, filterable Resource Hub. | HUB-01 |
 
 ## Phase Details
 

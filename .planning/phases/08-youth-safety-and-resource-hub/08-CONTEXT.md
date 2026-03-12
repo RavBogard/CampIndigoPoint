@@ -1,4 +1,4 @@
-# Phase 8: Youth Safety UX & Resource Hub - Context
+# Phase 8: Resource Hub - Context
 
 **Gathered:** 2026-03-12
 **Status:** Ready for planning
@@ -6,18 +6,12 @@
 <domain>
 ## Phase Boundary
 
-Implement a persistent "Quick Exit" panic button to protect vulnerable youth browsing the site in unsupportive environments. Upgrade the FAQ into an interactive, filterable Resource Hub using Framer Motion.
+Upgrade the FAQ into an interactive, filterable Resource Hub using Framer Motion to better organize information for families, donors, and staff.
 
 </domain>
 
 <decisions>
 ## Implementation Decisions
-
-### Safety First: Quick Exit
-- **Functionality:** Clicking the button must immediately redirect the browser to a neutral site (e.g., `https://weather.com`).
-- **Placement:** The button must be persistent, highly visible, and fixed to the viewport (e.g., bottom right corner or top utility bar), sitting above all other z-index layers (`z-50`).
-- **Keyboard Shortcut:** Implement an 'Escape' key listener (pressing Escape 3 times quickly) as an alternative trigger for the Quick Exit.
-- **Copy/Design:** The button should be labeled clearly but discreetly, perhaps "Quick Exit" with a simple 'X' or 'External Link' icon from `lucide-react`. It should contrast enough to be seen but not disrupt the main brand flow.
 
 ### Interactive Resource Hub (FAQ)
 - **Data Structure:** Refactor `src/content/faq.js` from an object of grouped arrays into a single array of objects, each with a `category` or `tags` property.
@@ -29,8 +23,7 @@ Implement a persistent "Quick Exit" panic button to protect vulnerable youth bro
 <specifics>
 ## Specific Ideas
 
-- The Quick Exit is a "panic button," not a history eraser. We must not over-promise its capability to users. It gets them off the screen immediately if someone walks in the room.
-- The FAQ filter buttons should look like "chips" or "pills" that visually toggle their active state.
+- The FAQ filter buttons should look like "chips" or "pills" that visually toggle their active state, making the page feel like a premium concierge service rather than a static list.
 
 </specifics>
 
@@ -38,12 +31,11 @@ Implement a persistent "Quick Exit" panic button to protect vulnerable youth bro
 ## Existing Code Insights
 
 ### Reusable Assets
-- `src/components/site/SiteLayout.jsx`: The ideal place to render the `<QuickExit />` component so it persists across all routes.
 - `src/content/faq.js`: Needs structural refactoring.
 - `src/routes/FaqRoute.jsx`: Needs a complete rewrite to handle state (`activeFilter`) and Framer Motion logic.
 
 ### Established Patterns
-- Tailwind CSS is fully implemented. We will use utility classes for the fixed positioning of the Quick Exit button and the styling of the FAQ filter chips.
+- Tailwind CSS is fully implemented. We will use utility classes for the styling of the FAQ filter chips.
 - `framer-motion` is already in the `package.json` dependencies.
 
 </code_context>
@@ -51,11 +43,11 @@ Implement a persistent "Quick Exit" panic button to protect vulnerable youth bro
 <deferred>
 ## Deferred Ideas
 
-- None.
+- "Quick Exit" panic button feature was explicitly removed from scope per user request.
 
 </deferred>
 
 ---
 
-*Phase: 08-youth-safety-and-resource-hub*
+*Phase: 08-resource-hub*
 *Context gathered: 2026-03-12*

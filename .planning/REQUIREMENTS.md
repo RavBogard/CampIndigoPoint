@@ -9,10 +9,6 @@
 - [ ] **STORY-01**: Implement "Bento Box" style grids on the Home and About pages to weave press quotes and testimonials directly into the visual layout.
 - [ ] **STORY-02**: Rewrite the homepage "Choose your path" gateway copy to be more evocative and less utilitarian.
 
-### Youth Safety UX
-- [ ] **SAFE-01**: Implement a persistent "Quick Exit" button (and keyboard shortcut) that immediately redirects the user to a neutral site.
-- [ ] **SAFE-02**: Ensure the Quick Exit feature visually sits above all other z-index layers.
-
 ### Donor Impact & Resources
 - [ ] **IMP-01**: Build a static, visually distinct "Impact Dashboard" on the Donate page highlighting key camp metrics.
 - [ ] **HUB-01**: Upgrade the FAQ page into an interactive, filterable "Resource Hub" using Framer Motion for smooth category transitions.
