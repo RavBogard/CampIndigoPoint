@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { describe, it, expect } from "vitest";
 import DonateRoute from "../routes/DonateRoute";
-import { donatePage } from "../content/donate";
+import donatePage from "../content/data/donate.json";
 
 describe("Donor Journey", () => {
   it("renders the primary lifeline narrative", () => {

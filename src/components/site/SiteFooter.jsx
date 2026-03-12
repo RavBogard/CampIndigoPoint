@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import {
-  organizationFacts,
-  socialLinks,
-} from "../../content/brand";
+import brandData from "../../content/data/brand.json";
 import { actionLinks } from "../../content/actions";
 import { siteSettings } from "../../content/site";
+
+const { organizationFacts, socialLinks } = brandData;
 
 const footerLinks = [
   { label: "About", to: "/about" },

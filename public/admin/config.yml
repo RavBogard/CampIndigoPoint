@@ -1,0 +1,394 @@
+backend:
+  name: github
+  repo: RavBogard/CampIndigoPoint
+  branch: main
+  commit_messages:
+    create: 'content: create {{collection}} “{{slug}}”'
+    update: 'content: update {{collection}} “{{slug}}”'
+    delete: 'content: delete {{collection}} “{{slug}}”'
+
+local_backend: true
+
+media_folder: "public/images/gallery"
+public_folder: "/images/gallery"
+
+collections:
+  - name: "pages"
+    label: "Core Pages"
+    description: "Edit the main storytelling pages of the site."
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "src/content/data/home.json"
+        description: "The main gateway and welcome page."
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "home"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Audience", name: "audience", widget: "hidden", default: "all"}
+          - {label: "Primary Action ID", name: "primaryActionId", widget: "hidden", default: "register"}
+          - label: "Hero Gallery"
+            name: "heroGallery"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Hero Content"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - {label: "Details (Paragraphs)", name: "details", widget: "list"}
+              - {label: "CTAs", name: "ctas", widget: "list", field: {name: "cta", widget: "string"}}
+          - label: "Quick Facts"
+            name: "quickFacts"
+            widget: "list"
+          - label: "Gateway"
+            name: "gateway"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Heading", name: "heading", widget: "string"}
+          - label: "Press Quotes"
+            name: "pressQuotes"
+            widget: "list"
+            fields:
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Source", name: "source", widget: "string"}
+              - {label: "Color", name: "color", widget: "string"}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Bullets", name: "bullets", widget: "list"}
+          - label: "Audience Paths"
+            name: "audiencePaths"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Route", name: "route", widget: "string"}
+              - {label: "Route Label", name: "routeLabel", widget: "string"}
+              - {label: "Action", name: "action", widget: "string"}
+
+      - name: "about"
+        label: "About Page"
+        file: "src/content/data/about.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "about"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Audience", name: "audience", widget: "hidden", default: "families"}
+          - {label: "Primary Action ID", name: "primaryActionId", widget: "hidden", default: "register"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - label: "Hero Media"
+            name: "heroMedia"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Camp Life Photos"
+            name: "campLifePhotos"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Camp Life Content"
+            name: "campLife"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - label: "Schedule"
+                name: "schedule"
+                widget: "list"
+                fields:
+                  - {label: "Time", name: "time", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Source", name: "source", widget: "string"}
+          - label: "Belonging Section"
+            name: "belonging"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Details", name: "details", widget: "list"}
+          - label: "Activities Section"
+            name: "activities"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - {label: "Highlights", name: "highlights", widget: "list"}
+          - label: "Community Care Section"
+            name: "communityCare"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - {label: "Bullets", name: "bullets", widget: "list"}
+          - label: "History Section"
+            name: "history"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Milestones", name: "milestones", widget: "list"}
+          - {label: "CTA", name: "cta", widget: "hidden", default: "register"}
+
+      - name: "donate"
+        label: "Donate Page"
+        file: "src/content/data/donate.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "donate"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Audience", name: "audience", widget: "hidden", default: "donors"}
+          - {label: "Primary Action ID", name: "primaryActionId", widget: "hidden", default: "donate"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "CTA", name: "cta", widget: "hidden", default: "donate"}
+          - label: "Hero Media"
+            name: "heroMedia"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Support Media"
+            name: "supportMedia"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Impact Metrics"
+            name: "impactMetrics"
+            widget: "list"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Value", name: "value", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+          - label: "Lifeline Section"
+            name: "lifeline"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Bullets", name: "bullets", widget: "list"}
+          - label: "Ancestors Section"
+            name: "ancestors"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Details", name: "details", widget: "list"}
+          - label: "Impact Tiers"
+            name: "impactTiers"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                fields:
+                  - {label: "Amount", name: "amount", widget: "string"}
+                  - {label: "Description", name: "description", widget: "string"}
+          - label: "Partners In Joy Section"
+            name: "partnersInJoy"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Bullets", name: "bullets", widget: "list"}
+          - label: "Fiscal Sponsorship Section"
+            name: "fiscalSponsorship"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Details", name: "details", widget: "list"}
+
+      - name: "staff"
+        label: "Staff Page"
+        file: "src/content/data/staff.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "staff"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Audience", name: "audience", widget: "hidden", default: "staff"}
+          - {label: "Primary Action ID", name: "primaryActionId", widget: "hidden", default: "apply"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "CTA", name: "cta", widget: "hidden", default: "apply"}
+          - label: "Hero Media"
+            name: "heroMedia"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Support Media"
+            name: "supportMedia"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "The Magic Section"
+            name: "theMagic"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Bullets", name: "bullets", widget: "list"}
+          - label: "The Mud Section"
+            name: "theMud"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Bullets", name: "bullets", widget: "list"}
+          - label: "The Community Section"
+            name: "theCommunity"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Roles Overview", name: "rolesOverview", widget: "text"}
+          - label: "Application Process"
+            name: "applicationProcess"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Steps", name: "steps", widget: "list"}
+              - {label: "Contact", name: "contact", widget: "string"}
+
+      - name: "registration"
+        label: "Registration Page"
+        file: "src/content/data/registration.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "registration"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Audience", name: "audience", widget: "hidden", default: "families"}
+          - {label: "Primary Action ID", name: "primaryActionId", widget: "hidden", default: "register"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "CTA", name: "cta", widget: "hidden", default: "register"}
+          - label: "Hero Media"
+            name: "heroMedia"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Support Media"
+            name: "supportMedia"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Affordability Section"
+            name: "affordability"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - {label: "Promise", name: "promise", widget: "string"}
+              - {label: "Details", name: "details", widget: "list"}
+          - label: "Accommodations Section"
+            name: "accommodations"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+              - {label: "Details", name: "details", widget: "list"}
+          - label: "Handoff Section"
+            name: "handoff"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Bullets", name: "bullets", widget: "list"}
+
+      - name: "faq"
+        label: "FAQ Page"
+        file: "src/content/data/faq.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "faq"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Audience", name: "audience", widget: "hidden", default: "all"}
+          - {label: "Primary Action ID", name: "primaryActionId", widget: "hidden", default: "register"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Categories", name: "categories", widget: "list"}
+          - label: "FAQ Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Category", name: "category", widget: "string"}
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer", name: "answer", widget: "text"}
+
+      - name: "brand"
+        label: "Brand Settings"
+        file: "src/content/data/brand.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - label: "Brand Values"
+            name: "brandValues"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Contact Directory"
+            name: "contactDirectory"
+            widget: "list"
+            fields:
+              - {label: "Intent", name: "intent", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Role", name: "role", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Phone", name: "phone", widget: "string", required: false}
+          - label: "Press Links"
+            name: "pressLinks"
+            widget: "list"
+            fields:
+              - {label: "Publication", name: "publication", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+          - label: "Social Links"
+            name: "socialLinks"
+            widget: "object"
+            fields:
+              - {label: "Instagram", name: "instagram", widget: "string"}
+              - {label: "Facebook", name: "facebook", widget: "string"}
+          - label: "Organization Facts"
+            name: "organizationFacts"
+            widget: "object"
+            fields:
+              - {label: "Site Name", name: "siteName", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Audience", name: "audience", widget: "string"}
+              - {label: "Format", name: "format", widget: "string"}
+              - {label: "Founded", name: "founded", widget: "number", value_type: "int"}
+              - {label: "Founded By", name: "foundedBy", widget: "list"}
+              - {label: "Fiscal Sponsor", name: "fiscalSponsor", widget: "string"}
+          - label: "Brand Voice"
+            name: "brandVoice"
+            widget: "object"
+            fields:
+              - {label: "Tone", name: "tone", widget: "list"}
+              - {label: "Editorial Approach", name: "editorialApproach", widget: "text"}

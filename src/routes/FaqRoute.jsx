@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PageFrame from "../components/site/PageFrame";
-import { faqPage } from "../content/faq";
+import faqPage from "../content/data/faq.json";
 import { usePageMetadata } from "../lib/metadata";
 
 const FaqRoute = () => {

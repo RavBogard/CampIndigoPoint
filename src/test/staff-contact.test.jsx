@@ -3,8 +3,10 @@ import { MemoryRouter } from "react-router-dom";
 import { describe, it, expect } from "vitest";
 import StaffRoute from "../routes/StaffRoute";
 import ContactRoute from "../routes/ContactRoute";
-import { staffPage } from "../content/staff";
-import { contactDirectory, pressLinks } from "../content/brand";
+import staffPage from "../content/data/staff.json";
+import brandData from "../content/data/brand.json";
+
+const { contactDirectory, pressLinks } = brandData;
 
 describe("Staff Journey", () => {
   it("renders the Magic and Mud narrative", () => {

@@ -1,11 +1,7 @@
 import { actionLinks, announcementActionIds } from './actions'
-import {
-  brandValues,
-  brandVoice,
-  contactDirectory,
-  organizationFacts,
-  socialLinks,
-} from './brand'
+import brandData from './data/brand.json'
+
+const { brandValues, brandVoice, contactDirectory, organizationFacts, socialLinks } = brandData;
 
 export const siteSettings = {
   siteName: organizationFacts.siteName,

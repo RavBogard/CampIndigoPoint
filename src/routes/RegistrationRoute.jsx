@@ -1,5 +1,6 @@
 import PageFrame from "../components/site/PageFrame";
-import { registrationPage } from "../content/registration";
+import registrationPage from "../content/data/registration.json";
+import { actionLinks } from "../content/actions";
 import { usePageMetadata } from "../lib/metadata";
 
 const RegistrationRoute = () => {
@@ -11,7 +12,7 @@ const RegistrationRoute = () => {
       title={registrationPage.title}
       intro={registrationPage.intro}
       media={registrationPage.heroMedia}
-      cta={registrationPage.cta}
+      cta={actionLinks[registrationPage.cta]}
     >
       <section className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
         <article

@@ -1,5 +1,6 @@
 import PageFrame from "../components/site/PageFrame";
-import { staffPage } from "../content/staff";
+import staffPage from "../content/data/staff.json";
+import { actionLinks } from "../content/actions";
 import { usePageMetadata } from "../lib/metadata";
 
 const StaffRoute = () => {
@@ -11,7 +12,7 @@ const StaffRoute = () => {
       title={staffPage.title}
       intro={staffPage.intro}
       media={staffPage.heroMedia}
-      cta={staffPage.cta}
+      cta={actionLinks[staffPage.cta]}
     >
       <section
         aria-labelledby="staff-magic-title"

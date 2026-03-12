@@ -1,11 +1,17 @@
 import PageFrame from "../components/site/PageFrame";
 import AudiencePathGrid from "../components/site/AudiencePathGrid";
 import HeroSlideshow from "../components/site/HeroSlideshow";
-import { homePage } from "../content/home";
+import homePage from "../content/data/home.json";
+import { actionLinks } from "../content/actions";
 import { usePageMetadata } from "../lib/metadata";
 
 const HomeRoute = () => {
   usePageMetadata("home");
+
+  const pathsWithActions = homePage.audiencePaths.map(path => ({
+    ...path,
+    action: actionLinks[path.action]
+  }));
 
   return (
     <PageFrame
@@ -21,7 +27,7 @@ const HomeRoute = () => {
             {homePage.gateway.heading}
           </h2>
         </div>
-        <AudiencePathGrid paths={homePage.audiencePaths} />
+        <AudiencePathGrid paths={pathsWithActions} />
       </section>
 
       <section

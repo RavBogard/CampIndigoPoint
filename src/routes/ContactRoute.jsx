@@ -1,7 +1,8 @@
 import PageFrame from "../components/site/PageFrame";
-import { contactDirectory, pressLinks, socialLinks } from "../content/brand";
-import { siteSettings } from "../content/site";
+import brandData from "../content/data/brand.json";
 import { usePageMetadata } from "../lib/metadata";
+
+const { contactDirectory, pressLinks, socialLinks } = brandData;
 
 const ContactRoute = () => {
   usePageMetadata("contact");

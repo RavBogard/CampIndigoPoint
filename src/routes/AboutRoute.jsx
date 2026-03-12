@@ -1,6 +1,7 @@
 import PageFrame from "../components/site/PageFrame";
 import CampTimeline from "../components/site/CampTimeline";
-import { aboutPage } from "../content/about";
+import aboutPage from "../content/data/about.json";
+import { actionLinks } from "../content/actions";
 import { usePageMetadata } from "../lib/metadata";
 
 const AboutRoute = () => {
@@ -12,7 +13,7 @@ const AboutRoute = () => {
       title={aboutPage.title}
       intro={aboutPage.intro}
       media={aboutPage.heroMedia}
-      cta={aboutPage.cta}
+      cta={actionLinks[aboutPage.cta]}
     >
       <section
         aria-labelledby="about-camp-life-title"

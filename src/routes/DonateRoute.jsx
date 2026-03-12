@@ -1,5 +1,6 @@
 import PageFrame from "../components/site/PageFrame";
-import { donatePage } from "../content/donate";
+import donatePage from "../content/data/donate.json";
+import { actionLinks } from "../content/actions";
 import { usePageMetadata } from "../lib/metadata";
 import { Users, Map, Heart, Sun } from "lucide-react";
 
