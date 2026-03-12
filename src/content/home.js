@@ -6,6 +6,12 @@ export const homePage = {
   title: 'Camp Indigo Point',
   audience: 'all',
   primaryActionId: actionLinks.register.id,
+  heroGallery: [
+    { src: '/images/gallery/camp-photo-1.jpg', alt: 'Joyful moments at Camp Indigo Point' },
+    { src: '/images/gallery/camp-photo-10.jpg', alt: 'Campers laughing together' },
+    { src: '/images/gallery/camp-photo-11.jpg', alt: 'A supportive camp moment' },
+    { src: '/images/gallery/camp-photo-12.jpg', alt: 'Intergenerational queer community' }
+  ],
   hero: {
     eyebrow: `A Summer Safe Haven — ${siteSettings.season.year}`,
     heading: 'Experience the Unconditional Joy of Being Wholeheartedly Yourself',

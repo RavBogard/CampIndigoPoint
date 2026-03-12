@@ -1,5 +1,6 @@
 import PageFrame from "../components/site/PageFrame";
 import AudiencePathGrid from "../components/site/AudiencePathGrid";
+import HeroSlideshow from "../components/site/HeroSlideshow";
 import { homePage } from "../content/home";
 import { usePageMetadata } from "../lib/metadata";
 
@@ -11,10 +12,7 @@ const HomeRoute = () => {
       eyebrow={homePage.hero.eyebrow}
       title={homePage.hero.heading}
       intro={homePage.hero.summary}
-      media={{
-        src: "/images/gallery/camp-photo-1.jpg",
-        alt: "Joyful moments at Camp Indigo Point.",
-      }}
+      media={<HeroSlideshow images={homePage.heroGallery} />}
     >
       <section aria-labelledby="home-gateway-title" className="pb-8">
         <div className="grid gap-2 mb-6">
@@ -67,11 +65,16 @@ const HomeRoute = () => {
           </cite>
         </article>
 
+        {/* New Photo Block in Grid */}
+        <article className="rounded-[1.4rem] overflow-hidden shadow-xl md:col-span-1 lg:col-span-1 xl:col-span-1 aspect-square lg:aspect-auto">
+          <img src="/images/gallery/camp-photo-2.jpg" alt="Campers gathered together" className="w-full h-full object-cover" />
+        </article>
+
         {/* Story Block 2 - Standard */}
-        <article className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start md:col-span-2 lg:col-span-2 xl:col-span-3">
+        <article className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start md:col-span-2 lg:col-span-3 xl:col-span-2">
           <h3 className="text-2xl font-bold font-serif">{homePage.sections[1].heading}</h3>
           <p className="leading-relaxed">{homePage.sections[1].body}</p>
-          <ul className="grid gap-3 mt-2 md:grid-cols-3">
+          <ul className="grid gap-3 mt-2 md:grid-cols-1">
             {homePage.sections[1].bullets.map((bullet) => (
               <li key={bullet} className="pl-6 relative text-sm font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-bold before:absolute before:left-0 before:-top-0.5">
                 {bullet}

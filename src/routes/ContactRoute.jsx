@@ -11,6 +11,10 @@ const ContactRoute = () => {
       eyebrow="Contact & Press"
       title="We're Here to Help"
       intro="Whether you are a family with specific accommodation questions, a donor wanting to discuss foundation support, or a reporter looking for a quote, we want to hear from you."
+      media={{
+        src: "/images/gallery/camp-photo-9.jpg",
+        alt: "A welcoming view of Camp Indigo Point.",
+      }}
     >
       <section
         aria-labelledby="contact-directory-title"

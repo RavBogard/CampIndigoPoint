@@ -18,6 +18,10 @@ const FaqRoute = () => {
       eyebrow="Questions answered"
       title={faqPage.title}
       intro={faqPage.intro}
+      media={{
+        src: "/images/gallery/camp-photo-8.jpg",
+        alt: "Campers enjoying a moment together.",
+      }}
     >
       <div className="grid gap-8 md:gap-12">
         

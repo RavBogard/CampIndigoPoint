@@ -4,12 +4,12 @@ milestone: v1.2
 milestone_name: Story and Safety Expansion
 current_phase: Milestone Complete
 status: v1.2 finished
-last_updated: "2026-03-13T03:00:00.000Z"
+last_updated: "2026-03-13T03:30:00.000Z"
 progress:
-  total_phases: 9
-  completed_phases: 9
-  total_plans: 27
-  completed_plans: 27
+  total_phases: 10
+  completed_phases: 10
+  total_plans: 30
+  completed_plans: 30
 ---
 
 # State
@@ -23,7 +23,7 @@ progress:
 Phase: Milestone Complete
 Plan: —
 Status: Milestone v1.2 finished
-Last activity: 2026-03-13 — Phase 9 completed and verified.
+Last activity: 2026-03-13 — Phase 10 completed and verified.
 
 ## Project Reference
 
@@ -36,10 +36,11 @@ See: `.planning/PROJECT.md` (updated 2026-03-13)
 
 - PROJECT.md updated for v1.2
 - REQUIREMENTS.md updated with STORY, IMP, HUB, MEDIA, and LANG requirements
-- ROADMAP.md updated with Phases 7, 8, and 9
+- ROADMAP.md updated with Phases 7, 8, 9, and 10
 - Phase 7 (Bento Storytelling & Impact) completed and verified.
 - Phase 8 (Interactive Resource Hub) completed and verified.
 - Phase 9 (High-Impact Media & Language) completed and verified.
+- Phase 10 (Hero Slideshow & Media Density) completed and verified.
 
 ## Decisions Made (Project Summary)
 
@@ -49,6 +50,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-13)
 - **Interactive FAQ:** Refactored FAQ into a smooth, filterable "Chips" UI using Framer Motion.
 - **Safety UX:** Quick Exit was explicitly removed from scope by the user.
 - **Media & Language:** Audited the site to use profound language from *Washington Post*, *JTA*, and *GMA*. Built a dedicated photo grid on the About page to showcase unadulterated joy.
+- **Hero Slideshow:** Implemented a Framer Motion crossfade slideshow on the homepage to maximize initial visual impact.
+- **Media Density:** Systematically eliminated "walls of text" by weaving the new gallery photos into the layout grids of every major route.
 
 ## Next Actions
 

@@ -54,10 +54,10 @@ const DonateRoute = () => {
         </ul>
       </section>
 
-      <section className="grid gap-6 md:gap-8 md:grid-cols-2">
+      <section className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
         <article
           aria-labelledby="donate-ancestors-title"
-          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
+          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start md:col-span-2"
         >
           <h2 id="donate-ancestors-title" className="text-2xl md:text-3xl font-bold font-serif">{donatePage.ancestors.heading}</h2>
           <p className="leading-relaxed">{donatePage.ancestors.body}</p>
@@ -70,6 +70,12 @@ const DonateRoute = () => {
           </ul>
         </article>
 
+        <article className="rounded-[1.4rem] overflow-hidden shadow-xl aspect-square md:aspect-auto h-full lg:col-span-1">
+          <img src={donatePage.supportMedia.src} alt={donatePage.supportMedia.alt} className="w-full h-full object-cover" />
+        </article>
+      </section>
+
+      <section className="grid gap-6 md:gap-8 md:grid-cols-2 mt-8">
         <article
           aria-labelledby="donate-impact-title"
           className="bg-pink-50 border-l-8 border-pink-600 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
@@ -84,13 +90,12 @@ const DonateRoute = () => {
             ))}
           </ul>
         </article>
-      </section>
 
-      <div className="grid gap-6 md:gap-8 md:grid-cols-2">
-        <section
-          aria-labelledby="donate-partners-title"
-          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
-        >
+        <div className="grid gap-6 md:gap-8">
+          <section
+            aria-labelledby="donate-partners-title"
+            className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
+          >
           <h2 id="donate-partners-title" className="text-2xl md:text-3xl font-bold font-serif">{donatePage.partnersInJoy.heading}</h2>
           <p className="leading-relaxed">{donatePage.partnersInJoy.body}</p>
           <ul className="grid gap-4 mt-2">
@@ -117,6 +122,7 @@ const DonateRoute = () => {
           </ul>
         </section>
       </div>
+      </section>
     </PageFrame>
   );
 };

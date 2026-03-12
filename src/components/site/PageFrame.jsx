@@ -32,7 +32,11 @@ const PageFrame = ({
 
           {media ? (
             <div className="rounded-[2rem] overflow-hidden shadow-2xl md:-rotate-2">
-              <img src={media.src} alt={media.alt} className="w-full h-auto block object-cover" />
+              {media.src ? (
+                <img src={media.src} alt={media.alt} className="w-full h-full min-h-[300px] object-cover" />
+              ) : (
+                media 
+              )}
             </div>
           ) : aside ? (
             <aside className="bg-white/85 border border-black/5 shadow-2xl rounded-[1.75rem] p-6 md:p-8">

@@ -11,6 +11,10 @@ export const staffPage = {
     src: '/images/gallery/camp-photo-4.jpg', // Using the authentic, high-energy photo
     alt: 'Staff and campers sharing an unforgettable, high-energy moment.',
   },
+  supportMedia: {
+    src: '/images/gallery/camp-photo-5.jpg',
+    alt: 'Staff members working together.',
+  },
   cta: actionLinks.apply,
   theMagic: {
     heading: 'The Magic: Becoming an Ancestor',

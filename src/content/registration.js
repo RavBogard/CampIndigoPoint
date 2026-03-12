@@ -11,6 +11,10 @@ export const registrationPage = {
     src: '/images/gallery/camp-photo-3.jpg',
     alt: 'Moments of connection and joy at Camp Indigo Point.',
   },
+  supportMedia: {
+    src: '/images/gallery/camp-photo-7.jpg',
+    alt: 'Campers and staff supporting one another.',
+  },
   cta: actionLinks.register,
   affordability: {
     heading: 'Our Promise: No One is Turned Away',

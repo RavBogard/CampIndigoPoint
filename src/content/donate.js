@@ -8,6 +8,14 @@ export const donatePage = {
   intro:
     'We are literally saving lives with marshmallows, campfires, and intergenerational queer community. Your gift provides the lifeline our youth need to thrive.',
   cta: actionLinks.donate,
+  heroMedia: {
+    src: '/images/gallery/camp-photo-2.jpg',
+    alt: 'Camp staff and campers sharing a joyful, intergenerational moment.',
+  },
+  supportMedia: {
+    src: '/images/gallery/camp-photo-4.jpg',
+    alt: 'A joyful camp moment made possible by scholarships.',
+  },
   impactMetrics: [
     { label: "Campers Served", value: "140+", icon: "Users" },
     { label: "States Represented", value: "30", icon: "Map" },
