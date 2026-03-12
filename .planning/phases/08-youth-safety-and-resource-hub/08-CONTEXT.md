@@ -15,8 +15,9 @@ Upgrade the FAQ into an interactive, filterable Resource Hub using Framer Motion
 
 ### Interactive Resource Hub (FAQ)
 - **Data Structure:** Refactor `src/content/faq.js` from an object of grouped arrays into a single array of objects, each with a `category` or `tags` property.
-- **Interactivity:** Build a new component in `FaqRoute.jsx` with category filter buttons.
-- **Animation:** Use `framer-motion` (specifically `<AnimatePresence>`) to smoothly animate questions entering and exiting the DOM when filters are clicked.
+- **Visual Style of Filters:** Use modern "Chips/Pills" (rounded buttons that fill with a solid color when active).
+- **Default State:** Default to showing "All" questions so users can immediately scroll, but provide the chips for quick filtering.
+- **Animation Style:** Use a smooth "fade and slide" animation via Framer Motion when filtering categories so the layout shifts gracefully.
 
 </decisions>
 
@@ -24,6 +25,7 @@ Upgrade the FAQ into an interactive, filterable Resource Hub using Framer Motion
 ## Specific Ideas
 
 - The FAQ filter buttons should look like "chips" or "pills" that visually toggle their active state, making the page feel like a premium concierge service rather than a static list.
+- Animate the `<motion.article>` elements using `layout`, `initial={{ opacity: 0, y: 10 }}`, `animate={{ opacity: 1, y: 0 }}`, and `exit={{ opacity: 0, scale: 0.95 }}`.
 
 </specifics>
 

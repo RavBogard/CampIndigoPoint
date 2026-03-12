@@ -13,6 +13,10 @@
 - [ ] **IMP-01**: Build a static, visually distinct "Impact Dashboard" on the Donate page highlighting key camp metrics.
 - [ ] **HUB-01**: Upgrade the FAQ page into an interactive, filterable "Resource Hub" using Framer Motion for smooth category transitions.
 
+### High-Impact Media & Language Integration
+- [ ] **MEDIA-01**: Source and integrate a significantly higher volume of authentic camp photography across all pages, pulling from historical assets and social media.
+- [ ] **LANG-01**: Perform a site-wide language audit and rewrite, injecting inspiring, high-quality copy drawn from national press coverage and founder interviews to elevate the overall tone.
+
 ## v1.1 Requirements (UI and Layout Refactor)
 
 ### Technical Architecture

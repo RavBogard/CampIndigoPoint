@@ -20,6 +20,7 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | 6 | UI and Tailwind CSS Refactor | Completely refactor the site's styling methodology to Tailwind CSS to fix layout bugs and ensure long-term responsive stability. | ARCH-01, ARCH-02, LAY-01, LAY-02, RES-01, RES-02, BRND-01 |
 | 7 | Bento Storytelling & Impact | Redesign core pages using Bento Box grids and add a data-driven Donor Impact Dashboard. | STORY-01, STORY-02, IMP-01 |
 | 8 | Resource Hub | Upgrade the FAQ into an interactive, filterable Resource Hub. | HUB-01 |
+| 9 | High-Impact Media & Language Integration | Perform a site-wide language audit and inject a significant volume of authentic photography to elevate the overall tone and visual impact. | MEDIA-01, LANG-01 |
 
 ## Phase Details
 
