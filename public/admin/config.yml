@@ -2,6 +2,7 @@ backend:
   name: github
   repo: RavBogard/CampIndigoPoint
   branch: main
+  base_url: https://decap-cms-oauth.vercel.app
   commit_messages:
     create: 'content: create {{collection}} “{{slug}}”'
     update: 'content: update {{collection}} “{{slug}}”'
