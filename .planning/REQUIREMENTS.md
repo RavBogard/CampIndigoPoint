@@ -15,6 +15,8 @@
 
 ### High-Impact Media & Language Integration
 - [ ] **MEDIA-01**: Source and integrate a significantly higher volume of authentic camp photography across all pages, pulling from historical assets and social media.
+- [ ] **MEDIA-02**: Implement a crossfading hero slideshow on the homepage to maximize initial visual impact.
+- [ ] **MEDIA-03**: Ensure every major route features at least one integrated context photo (beyond the hero) to break up text density.
 - [ ] **LANG-01**: Perform a site-wide language audit and rewrite, injecting inspiring, high-quality copy drawn from national press coverage and founder interviews to elevate the overall tone.
 
 ## v1.1 Requirements (UI and Layout Refactor)

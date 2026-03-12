@@ -21,6 +21,7 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | 7 | Bento Storytelling & Impact | Redesign core pages using Bento Box grids and add a data-driven Donor Impact Dashboard. | STORY-01, STORY-02, IMP-01 |
 | 8 | Resource Hub | Upgrade the FAQ into an interactive, filterable Resource Hub. | HUB-01 |
 | 9 | High-Impact Media & Language Integration | Perform a site-wide language audit and inject a significant volume of authentic photography to elevate the overall tone and visual impact. | MEDIA-01, LANG-01 |
+| 10 | Hero Slideshow & Media Density | Implement a crossfading hero slideshow on the homepage and systematically increase photo density across all pages. | MEDIA-02, MEDIA-03 |
 
 ## Phase Details
 
@@ -159,6 +160,20 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 2. Clicking Quick Exit immediately redirects the browser to a neutral site.
 3. FAQ page is filterable by tags with smooth transitions.
 
+### Phase 10: Hero Slideshow & Media Density
+
+**Goal:** Implement a crossfading hero slideshow on the homepage and systematically increase photo density across all pages.
+
+**Requirements:** MEDIA-02, MEDIA-03
+
+**Why next:**
+- Addresses direct user feedback to cycle through the new, high-quality images on the homepage.
+- Fixes the "wall of text" issue on secondary pages by utilizing the newly sourced media assets.
+
+**Success criteria:**
+1. Homepage hero automatically crossfades through 3-5 images.
+2. Registration, Donate, Staff, FAQ, and Contact pages each feature at least one supporting photo integrated into the grid layout.
+
 ## Coverage Validation
 
 | Requirement | Phase |
@@ -198,19 +213,23 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | SAFE-01 | Phase 8 |
 | SAFE-02 | Phase 8 |
 | HUB-01 | Phase 8 |
+| MEDIA-01 | Phase 9 |
+| LANG-01 | Phase 9 |
+| MEDIA-02 | Phase 10 |
+| MEDIA-03 | Phase 10 |
 
 **Coverage:**
 - v1 requirements: 22
 - v1.1 requirements: 7
-- v1.2 requirements: 6
-- Total mapped to phases: 35
+- v1.2 requirements: 10
+- Total mapped to phases: 39
 - Unmapped: 0
 
 ## Recommended Next Step
 
-`/gsd:plan-phase 7`
+`/gsd:plan-phase 10`
 
-Move into Phase 7 to begin building the Bento Box layouts and Donor Dashboard.
+Move into Phase 10 to implement the hero slideshow and media density updates.
 
 ---
 *Last updated: 2026-03-12 after phase 2 completion*
