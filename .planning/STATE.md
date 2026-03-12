@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Story and Safety Expansion
 current_phase: Phase 9 - High-Impact Media & Language Integration
-status: pending context gathering
-last_updated: "2026-03-13T02:00:00.000Z"
+status: planning complete
+last_updated: "2026-03-13T02:30:00.000Z"
 progress:
   total_phases: 9
   completed_phases: 8
-  total_plans: 24
+  total_plans: 27
   completed_plans: 24
 ---
 
@@ -16,14 +16,14 @@ progress:
 
 **Updated:** 2026-03-13
 **Current phase:** Phase 9 - High-Impact Media & Language Integration
-**Current status:** Phase 8 complete, ready to gather context for Phase 9
+**Current status:** Phase 9 planning complete, ready for execution
 
 ## Current Position
 
 Phase: Phase 9 - High-Impact Media & Language Integration
 Plan: —
-Status: Ready to gather context
-Last activity: 2026-03-13 — Phase 8 completed and verified
+Status: Planning complete, ready for execution
+Last activity: 2026-03-13 — Phase 9 context gathered and plans created
 
 ## Project Reference
 
@@ -37,23 +37,27 @@ See: `.planning/PROJECT.md` (updated 2026-03-13)
 - PROJECT.md updated for v1.2
 - REQUIREMENTS.md updated with MEDIA and LANG requirements
 - ROADMAP.md updated with Phase 9
-- Phase 8 Verification Report created (08-VERIFICATION.md)
+- Phase 9 context gathered (09-CONTEXT.md)
+- Phase 9 research completed (09-RESEARCH.md)
+- Phase 9 validation strategy defined (09-VALIDATION.md)
+- Phase 9 plans created (09-01-PLAN.md, 09-02-PLAN.md, 09-03-PLAN.md)
 
 ## Decisions Made
 
-- **Interactive FAQ:** Flattened the FAQ data structure in `faq.js` to use tags, and used Framer Motion in `FaqRoute.jsx` to build a smooth, filterable "Chips" UI.
-- **Safety UX:** Quick Exit was explicitly removed from scope by the user.
+- **Language Audit:** Borrow heavily from diverse press coverage (Washington Post, JTA, Kveller) to make the tone profound and urgent.
+- **Media Sourcing:** Prioritize photos showing "unadulterated joy" and physical spaces (without naming Manitowa).
+- **Architecture:** Add a new `gallery` array to the content layer to support high-volume photo rendering.
 
 ## Next Actions
 
-1. Run `/gsd:discuss-phase 9` to gather context for the final v1.2 phase.
-2. Plan the media integration and language audit.
+1. Execute Phase 9 - Plan 01: Language Audit and Rewrite.
+2. Update all `src/content/*.js` files.
 
 ## Known Risks
 
-- None currently.
+- Sourcing high-quality images without direct Instagram API access requires manual curation or reliance on existing WP links.
 
 ## Session Resume
 
-- Stopped at: Phase 8 complete
-- Resume action: `/gsd:discuss-phase 9`
+- Stopped at: Phase 9 planning complete
+- Resume file: `.planning/phases/09-media-and-language-integration/09-01-PLAN.md`
