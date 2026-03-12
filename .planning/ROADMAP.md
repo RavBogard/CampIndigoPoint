@@ -18,6 +18,8 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | 4 | Donor Scholarship Journey | Build a donor path that explains scholarship impact and the Ashrei Foundation handoff clearly | DON-01, DON-02, DON-03 |
 | 5 | Staff Recruiting and Contact Journey | Build the staff recruitment path and clear human follow-up options | STAF-01, STAF-02, STAF-03, TRST-02 |
 | 6 | UI and Tailwind CSS Refactor | Completely refactor the site's styling methodology to Tailwind CSS to fix layout bugs and ensure long-term responsive stability. | ARCH-01, ARCH-02, LAY-01, LAY-02, RES-01, RES-02, BRND-01 |
+| 7 | Bento Storytelling & Impact | Redesign core pages using Bento Box grids and add a data-driven Donor Impact Dashboard. | STORY-01, STORY-02, IMP-01 |
+| 8 | Youth Safety UX & Resource Hub | Implement a "Quick Exit" panic button and an interactive, filterable FAQ Resource Hub. | SAFE-01, SAFE-02, HUB-01 |
 
 ## Phase Details
 
@@ -126,6 +128,36 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 3. Brittle grid and flexbox implementations in the `PageFrame` and `HomeRoute` are replaced with Tailwind utility classes.
 4. The site renders perfectly on mobile viewports (320px) without overflow issues.
 
+### Phase 7: Bento Storytelling & Impact
+
+**Goal:** Redesign core pages using Bento Box grids to weave media quotes and testimonials directly into the visual layout, and add a data-driven Donor Impact Dashboard.
+
+**Requirements:** STORY-01, STORY-02, IMP-01
+
+**Why next:**
+- With the UI refactored into Tailwind, complex responsive grids are now safe to build.
+- Extracts maximum emotional value from existing assets without needing a CMS.
+
+**Success criteria:**
+1. Home and About pages utilize asymmetrical, responsive "Bento" grids.
+2. Homepage copy is rewritten to be evocative rather than purely utilitarian.
+3. Donate page features a visual "Impact Dashboard" built with static metrics.
+
+### Phase 8: Youth Safety UX & Resource Hub
+
+**Goal:** Implement critical safety features ("Quick Exit") and upgrade the FAQ into an interactive, filterable resource center using Framer Motion.
+
+**Requirements:** SAFE-01, SAFE-02, HUB-01
+
+**Why next:**
+- Follows best practices from leading LGBTQ+ organizations (like The Trevor Project).
+- Enhances family trust through better organization of complex information.
+
+**Success criteria:**
+1. A persistent "Quick Exit" button is available globally and z-indexed above all content.
+2. Clicking Quick Exit immediately redirects the browser to a neutral site.
+3. FAQ page is filterable by tags with smooth transitions.
+
 ## Coverage Validation
 
 | Requirement | Phase |
@@ -159,18 +191,25 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | RES-01 | Phase 6 |
 | RES-02 | Phase 6 |
 | BRND-01 | Phase 6 |
+| STORY-01 | Phase 7 |
+| STORY-02 | Phase 7 |
+| IMP-01 | Phase 7 |
+| SAFE-01 | Phase 8 |
+| SAFE-02 | Phase 8 |
+| HUB-01 | Phase 8 |
 
 **Coverage:**
 - v1 requirements: 22
 - v1.1 requirements: 7
-- Total mapped to phases: 29
+- v1.2 requirements: 6
+- Total mapped to phases: 35
 - Unmapped: 0
 
 ## Recommended Next Step
 
-`/gsd:plan-phase 6`
+`/gsd:plan-phase 7`
 
-Move into Phase 6 to begin the Tailwind CSS migration and UI layout polish.
+Move into Phase 7 to begin building the Bento Box layouts and Donor Dashboard.
 
 ---
 *Last updated: 2026-03-12 after phase 2 completion*
