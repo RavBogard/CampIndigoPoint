@@ -1,21 +1,18 @@
 # Research: Stack
 
 ## Core Question
-What stack additions/changes are needed for standardizing UI and layout, specifically evaluating Tailwind CSS?
+What stack additions are needed to support the Story and Safety Expansion (Bento Box UI, Interactive FAQ, Donor Dashboard, Quick Exit) using only existing front-end capabilities?
 
 ## Analysis
-To fix "super messed up" layout and formatting across a React/Vite site without rebuilding from scratch, the current stack has two paths:
-1.  **Refactor Vanilla CSS:** Continue using `index.css` and `App.css` but impose a strict methodology (BEM, CSS Modules, or CSS Variables for a design system).
-2.  **Migrate to Tailwind CSS:** Add Tailwind as a PostCSS plugin to Vite. This provides utility classes that enforce consistent spacing, typography, and flexbox/grid behaviors directly in the JSX.
+The current stack is React, Vite, React Router, and Tailwind CSS v4. This is highly capable. We do not need a backend CMS or database.
 
-**Recommendation:** Migrate to **Tailwind CSS**. It directly solves the problem of "broken grids and flexbox behaviors" by co-locating styling with markup, removing the cascading side-effects that cause layout bugs in global CSS files.
+**Stack Additions:**
+1.  **Framer Motion (`framer-motion`):** Already in `package.json`. We will use this to power the interactive testimonial carousels, the FAQ filtering animations, and the Bento Box entry animations.
+2.  **Lucide React (`lucide-react`):** Already in `package.json`. We will use this for icons in the Donor Dashboard and the Quick Exit button.
 
-## Stack Changes
-- Add `tailwindcss`, `@tailwindcss/vite` (or `postcss`, `autoprefixer` depending on Vite version, Tailwind v4 uses Vite plugin directly).
-- Minimal configuration in `vite.config.js`.
-- Create `tailwind.css` to replace or supplement `index.css`.
-- Keep `clsx` or `tailwind-merge` if conditional class names are heavily used.
+## Architecture
+- **No Backend:** The Donor Dashboard will use static data (updated manually in `src/content/`) rather than an API feed.
+- **Safety First:** The "Quick Exit" feature must use browser APIs (`window.location.replace()`, `history.pushState()`) to navigate away without leaving a prominent trace in the immediate back button history.
 
-## Integration Notes
-- Tailwind can be introduced incrementally. Existing `.content-card--wavy` classes can remain while layout utility classes (`flex`, `grid`, `gap-4`) are used to fix the structure.
-- We must configure the Tailwind theme to perfectly match the existing "Soul & Story" palette (Teal: `#1f5f7a`, Orange: `#e17a2d`, Sand: `#fffaf5`) and typography (Montserrat, Quicksand) established in Phase 3.
+## Conclusion
+The current stack is perfectly suited for this milestone. No new heavy dependencies are required. We will rely on React state and Framer Motion for interactivity.

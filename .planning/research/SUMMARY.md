@@ -1,28 +1,24 @@
-# Research Summary: UI and Layout Refactor
+# Research Summary: Story and Safety Expansion
 
 ## Domain Overview
-To resolve the "super messed up" layout and formatting issues, the project needs to migrate away from global, cascading CSS layouts towards a highly predictable, utility-first styling architecture.
+Milestone v1.2 elevates the Camp Indigo Point website from a functional brochure to a world-class digital experience. It focuses on immersive storytelling (Bento grids, quotes), donor authority (Impact Dashboard), and critical youth safety (Quick Exit), utilizing the existing React/Tailwind/Framer Motion stack without adding backend complexity.
 
 ## Key Findings
 
-**Stack Additions:**
-- **Tailwind CSS:** The recommended path forward. It eliminates cascading side-effects and forces consistent spacing and layout behaviors by co-locating styling with markup.
+**Feature Implementation:**
+- **Bento Grids:** Will be built using Tailwind CSS Grid utilities to create engaging, asymmetrical layouts on Home and About pages.
+- **Quick Exit:** A global React component using `window.location.replace('https://weather.com')` to provide immediate escape from the site for youth in hostile environments.
+- **Impact Dashboard:** A static, visual representation of camp metrics (campers, states, staff) on the Donate page to build donor confidence.
+- **Interactive FAQ:** A filterable React component powered by Framer Motion for smooth category transitions.
 
-**Feature Table Stakes:**
-- **Consistent Spacing:** Eliminate arbitrary pixel values.
-- **Robust Layout Skeletons:** Fix broken grids and flexbox overlaps.
-- **Mobile First:** Ensure absolute stability on small viewports.
-- **Brand Preservation:** The new structural stability cannot sacrifice the "Soul & Story" aesthetic (Teal/Orange, wavy shapes, organic feel).
-
-**Architecture Integration:**
-- Design tokens (colors, fonts) will move to the Tailwind configuration.
-- Global layout CSS will be systematically stripped out and replaced with utility classes in the React components (`flex`, `grid`, `gap`, `p-*`, `m-*`).
-- Highly specific visual flourishes (like the organic wavy backgrounds) can be retained via `@apply` or targeted custom classes, but their positioning on the page will be governed by Tailwind.
+**Content Strategy:**
+- Extract the most powerful quotes from existing press (Washington Post, JTA) and integrate them directly into the Bento grids as visual elements, rather than burying them in text.
+- Fix the homepage copy ("Find the next right page") to be more evocative and aligned with the "World in Color" narrative.
 
 **Watch Out For:**
-- **Frankenstein Styling:** Mixing legacy global layouts with utility classes causes specificity wars. Remove old CSS as you apply new classes.
-- **Losing the Soul:** Failing to configure the brand palette in Tailwind immediately will make the site look like a generic tech template.
-- **Mobile Breakage:** Always style mobile first.
+- **Quick Exit Limitations:** Understand that it does not wipe full browser history; it is a "panic button" for immediate screen clearance.
+- **Mobile Bento:** Ensure complex desktop grids degrade gracefully into a readable single column on mobile.
+- **Animation Bloat:** Keep Framer Motion animations fast, subtle, and respectful of reduced-motion preferences.
 
 ## Next Steps
-Proceed to defining the requirements, ensuring that the migration to Tailwind (or strict CSS methodology) is the central technical requirement, explicitly bounded by the need to preserve the established brand identity.
+Proceed to defining the explicit requirements for Milestone v1.2, ensuring that safety, storytelling, and static data rendering are the core technical constraints.
