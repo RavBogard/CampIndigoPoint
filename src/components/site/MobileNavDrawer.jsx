@@ -24,7 +24,6 @@ const MobileNavDrawer = ({ id, isOpen, onClose, returnFocusRef, titleId }) => {
     const previousOverflow = document.body.style.overflow;
     const returnFocusTarget = returnFocusRef?.current;
     document.body.style.overflow = "hidden";
-    document.body.classList.add("menu-open");
     closeButtonRef.current?.focus();
 
     const handleKeyDown = (event) => {
@@ -60,38 +59,39 @@ const MobileNavDrawer = ({ id, isOpen, onClose, returnFocusRef, titleId }) => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = previousOverflow;
-      document.body.classList.remove("menu-open");
       returnFocusTarget?.focus();
     };
   }, [isOpen, onClose, returnFocusRef]);
 
+  const activeLinkClass = "text-[var(--color-camp-teal)] ring-1 ring-inset ring-[var(--color-camp-teal)]/10";
+
   return (
     <div
       aria-hidden={!isOpen}
-      className={`mobile-nav ${isOpen ? "mobile-nav--open" : ""}`}
+      className={`md:hidden fixed inset-0 z-50 ${isOpen ? "pointer-events-auto" : "pointer-events-none"}`}
       data-open={isOpen}
     >
       <div
         aria-hidden="true"
-        className="mobile-nav__scrim"
+        className={`fixed inset-0 bg-slate-900/30 transition-opacity duration-200 ${isOpen ? "opacity-100" : "opacity-0"}`}
         onClick={onClose}
       />
       <div
         aria-labelledby={titleId}
         aria-modal="true"
-        className="mobile-nav__panel"
+        className={`fixed top-0 right-0 w-[min(26rem,92vw)] h-screen p-6 bg-[var(--color-camp-sand)] shadow-2xl overflow-y-auto transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
         id={id}
         ref={panelRef}
         role="dialog"
       >
-        <div className="mobile-nav__header">
+        <div className="grid grid-cols-[1fr_auto] gap-4 items-start mb-8">
           <div>
-            <p className="mobile-nav__eyebrow">Navigate</p>
-            <h2 id={titleId}>Find the right path</h2>
+            <p className="text-[0.85rem] font-bold uppercase tracking-[0.14em] text-[var(--color-camp-teal)]">Navigate</p>
+            <h2 id={titleId} className="text-2xl mt-1">Find the right path</h2>
           </div>
           <button
             aria-label="Close navigation"
-            className="mobile-nav__close"
+            className="inline-flex items-center justify-center w-11 h-11 rounded-full border border-black/10 bg-white cursor-pointer hover:bg-black/5"
             onClick={onClose}
             ref={closeButtonRef}
             type="button"
@@ -100,33 +100,33 @@ const MobileNavDrawer = ({ id, isOpen, onClose, returnFocusRef, titleId }) => {
           </button>
         </div>
 
-        <div className="mobile-nav__section">
-          <p className="mobile-nav__label">Audience paths</p>
-          <nav className="mobile-nav__links" aria-label="Audience">
+        <div className="grid gap-4 mb-8">
+          <p className="text-[0.85rem] font-bold uppercase tracking-[0.14em] text-[var(--color-camp-teal)]">Audience paths</p>
+          <nav className="grid gap-4" aria-label="Audience">
             {navigation.primary.map((link) => (
               <NavLink
                 key={link.id}
                 className={({ isActive }) =>
-                  `mobile-nav__link ${isActive ? "is-active" : ""}`
+                  `grid gap-1 p-4 rounded-2xl bg-white/90 text-inherit no-underline shadow-sm ${isActive ? activeLinkClass : ""}`
                 }
                 onClick={onClose}
                 to={link.to}
               >
-                <span>{link.label}</span>
-                <small>{link.summary}</small>
+                <span className="font-bold text-lg">{link.label}</span>
+                <small className="text-[var(--color-camp-muted)] text-sm">{link.summary}</small>
               </NavLink>
             ))}
           </nav>
         </div>
 
-        <div className="mobile-nav__section">
-          <p className="mobile-nav__label">Explore</p>
-          <nav className="mobile-nav__links" aria-label="Site sections">
+        <div className="grid gap-4 mb-8">
+          <p className="text-[0.85rem] font-bold uppercase tracking-[0.14em] text-[var(--color-camp-teal)]">Explore</p>
+          <nav className="grid gap-2" aria-label="Site sections">
             {navigation.secondary.map((link) =>
               link.to.includes("#") ? (
                 <Link
                   key={link.id}
-                  className="mobile-nav__link mobile-nav__link--simple"
+                  className="block p-4 rounded-2xl bg-white/90 text-inherit no-underline shadow-sm font-semibold"
                   onClick={onClose}
                   to={link.to}
                 >
@@ -136,7 +136,7 @@ const MobileNavDrawer = ({ id, isOpen, onClose, returnFocusRef, titleId }) => {
                 <NavLink
                   key={link.id}
                   className={({ isActive }) =>
-                    `mobile-nav__link mobile-nav__link--simple ${isActive ? "is-active" : ""}`
+                    `block p-4 rounded-2xl bg-white/90 text-inherit no-underline shadow-sm font-semibold ${isActive ? activeLinkClass : ""}`
                   }
                   onClick={onClose}
                   to={link.to}
@@ -148,11 +148,15 @@ const MobileNavDrawer = ({ id, isOpen, onClose, returnFocusRef, titleId }) => {
           </nav>
         </div>
 
-        <div className="mobile-nav__section mobile-nav__section--actions">
+        <div className="grid gap-4 mt-8 pt-8 border-t border-black/10">
           {actionLinks.map((action, index) => (
             <a
               key={action.id}
-              className={`btn ${index === 0 ? "btn-primary" : "btn-secondary"}`}
+              className={`inline-flex items-center justify-center px-4 py-3 w-full font-bold rounded-full transition-all ${
+                index === 0 
+                  ? "bg-[var(--color-camp-orange)] text-white" 
+                  : "bg-transparent border-2 border-[var(--color-camp-teal)] text-[var(--color-camp-teal)]"
+              }`}
               href={action.href}
               onClick={onClose}
               rel="noreferrer"

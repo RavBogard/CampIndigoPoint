@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-camp-teal: #1f5f7a;
+  --color-camp-orange: #e17a2d;
+  --color-camp-sand: #fffaf5;
+  --color-camp-sun: #fdf7f0;
+  
+  --color-camp-text: #1a3641;
+  --color-camp-muted: #5a7a85;
+
+  --font-sans: "Quicksand", sans-serif;
+  --font-serif: "Montserrat", sans-serif;
+}

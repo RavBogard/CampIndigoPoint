@@ -18,42 +18,46 @@ const DonateRoute = () => {
     >
       <section
         aria-labelledby="donate-lifeline-title"
-        className="content-panel content-panel--wavy"
+        className="bg-[var(--color-camp-sun)] rounded-[3rem_1.5rem_4rem_2rem] p-8 md:p-14 border-b-8 border-[var(--color-camp-orange)] shadow-xl grid gap-4"
       >
-        <h2 id="donate-lifeline-title" className="content-title--underline">
+        <h2 id="donate-lifeline-title" className="text-3xl md:text-4xl font-extrabold text-[var(--color-camp-text)] font-serif tracking-tight content-title--underline">
           {donatePage.lifeline.heading}
         </h2>
-        <p className="page-hero__intro">{donatePage.lifeline.body}</p>
-        <ul className="content-list">
+        <p className="text-lg text-[var(--color-camp-text)] leading-relaxed">{donatePage.lifeline.body}</p>
+        <ul className="grid gap-4 mt-2">
           {donatePage.lifeline.bullets.map((bullet) => (
-            <li key={bullet}>{bullet}</li>
+            <li key={bullet} className="pl-8 relative font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-extrabold before:text-xl before:absolute before:left-0 before:-top-1.5">
+              {bullet}
+            </li>
           ))}
         </ul>
       </section>
 
-      <section className="content-stack content-stack--two-up">
+      <section className="grid gap-6 md:gap-8 md:grid-cols-2">
         <article
           aria-labelledby="donate-ancestors-title"
-          className="content-card"
+          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
         >
-          <h2 id="donate-ancestors-title">{donatePage.ancestors.heading}</h2>
-          <p>{donatePage.ancestors.body}</p>
-          <ul className="content-list">
+          <h2 id="donate-ancestors-title" className="text-2xl md:text-3xl font-bold font-serif">{donatePage.ancestors.heading}</h2>
+          <p className="leading-relaxed">{donatePage.ancestors.body}</p>
+          <ul className="grid gap-4 mt-2">
             {donatePage.ancestors.details.map((detail) => (
-              <li key={detail}>{detail}</li>
+              <li key={detail} className="pl-8 relative font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-extrabold before:text-xl before:absolute before:left-0 before:-top-1.5">
+                {detail}
+              </li>
             ))}
           </ul>
         </article>
 
         <article
           aria-labelledby="donate-impact-title"
-          className="content-card content-card--affirming"
+          className="bg-pink-50 border-l-8 border-pink-600 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
         >
-          <h2 id="donate-impact-title">{donatePage.impactTiers.heading}</h2>
-          <p>{donatePage.impactTiers.summary}</p>
-          <ul className="content-list">
+          <h2 id="donate-impact-title" className="text-2xl md:text-3xl font-bold font-serif text-pink-900">{donatePage.impactTiers.heading}</h2>
+          <p className="leading-relaxed text-pink-950/80 font-medium">{donatePage.impactTiers.summary}</p>
+          <ul className="grid gap-4 mt-2 text-pink-950">
             {donatePage.impactTiers.tiers.map((tier) => (
-              <li key={tier.amount}>
+              <li key={tier.amount} className="pl-8 relative font-semibold before:content-['❤'] before:text-pink-600 before:absolute before:left-0 before:top-0">
                 <strong>{tier.amount}:</strong> {tier.description}
               </li>
             ))}
@@ -61,29 +65,33 @@ const DonateRoute = () => {
         </article>
       </section>
 
-      <div className="content-stack content-stack--two-up">
+      <div className="grid gap-6 md:gap-8 md:grid-cols-2">
         <section
           aria-labelledby="donate-partners-title"
-          className="content-card"
+          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
         >
-          <h2 id="donate-partners-title">{donatePage.partnersInJoy.heading}</h2>
-          <p>{donatePage.partnersInJoy.body}</p>
-          <ul className="content-list">
+          <h2 id="donate-partners-title" className="text-2xl md:text-3xl font-bold font-serif">{donatePage.partnersInJoy.heading}</h2>
+          <p className="leading-relaxed">{donatePage.partnersInJoy.body}</p>
+          <ul className="grid gap-4 mt-2">
             {donatePage.partnersInJoy.bullets.map((bullet) => (
-              <li key={bullet}>{bullet}</li>
+              <li key={bullet} className="pl-8 relative font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-extrabold before:text-xl before:absolute before:left-0 before:-top-1.5">
+                {bullet}
+              </li>
             ))}
           </ul>
         </section>
 
         <section
           aria-labelledby="donate-fiscal-title"
-          className="content-card"
+          className="bg-white/85 border border-black/5 shadow-xl rounded-[1.4rem] p-6 md:p-8 grid gap-4 content-start"
         >
-          <h2 id="donate-fiscal-title">{donatePage.fiscalSponsorship.heading}</h2>
-          <p>{donatePage.fiscalSponsorship.body}</p>
-          <ul className="content-list">
+          <h2 id="donate-fiscal-title" className="text-2xl md:text-3xl font-bold font-serif">{donatePage.fiscalSponsorship.heading}</h2>
+          <p className="leading-relaxed">{donatePage.fiscalSponsorship.body}</p>
+          <ul className="grid gap-4 mt-2">
             {donatePage.fiscalSponsorship.details.map((detail) => (
-              <li key={detail}>{detail}</li>
+              <li key={detail} className="pl-8 relative font-medium before:content-['→'] before:text-[var(--color-camp-orange)] before:font-extrabold before:text-xl before:absolute before:left-0 before:-top-1.5">
+                {detail}
+              </li>
             ))}
           </ul>
         </section>

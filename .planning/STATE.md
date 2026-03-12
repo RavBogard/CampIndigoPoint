@@ -2,64 +2,61 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI and Layout Refactor
-current_phase: Phase 6 - UI and Tailwind CSS Refactor
-status: planning complete
-last_updated: "2026-03-12T23:55:00.000Z"
+current_phase: Milestone Complete
+status: v1.1 finished
+last_updated: "2026-03-12T23:59:00.000Z"
 progress:
   total_phases: 6
-  completed_phases: 5
+  completed_phases: 6
   total_plans: 18
-  completed_plans: 15
+  completed_plans: 18
 ---
 
 # State
 
 **Updated:** 2026-03-12
-**Current phase:** Phase 6 - UI and Tailwind CSS Refactor
-**Current status:** Phase 6 planning complete, ready for execution
+**Current phase:** Milestone Complete
+**Current status:** Milestone v1.1 (UI and Layout Refactor) is complete and verified.
 
 ## Current Position
 
-Phase: Phase 6 - UI and Tailwind CSS Refactor
+Phase: Milestone Complete
 Plan: —
-Status: Planning complete, ready for execution
-Last activity: 2026-03-12 — Phase 6 context gathered and plans created
+Status: Milestone v1.1 finished
+Last activity: 2026-03-12 — Phase 6 Tailwind migration completed and verified.
 
 ## Project Reference
 
 See: `.planning/PROJECT.md` (updated 2026-03-12)
 
 **Core value:** Visitors should quickly understand why Camp Indigo Point matters, feel the camp's joyful and affirming spirit, and take the next right action to register, donate, or apply.
-**Current focus:** Execute a full CSS rewrite using Tailwind CSS to establish a stable, responsive, and predictable layout system.
+**Current focus:** The UI/CSS refactor is complete.
 
 ## Completed Artifacts
 
 - PROJECT.md updated for v1.1
 - REQUIREMENTS.md updated with ARCH, LAY, RES, BRND requirements
 - ROADMAP.md updated with Phase 6
-- Phase 6 context gathered (06-CONTEXT.md)
-- Phase 6 research completed (06-RESEARCH.md)
-- Phase 6 validation strategy defined (06-VALIDATION.md)
-- Phase 6 plans created (06-01-PLAN.md, 06-02-PLAN.md, 06-03-PLAN.md)
+- Phase 6 completed and verified (06-VERIFICATION.md)
+- Global CSS successfully migrated to Tailwind v4.
 
-## Decisions Made
+## Decisions Made (Project Summary)
 
-- **Migration Strategy:** Full rewrite. We will replace almost all custom classes with inline Tailwind utilities for long-term maintainability.
-- **Layout System:** Pragmatic mix. Grid for structural columns, Flexbox for component alignment.
-- **Visual Identity:** Port core brand tokens (Teal, Orange, Sand, fonts) to Tailwind config. Attempt to preserve organic shapes using utility classes, but prioritize layout stability over complex custom CSS blobs.
-- **Responsive Rules:** Strict mobile-first approach. Zero tolerance for horizontal scrolling.
+- **Migration Strategy:** Executed a full CSS rewrite, replacing custom classes with inline Tailwind utilities.
+- **Layout System:** Used a pragmatic mix of Grid for structural columns and Flexbox for component alignment.
+- **Visual Identity:** Ported core brand tokens to Tailwind config. Preserved the "Soul & Story" aesthetic (Teal/Orange palettes, wavy shapes) using utilities instead of brittle global CSS.
+- **Responsive Rules:** Implemented a strict mobile-first approach with absolute stability down to 320px.
 
 ## Next Actions
 
-1. Execute Phase 6 - Plan 01: Tailwind Architecture Initialization.
-2. Install Tailwind and configure the brand theme.
+1. Review the completed local site on desktop and mobile.
+2. Deploy the v1.1 site.
 
 ## Known Risks
 
-- Stripping global CSS (`index.css`) will temporarily break the site visually until all utility classes are applied.
-- Recreating complex wavy borders with pure utility classes may be challenging and require subtle design compromises.
+- None remaining for v1.1.
 
 ## Session Resume
 
-- Stopped at: Phase 6 planning complete
-- Resume file: `.planning/phases/06-ui-and-tailwind-css-refactor/06-01-PLAN.md`
+- Stopped at: Milestone Complete
+- Resume file: None. Ready for deployment.
