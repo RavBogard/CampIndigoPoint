@@ -47,6 +47,12 @@ Build the family-facing pages and registration journey that help families unders
 - Exact visual treatment for family-trust sections, cards, and reassurance callouts within the Phase 2 shell.
 - Exact microcopy refinements, as long as the approved tone and trust priorities remain intact.
 
+### Visual asset migration
+- Phase 3 should account for pulling over the real Camp Indigo Point logo and a selected set of authentic camp photos from the current WordPress site instead of relying on placeholder or starter imagery.
+- Use the live logo asset at `https://www.campindigopoint.org/wp-content/uploads/2023/11/header-white.png` as the source for the recognizable Camp Indigo Point mark unless a better-quality source is discovered during implementation.
+- Use the live homepage collage at `https://www.campindigopoint.org/wp-content/uploads/2024/06/cropped-camp-web-header-1-scaled-1.jpg` as an initial source for selecting family-facing photos and visual cues to migrate into the redesigned experience.
+- Treat imported media as a local, optimized asset workflow with meaningful alt text and placement decisions that reinforce family trust, belonging, and lived camp texture.
+
 </decisions>
 
 <specifics>
@@ -56,6 +62,7 @@ Build the family-facing pages and registration journey that help families unders
 - The site should reassure families by naming what matters: overnight trust, affirmation, accommodations, scholarship access, and what happens next.
 - Community care should feel like a lived part of camp culture and staffing, not a compliance paragraph.
 - Registration should feel like a supported handoff, not a sudden jump from warm storytelling into a cold external form.
+- The first family-facing visual pass should start replacing generic favicon, OG, and demo imagery with the real camp logo and a curated photo set from the live site.
 
 </specifics>
 

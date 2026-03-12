@@ -23,7 +23,7 @@ describe("site shell", () => {
     expect(
       await screen.findByRole("heading", {
         level: 1,
-        name: /a summer camp for lgbtq\+ youth/i,
+        name: /Experience the Unconditional Joy/i,
       }),
     ).toBeInTheDocument();
 
@@ -31,7 +31,7 @@ describe("site shell", () => {
     expect(screen.getAllByText(/^Donors$/i).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/^Staff$/i).length).toBeGreaterThan(0);
     expect(
-      screen.getByRole("link", { name: /explore family info/i }),
+      screen.getByRole("link", { name: /explore the adventure/i }),
     ).toBeInTheDocument();
     expect(screen.getAllByRole("link", { name: /^register$/i }).length).toBeGreaterThan(0);
     expect(screen.getAllByRole("link", { name: /^donate$/i }).length).toBeGreaterThan(0);
@@ -43,7 +43,7 @@ describe("site shell", () => {
     expect(
       await screen.findByRole("heading", {
         level: 1,
-        name: /support camp indigo point/i,
+        name: /give a child a world in color/i,
       }),
     ).toBeInTheDocument();
 

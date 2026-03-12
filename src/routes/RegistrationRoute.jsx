@@ -7,18 +7,29 @@ const RegistrationRoute = () => {
 
   return (
     <PageFrame
-      eyebrow="Registration"
+      eyebrow="The Registration Path"
       title={registrationPage.title}
       intro={registrationPage.intro}
-      aside={
-        <div className="content-card content-card--compact">
-          <h2>{registrationPage.affordability.heading}</h2>
-          <p>{registrationPage.affordability.promise}</p>
-        </div>
-      }
+      media={registrationPage.heroMedia}
       cta={registrationPage.cta}
     >
       <section className="content-stack content-stack--two-up">
+        <article
+          aria-labelledby="registration-affordability-title"
+          className="content-card content-card--affirming"
+        >
+          <h2 id="registration-affordability-title">
+            {registrationPage.affordability.heading}
+          </h2>
+          <p className="page-hero__intro">{registrationPage.affordability.promise}</p>
+          <p>{registrationPage.affordability.summary}</p>
+          <ul className="content-list">
+            {registrationPage.affordability.details.map((detail) => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        </article>
+
         <article
           aria-labelledby="registration-accommodations-title"
           className="content-card"
@@ -27,23 +38,8 @@ const RegistrationRoute = () => {
             {registrationPage.accommodations.heading}
           </h2>
           <p>{registrationPage.accommodations.body}</p>
-          <ul>
+          <ul className="content-list">
             {registrationPage.accommodations.details.map((detail) => (
-              <li key={detail}>{detail}</li>
-            ))}
-          </ul>
-        </article>
-
-        <article
-          aria-labelledby="registration-affordability-title"
-          className="content-card"
-        >
-          <h2 id="registration-affordability-title">
-            {registrationPage.affordability.heading}
-          </h2>
-          <p>{registrationPage.affordability.summary}</p>
-          <ul>
-            {registrationPage.affordability.details.map((detail) => (
               <li key={detail}>{detail}</li>
             ))}
           </ul>
@@ -52,10 +48,10 @@ const RegistrationRoute = () => {
 
       <section
         aria-labelledby="registration-handoff-title"
-        className="content-card"
+        className="content-panel content-panel--wavy"
       >
         <h2 id="registration-handoff-title">{registrationPage.handoff.heading}</h2>
-        <ul>
+        <ul className="content-list">
           {registrationPage.handoff.bullets.map((bullet) => (
             <li key={bullet}>{bullet}</li>
           ))}

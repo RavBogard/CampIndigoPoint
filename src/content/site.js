@@ -10,8 +10,8 @@ import {
 export const siteSettings = {
   siteName: organizationFacts.siteName,
   siteTagline: organizationFacts.tagline,
-  primaryEmail: contactDirectory.general.email,
-  primaryPhone: contactDirectory.general.phone,
+  primaryEmail: contactDirectory.find(c => c.role === 'General Inquiries')?.email || 'info@campindigopoint.org',
+  primaryPhone: contactDirectory.find(c => c.role === 'General Inquiries')?.phone || '314-348-6412',
   shellLead:
     'Families, donors, and future staff should be able to spot their path and take the next right action right away.',
   season: {

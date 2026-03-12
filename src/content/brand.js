@@ -16,24 +16,50 @@ export const brandValues = [
   },
 ]
 
-export const contactDirectory = {
-  general: {
+export const contactDirectory = [
+  {
+    intent: 'Registration, Scholarships, or Foundation Support',
     name: 'Dan Grabel',
     role: 'Camp Director',
-    email: 'info@campindigopoint.org',
+    email: 'dan@campindigopoint.org',
     phone: '314-348-6412',
   },
-  director: {
+  {
+    intent: 'Nursing, Wellness Roles, or Accommodations',
     name: 'Shira Berkowitz',
     role: 'Camp Director',
     email: 'shira@campindigopoint.org',
   },
-  affordability: {
-    name: 'Dan Grabel',
-    role: 'Registration and scholarships',
-    email: 'dan@campindigopoint.org',
+  {
+    intent: 'General Camp Info',
+    name: 'Camp Office',
+    role: 'General Inquiries',
+    email: 'info@campindigopoint.org',
+  }
+]
+
+export const pressLinks = [
+  {
+    publication: 'The Washington Post',
+    title: 'Camp Indigo Point is a summer safe haven for LGBTQ+ kids',
+    url: 'https://www.washingtonpost.com/photography/interactive/2024/camp-indigo-point-lgbtq-safe-haven/',
   },
-}
+  {
+    publication: 'Jewish Telegraphic Agency',
+    title: 'Jewish summer camp veterans are opening a camp for trans kids',
+    url: 'https://www.jta.org/2022/05/05/united-states/the-jewish-summer-camp-veterans-opening-a-summer-camp-for-trans-kids',
+  },
+  {
+    publication: 'Kveller',
+    title: 'This St. Louis Rabbi Is Fighting For His Trans Son’s Future',
+    url: 'https://www.kveller.com/this-st-louis-rabbi-is-fighting-for-his-trans-sons-future-and-hes-not-backing-down/',
+  },
+  {
+    publication: 'Good Morning America',
+    title: 'A summer safe haven in the Midwest',
+    url: '#', // Placeholder for the actual video link
+  }
+]
 
 export const socialLinks = {
   instagram: 'https://instagram.com',
@@ -46,7 +72,7 @@ export const organizationFacts = {
   audience: 'Queer and trans youth entering grades 2nd-11th',
   format: 'Residential summer camp in the Midwest',
   founded: 2021,
-  foundedBy: ['Camp Manitowa', 'Daniel Bogard', 'Shira Berkowitz'],
+  foundedBy: ['Daniel Bogard', 'Shira Berkowitz'], // Manitowa removed per security constraint
   fiscalSponsor: 'Ashrei Foundation',
 }
 

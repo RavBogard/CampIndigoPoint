@@ -5,6 +5,7 @@ const PageFrame = ({
   children,
   aside,
   cta,
+  media,
 }) => {
   return (
     <div className="page-frame">
@@ -27,7 +28,13 @@ const PageFrame = ({
             ) : null}
           </div>
 
-          {aside ? <aside className="page-hero__aside">{aside}</aside> : null}
+          {media ? (
+            <div className="hero-media">
+              <img src={media.src} alt={media.alt} />
+            </div>
+          ) : aside ? (
+            <aside className="page-hero__aside">{aside}</aside>
+          ) : null}
         </div>
       </section>
 

@@ -2,55 +2,51 @@ import { actionLinks } from './actions'
 
 export const faqPage = {
   slug: 'faq',
-  title: 'Frequently Asked Questions',
+  title: 'Questions & Answers',
   audience: 'all',
   primaryActionId: actionLinks.register.id,
   intro:
-    'This FAQ holds practical follow-up questions so families, donors, and staff can get clarity without losing the warm tone of the main pages.',
+    'We know that choosing a summer sanctuary for your child is a big decision. Here are the most common questions families ask about our safe haven.',
   groups: {
     families: [
       {
-        question: 'Who is camp for?',
+        question: 'Is my child "queer enough" for camp?',
         answer:
-          'Camp Indigo Point is for queer and trans youth entering grades 2nd-11th, with a staff-in-training program for rising 12th graders.',
+          'Yes! Camp Indigo Point is a sanctuary for any youth who identifies as LGBTQ+, is questioning, or simply wants the "unconditional joy" of a community where they don\'t feel like an outsider. If they want to be here, they belong here.',
       },
       {
-        question: 'What is camp life actually like?',
+        question: 'What does "affirming" actually mean at camp?',
         answer:
-          'Camp is a residential overnight experience with meals together, structured activities, evening programming, outdoor adventure, and low-tech community life.',
+          'It means a "beautifully liberated freedom of expression." Your child will be called by their correct name and pronouns by every staff member and camper. Bunking is handled with care, and identity is celebrated as a default.',
       },
       {
-        question: 'How does bunking work?',
+        question: 'What if we can\'t afford the full tuition?',
         answer:
-          'Campers are bunked by grade and personal preference rather than by a single gender assignment, with options designed to support affirmation and comfort.',
+          'We believe every child deserves a "joyful reprieve" from the outside world. We offer scholarships to every family who asks, and no one is turned away for lack of funds. Register, pay the deposit, and we will work with you.',
       },
       {
-        question: 'Can families ask for scholarship help?',
+        question: 'What is the "low-tech" policy?',
         answer:
-          'Yes. Families should register, pay the deposit, and let camp know what support they need. No one will be turned away for lack of funds.',
+          'We "trade screens for sunsets" to help kids build face-to-face friendships. Campers thrive when they can leave behind the noise of the internet for two weeks of pure camp magic.',
       },
     ],
     donors: [
       {
-        question: 'What does giving support?',
+        question: 'How is my donation used?',
         answer:
-          'Donations primarily support camper scholarships and access so more youth can attend camp.',
+          'Donations primarily go to our scholarship fund, ensuring that every kid can find their "sanctuary" at camp regardless of their family\'s financial situation.',
       },
       {
-        question: 'Why does the donation link mention Ashrei?',
+        question: 'Who is the Ashrei Foundation?',
         answer:
-          'Camp Indigo Point is fiscally sponsored by the Ashrei Foundation, so the official donation flow is hosted through that organization’s giving platform.',
+          'The Ashrei Foundation is our 501(c)(3) fiscal sponsor. They provide the administrative backbone that allows us to focus on the joy and safety of our campers.',
       },
     ],
     staff: [
       {
-        question: 'What kinds of staff roles are available?',
+        question: 'What is it like to work at Indigo Point?',
         answer:
-          'Camp hires counselors, junior counselors, specialists, and unit heads, with additional conversations available for nursing, wellness, and fundraising roles.',
-      },
-      {
-        question: 'How do I apply?',
-        answer: `Use the official ${actionLinks.apply.platform} application linked from the staff page, then watch for follow-up from camp to schedule an interview.`,
+          'It is hard work, deep joy, and a chance to build "the most home our kids have ever felt." You\'ll be a role model in a community where being wholeheartedly yourself is the only requirement.',
       },
     ],
   },

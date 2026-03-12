@@ -2,64 +2,64 @@ import { actionLinks } from './actions'
 
 export const aboutPage = {
   slug: 'about',
-  title: 'About Camp',
+  title: 'Where Kids Can Just Be Kids',
   audience: 'families',
   primaryActionId: actionLinks.register.id,
   intro:
-    'Camp Indigo Point operates like a real overnight camp while preserving the affirming details that matter deeply to queer and trans youth and their families.',
+    'Camp Indigo Point is a premier summer camp experience where queer and trans youth build friendships, explore nature, and celebrate their truest selves in a place that feels like "the most home they have ever felt."',
+  heroMedia: {
+    src: '/images/families/hero-collage.jpg',
+    alt: 'Campers laughing and enjoying activities at Camp Indigo Point.',
+  },
   campLife: {
-    heading: 'Daily camp life',
+    heading: 'The Magic of a Camp Day',
+    summary: 'From morning polar bear plunges to evening campfires, we trade screens for sunsets and the noise of the world for the soundtrack of laughter.',
     bullets: [
-      'Camp is predominantly outdoors in a beautiful natural setting.',
-      'Each day includes three meals together, four structured activity periods, snacks, a free period, rest time, and an evening activity.',
-      'Bunks rotate through activities together twice daily and campers also choose additional activities based on their interests.',
-      'Campers are under the direct care of counselors at all times and are called by their preferred name and pronoun.',
-      'Camp is intentionally low-tech: no internet, cell phones, or video games, though music players, audiobooks, and digital cameras are allowed.',
+      'Morning polar bear plunges and breakfast with a community that understands you.',
+      'A "beautifully liberated freedom of expression" across all-camp activities and bunk rotations.',
+      'Intentional low-tech time: trader screens for friendship bracelets and face-to-face fun.',
+      'Daily "Rest Hour" for reading, writing, and recharging in a sanctuary of peers.',
+      'Evening activities like Capture the Flag, Silent Discos, and our legendary Queer Prom.',
+    ],
+  },
+  belonging: {
+    heading: 'A Home for Every Identity',
+    body: 'We don\'t just "accept" our campers—we celebrate them. Every detail is built on the foundations of affirmation, so every child can be "wholeheartedly themselves."',
+    details: [
+      'Campers are always called by their correct names and pronouns by every staff member.',
+      'Bunking is grade-based and affirming, ensuring no child feels like an outsider in their own cabin.',
+      'A community where you can be unabashedly queer in the great outdoors.',
+      'A "Community Care Team" dedicated to the mental, emotional, and social health of every camper.',
     ],
   },
   activities: {
-    heading: 'Activities and traditions',
-    summary: 'Camp balances water, arts, sports, and all-camp traditions so each camper can find both adventure and belonging.',
+    heading: 'Adventure & Traditions',
+    summary: 'Whether you\'re a lake lover, an artist, or a gaga champion, camp is a place to grow through play.',
     highlights: [
-      'Canoeing, kayaking, swimming, a water trampoline, beach days, and boating',
-      'Drama, dance, arts and crafts, creative writing, queer book club, music, and gayming',
-      'Gaga, 9-square, soccer, basketball, volleyball, disc golf, rock climbing, zip lining, hiking, and campfire cooking',
-      'Campfires, capture the flag, silent discos, scavenger hunts, bunk nights, and Queer Prom',
-    ],
-  },
-  accommodations: {
-    heading: 'Accommodations and residential life',
-    body: 'Campers stay in yurts or cabins with approximately 12 other campers and 2-4 counselors. Bunking is based on grade and personal preference of gender identities so campers can find affirmation and comfort within their bunk community.',
-    details: [
-      'Yurts are permanent wooden structures enclosed in fabric with electricity, bunk beds, shelving, and central hangout space.',
-      'Restrooms and showers have private stalls, are located throughout camp, and accommodate all genders.',
-      'Camp is not a therapeutic program, but it is a supportive place where kids can practice independence, face-to-face relationships, and new experiences.',
-    ],
-  },
-  history: {
-    heading: 'History and organizational context',
-    body: 'Camp Indigo Point was founded in 2021 by Camp Manitowa, Daniel Bogard, and Shira Berkowitz as a premier summer camp experience for LGBTQ+ youth and staff.',
-    milestones: [
-      'The first summer ran in 2022 with 100 campers and 40 staff.',
-      'Camp now serves up to 140 campers during a two-week summer with more than 50 staff.',
-      'Leadership includes directors, assistant directors, a community care director, and unit heads who stay hands-on at camp.',
-      'Camp Indigo Point is fiscally sponsored by the Ashrei Foundation, a 501(c)(3) nonprofit organization.',
+      'Water Joy: Canoeing, kayaking, swimming, and the water trampoline.',
+      'Creative Arts: Drama, dance, pottery, and our popular queer book club.',
+      'Camp Classics: Archery, rock climbing, hiking, and zip-lining.',
+      'Indigo Traditions: Scavenger hunts, bunk nights, and the magic of the closing campfire.',
     ],
   },
   communityCare: {
     heading: 'Community Care',
     summary:
-      'Camp Indigo Point prioritizes the mental, emotional, social, and physical health of everyone who lives and works at camp.',
+      'We provide a safe haven where physical and emotional health are cared for with expertise and compassion.',
     bullets: [
-      'A Community Care Team develops systems and training for morale, engagement, and day-to-day support.',
-      'The health center is staffed with licensed providers competent in LGBTQ+ health.',
-      'Families are invited to discuss health care and mental health accommodations during registration so the camp can care for each camper uniquely.',
+      'Licensed on-site medical providers specialized in LGBTQ+ care.',
+      'Staff trained in trauma-informed care and identity affirmation.',
+      'A supportive environment where kids can face new experiences with confidence.',
     ],
   },
-  testimonialMoments: [
-    'My kiddo came home from camp glowing.',
-    'For once in my life I felt understood.',
-    'Camp gave me the chance to enjoy the great outdoors and be unabashedly queer at the same time.',
-  ],
+  history: {
+    heading: 'Our Story',
+    body: 'Founded in 2021 by a team of parents and activists, Camp Indigo Point was created to be a sanctuary for youth across the Midwest and beyond.',
+    milestones: [
+      'Started in 2022 to provide a "joyful reprieve" for queer and trans youth.',
+      'Grown to serve 140+ campers from 30 states with a staff of 50+ queer leaders.',
+      'Rooted in the values of the Jewish summer camp movement and open to all.',
+    ],
+  },
   cta: actionLinks.register,
 }

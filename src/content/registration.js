@@ -3,37 +3,44 @@ import { siteSettings } from './site'
 
 export const registrationPage = {
   slug: 'registration',
-  title: 'Registration',
+  title: 'Joining the Indigo Family',
   audience: 'families',
   primaryActionId: actionLinks.register.id,
-  intro: `Registration is open for ${siteSettings.season.dates}. Families can start the official registration flow and know what to expect before leaving the site.`,
+  intro: `We can't wait to see you at camp! Camp Indigo Point is a summer safe haven where every child can feel like the heart of the community. Here is everything you need to know to start your journey.`,
+  heroMedia: {
+    src: '/images/families/hero-collage.jpg',
+    alt: 'Moments of connection and joy at Camp Indigo Point.',
+  },
   cta: actionLinks.register,
-  accommodations: {
-    heading: 'Bunks and accommodations',
-    body: 'Campers stay in yurts or smaller cabins with approximately 14 other campers and 2-4 counselors. Camp Indigo Point bunks campers based on grade and personal preference rather than assigning bunks by any one gender.',
+  affordability: {
+    heading: 'Our Promise: No One is Turned Away',
+    summary:
+      'We believe every child deserves a "joyful reprieve" from the world, regardless of their family\'s ability to pay.',
+    promise: 'Scholarships are available to ensure camp is a sanctuary for every family.',
     details: [
-      'Yurts are rustic but equipped with bunk beds, wooden shelving, and central hangout space.',
-      'Restrooms and showers are nearby, provide private stalls, and accommodate all genders.',
-      'Campers spend the day with all of their friends and soon-to-be friends across activities and shared camp moments.',
+      'The actual cost for the 2-week session is $2,700, which reflects our operational expenses.',
+      'We offer partial and full scholarships to ensure cost is never a barrier to belonging.',
+      'To request support: Register, pay the deposit (if possible), and our team will follow up to make camp a reality.',
+      'If the deposit is a barrier, please email Dan directly at dan@campindigopoint.org.',
     ],
   },
-  affordability: {
-    heading: 'Affordability and scholarships',
-    summary:
-      'The camp wants every camper who wants to attend to be here. The cost for summer 2025 is $2700/camper for the full 2-week summer, which reflects the actual operational cost.',
-    promise: 'No one will be turned away for lack of funds.',
+  accommodations: {
+    heading: 'A Space to Not Feel Like an Outsider',
+    body: 'We create living spaces that are beautifully liberated and affirming. Bunking is handled with care, focusing on grade level and the "unconditional joy" of being yourself.',
     details: [
-      'Camp offers scholarships to every family who makes a request.',
-      'Families concerned about affordability should register, pay the deposit, and expect the camp team to follow up to make attendance possible.',
-      'Questions about affordability can go directly to Dan at dan@campindigopoint.org.',
+      'Campers stay in rustic yurts or cabins with 12-14 peers and 2-4 dedicated counselors who understand them.',
+      'Bunk assignments are grade-based and affirming of gender identity—we do not bunk by binary gender.',
+      'Private shower stalls and all-gender restrooms are available throughout camp.',
+      'Our "Community Care" team is on-site 24/7 to support social and emotional wellness.',
     ],
   },
   handoff: {
-    heading: 'What happens next',
+    heading: 'What to Expect Next',
     bullets: [
-      'The Register Now action opens the official external Active Camps registration flow.',
-      'Camp follows up after registration if a family requests scholarship support or has accommodation questions.',
-      'Families can still contact the camp directly before or after starting the form if they want a conversation first.',
+      'The "Register Now" button will take you to our official Active Camps registration form.',
+      'Once you complete the form, you\'ll receive a confirmation email welcoming you to our safe haven.',
+      'A member of our team will follow up with you to discuss scholarships, health forms, or any specific needs your camper has.',
+      'We are here to help every step of the way—reach out anytime with questions!',
     ],
   },
 }

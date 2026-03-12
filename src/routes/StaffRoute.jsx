@@ -10,38 +10,46 @@ const StaffRoute = () => {
       eyebrow="Join the staff"
       title={staffPage.title}
       intro={staffPage.intro}
-      aside={
-        <div className="content-card content-card--compact">
-          <h2>{staffPage.applicationProcess.heading}</h2>
-          <p>Questions for the team? {staffPage.applicationProcess.contact}</p>
-        </div>
-      }
+      media={staffPage.heroMedia}
       cta={staffPage.cta}
     >
-      <section aria-labelledby="staff-roles-title" className="content-panel">
-        <h2 id="staff-roles-title">Staff roles</h2>
-        <div className="content-stack content-stack--three-up">
-          {staffPage.roles.map((role) => (
-            <article
-              key={role.id}
-              aria-labelledby={`staff-role-${role.id}`}
-              className="content-card"
-            >
-              <h3 id={`staff-role-${role.id}`}>{role.label}</h3>
-              <p>{role.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section aria-labelledby="staff-culture-title" className="content-card">
-        <h2 id="staff-culture-title">{staffPage.culture.heading}</h2>
-        <p>{staffPage.culture.body}</p>
-        <ul>
-          {staffPage.culture.bullets.map((bullet) => (
+      <section
+        aria-labelledby="staff-magic-title"
+        className="content-panel content-panel--wavy"
+      >
+        <h2 id="staff-magic-title" className="content-title--underline">
+          {staffPage.theMagic.heading}
+        </h2>
+        <p className="page-hero__intro">{staffPage.theMagic.body}</p>
+        <ul className="content-list">
+          {staffPage.theMagic.bullets.map((bullet) => (
             <li key={bullet}>{bullet}</li>
           ))}
         </ul>
+      </section>
+
+      <section className="content-stack content-stack--two-up">
+        <article
+          aria-labelledby="staff-mud-title"
+          className="content-card"
+        >
+          <h2 id="staff-mud-title">{staffPage.theMud.heading}</h2>
+          <p>{staffPage.theMud.body}</p>
+          <ul className="content-list">
+            {staffPage.theMud.bullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+        </article>
+
+        <article
+          aria-labelledby="staff-community-title"
+          className="content-card content-card--affirming"
+        >
+          <h2 id="staff-community-title">{staffPage.theCommunity.heading}</h2>
+          <p>{staffPage.theCommunity.body}</p>
+          <p><strong>Roles:</strong> {staffPage.theCommunity.rolesOverview}</p>
+        </article>
       </section>
 
       <section
@@ -49,11 +57,11 @@ const StaffRoute = () => {
         className="content-card"
       >
         <h2 id="staff-process-title">{staffPage.applicationProcess.heading}</h2>
-        <ol>
+        <ul className="content-list">
           {staffPage.applicationProcess.steps.map((step) => (
             <li key={step}>{step}</li>
           ))}
-        </ol>
+        </ul>
       </section>
     </PageFrame>
   );

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import {
-  contactDirectory,
   organizationFacts,
   socialLinks,
 } from "../../content/brand";
 import { actionLinks } from "../../content/actions";
+import { siteSettings } from "../../content/site";
 
 const footerLinks = [
   { label: "About", to: "/about" },
@@ -56,17 +56,13 @@ const SiteFooter = () => {
 
         <div className="site-footer__column">
           <p className="site-footer__eyebrow">Questions?</p>
-          <a href={`mailto:${contactDirectory.general.email}`}>
-            {contactDirectory.general.email}
+          <a href={`mailto:${siteSettings.primaryEmail}`}>
+            {siteSettings.primaryEmail}
           </a>
-          <a href={`tel:${contactDirectory.general.phone.replace(/[^0-9]/g, "")}`}>
-            {contactDirectory.general.phone}
+          <a href={`tel:${siteSettings.primaryPhone.replace(/[^0-9]/g, "")}`}>
+            {siteSettings.primaryPhone}
           </a>
-          <p>
-            Instagram and Facebook links are ready to be updated from the
-            centralized content layer.
-          </p>
-          <div className="site-footer__socials">
+          <div className="site-footer__socials" style={{ marginTop: '1rem' }}>
             <a href={socialLinks.instagram} rel="noreferrer" target="_blank">
               Instagram
             </a>

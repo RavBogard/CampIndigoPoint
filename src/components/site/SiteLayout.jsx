@@ -23,7 +23,14 @@ const SiteLayout = () => {
               className="site-shell__brand"
               to="/"
             >
-              <span className="site-shell__brand-mark">CIP</span>
+              <div className="site-shell__brand-mark">
+                <img
+                  src="/brand/logo.png"
+                  alt=""
+                  className="site-shell__brand-logo"
+                  aria-hidden="true"
+                />
+              </div>
               <span className="site-shell__brand-copy">
                 <strong>{siteSettings.siteName}</strong>
                 <span>{siteSettings.siteTagline}</span>
