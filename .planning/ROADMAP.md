@@ -22,6 +22,7 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | 8 | Resource Hub | Upgrade the FAQ into an interactive, filterable Resource Hub. | HUB-01 |
 | 9 | High-Impact Media & Language Integration | Perform a site-wide language audit and inject a significant volume of authentic photography to elevate the overall tone and visual impact. | MEDIA-01, LANG-01 |
 | 10 | Hero Slideshow & Media Density | Implement a crossfading hero slideshow on the homepage and systematically increase photo density across all pages. | MEDIA-02, MEDIA-03 |
+| 11 | Conversion UX Optimization | Implement a persistent Sticky Action Bar to keep primary conversion actions accessible on long scroll pages. | CONV-01 |
 
 ## Phase Details
 
@@ -174,6 +175,21 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 1. Homepage hero automatically crossfades through 3-5 images.
 2. Registration, Donate, Staff, FAQ, and Contact pages each feature at least one supporting photo integrated into the grid layout.
 
+### Phase 11: Conversion UX Optimization
+
+**Goal:** Implement a persistent Sticky Action Bar and an interactive "Day in the Life" Timeline to increase conversion rates across all three primary audiences.
+
+**Requirements:** CONV-01, CONV-02
+
+**Why next:**
+- With the site's structural UI and storytelling complete, the focus must shift to reducing friction for the primary actions (Register, Donate, Apply).
+- Long-form, emotionally resonant pages (like About and Donate) currently force users to scroll significantly to find the CTA again. A sticky bar solves this.
+
+**Success criteria:**
+1. A subtle, persistent action bar appears when the user scrolls past the primary hero CTA on key routes.
+2. The action bar intelligently displays the most relevant CTA for the current route (e.g., "Donate" on the Donate page, "Register" on the About page).
+3. The "Camp Life" section on the About page is refactored into a visually engaging interactive timeline.
+
 ## Coverage Validation
 
 | Requirement | Phase |
@@ -217,19 +233,22 @@ This roadmap rebuilds Camp Indigo Point's site in a sequence that protects trust
 | LANG-01 | Phase 9 |
 | MEDIA-02 | Phase 10 |
 | MEDIA-03 | Phase 10 |
+| CONV-01 | Phase 11 |
+| CONV-02 | Phase 11 |
 
 **Coverage:**
 - v1 requirements: 22
 - v1.1 requirements: 7
 - v1.2 requirements: 10
-- Total mapped to phases: 39
+- v1.3 requirements: 2
+- Total mapped to phases: 41
 - Unmapped: 0
 
 ## Recommended Next Step
 
-`/gsd:plan-phase 10`
+`/gsd:plan-phase 11`
 
-Move into Phase 10 to implement the hero slideshow and media density updates.
+Move into Phase 11 to implement the Sticky Action Bar and interactive timeline.
 
 ---
 *Last updated: 2026-03-12 after phase 2 completion*

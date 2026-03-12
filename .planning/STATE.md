@@ -1,68 +1,61 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.2
-milestone_name: Story and Safety Expansion
-current_phase: Milestone Complete
-status: v1.2 finished
-last_updated: "2026-03-13T03:30:00.000Z"
+milestone: v1.3
+milestone_name: Conversion UX
+current_phase: Not started
+status: researching
+last_updated: "2026-03-13T04:00:00.000Z"
 progress:
-  total_phases: 10
-  completed_phases: 10
-  total_plans: 30
-  completed_plans: 30
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
 ---
 
 # State
 
 **Updated:** 2026-03-13
-**Current phase:** Milestone Complete
-**Current status:** Milestone v1.2 (Story and Safety Expansion) is complete and verified.
+**Current phase:** Not started (researching)
+**Current status:** Researching v1.3 features
+**Last activity:** 2026-03-13 — Milestone v1.3 started
 
 ## Current Position
 
-Phase: Milestone Complete
+Phase: Not started (researching)
 Plan: —
-Status: Milestone v1.2 finished
-Last activity: 2026-03-13 — Phase 10 completed and verified.
+Status: Researching v1.3 features
+Last activity: 2026-03-13 — Milestone v1.3 started
 
 ## Project Reference
 
 See: `.planning/PROJECT.md` (updated 2026-03-13)
 
 **Core value:** Visitors should quickly understand why Camp Indigo Point matters, feel the camp's joyful and affirming spirit, and take the next right action to register, donate, or apply.
-**Current focus:** The Story and Safety Expansion is complete.
+**Current focus:** Implement targeted User Experience (UX) improvements designed to increase conversion rates across all three primary audiences.
 
 ## Completed Artifacts
 
-- PROJECT.md updated for v1.2
-- REQUIREMENTS.md updated with STORY, IMP, HUB, MEDIA, and LANG requirements
-- ROADMAP.md updated with Phases 7, 8, 9, and 10
-- Phase 7 (Bento Storytelling & Impact) completed and verified.
-- Phase 8 (Interactive Resource Hub) completed and verified.
-- Phase 9 (High-Impact Media & Language) completed and verified.
-- Phase 10 (Hero Slideshow & Media Density) completed and verified.
+- PROJECT.md updated for v1.3
+- REQUIREMENTS.md updated with CONV requirements
+- v1.0, v1.1, and v1.2 completed and verified.
 
 ## Decisions Made (Project Summary)
 
-- **Bento Grids:** Used asymmetrical Tailwind grids to integrate extracted media quotes directly into the page flow on Home and About.
-- **Homepage Copy:** Rewrote "Find the next right page" to an evocative "Step Into the Magic."
-- **Donor Dashboard:** Built a highly visual data row (140+ campers, 30 states) on the Donate page.
-- **Interactive FAQ:** Refactored FAQ into a smooth, filterable "Chips" UI using Framer Motion.
-- **Safety UX:** Quick Exit was explicitly removed from scope by the user.
-- **Media & Language:** Audited the site to use profound language from *Washington Post*, *JTA*, and *GMA*. Built a dedicated photo grid on the About page to showcase unadulterated joy.
-- **Hero Slideshow:** Implemented a Framer Motion crossfade slideshow on the homepage to maximize initial visual impact.
-- **Media Density:** Systematically eliminated "walls of text" by weaving the new gallery photos into the layout grids of every major route.
+- **Architecture:** Tailwind CSS v4, React Router, centralized content layer (`src/content/`). External handoffs maintained.
+- **Brand/Vibe:** Vibrant "Soul & Story" aesthetic (Teal/Orange palettes, organic shapes).
+- **Safety & Story:** Integrated Bento Box grids, Donor Dashboards, Interactive FAQs, and high-impact media/language.
+- **Conversion Strategy:** The user selected the "Sticky Action Bar on Scroll" feature to keep primary CTAs one click away.
 
 ## Next Actions
 
-1. Review the completed local site on desktop and mobile.
-2. Ensure the production branch (`main`) is deployed successfully.
+1. Update ROADMAP.md with Phase 11.
+2. Complete research and planning for Phase 11 (Conversion UX).
 
 ## Known Risks
 
-- None remaining for v1.2.
+- Sticky bars must be carefully z-indexed so they don't block mobile navigation or footers.
 
 ## Session Resume
 
-- Stopped at: Milestone Complete
-- Resume file: None. Ready for deployment.
+- Stopped at: Milestone v1.3 initialization
+- Resume action: Researching UX features

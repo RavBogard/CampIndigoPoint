@@ -1,14 +1,12 @@
 # Camp Indigo Point Website Redesign
 
-## Current Milestone: v1.2 Story and Safety Expansion
+## Current Milestone: v1.3 Conversion UX
 
-**Goal:** Elevate the site from a functional brochure to a world-class digital experience by implementing immersive storytelling, advanced safety UX, and data-driven donor impact, using only existing assets and front-end engineering.
+**Goal:** Implement targeted User Experience (UX) improvements designed to increase conversion rates across all three primary audiences (Families, Donors, Staff) by reducing friction to the primary calls to action.
 
 **Target features:**
-- **"Bento Box" Storytelling:** Redesign key layouts (and fix weird homepage copy) using modern, scannable grids that weave extracted media quotes and camper testimonials directly into the narrative flow.
-- **Youth Safety UX ("Quick Exit"):** Implement a persistent, keyboard-accessible "Quick Exit" button for vulnerable youth browsing in unsupportive environments.
-- **Donor Impact Dashboard:** Build a visual, data-driven section on the Donate page to highlight camp metrics (states represented, staff count, etc.).
-- **Interactive Resource Hub:** Upgrade the static FAQ into a filterable, tag-based resource center.
+- **Sticky "Action Bar" on Scroll:** Implement a persistent bottom/top bar that appears as users scroll deep into pages, keeping the "Register / Donate / Apply" buttons exactly one click away at all times without cluttering the main content.
+- **Interactive "Day in the Life" Timeline:** Upgrade the "Camp Life" section from a static list into a highly visual, clickable interactive timeline to help families and staff truly visualize the magic of the daily routine.
 
 ## What This Is
 
