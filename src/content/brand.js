@@ -62,8 +62,8 @@ export const pressLinks = [
 ]
 
 export const socialLinks = {
-  instagram: 'https://instagram.com',
-  facebook: 'https://facebook.com',
+  instagram: 'https://www.instagram.com/campindigopoint/',
+  facebook: 'https://www.facebook.com/CampIndigoPoint/',
 }
 
 export const organizationFacts = {
