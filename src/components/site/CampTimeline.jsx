@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const CampTimeline = ({ schedule }) => {
   if (!schedule || schedule.length === 0) return null;
@@ -13,7 +13,7 @@ const CampTimeline = ({ schedule }) => {
           const isEven = index % 2 === 0;
 
           return (
-            <motion.div
+            <Motion.div
               key={item.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ const CampTimeline = ({ schedule }) => {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </Motion.div>
           );
         })}
       </div>

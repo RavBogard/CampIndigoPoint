@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import "./Portfolio.css";
 import chevrutaPreview from "../assets/chevruta-screenshot.png";
@@ -32,7 +32,7 @@ const Portfolio = ({ isDarkMode }) => {
         <section id="portfolio" className="portfolio-section">
             <div className="container">
 
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -42,11 +42,11 @@ const Portfolio = ({ isDarkMode }) => {
                     <p className="portfolio-intro">
                         Leveraging modern technology to create new pathways for Jewish education and connection.
                     </p>
-                </motion.div>
+                </Motion.div>
 
                 <div className="portfolio-grid">
                     {projects.map((project, index) => (
-                        <motion.div
+                        <Motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ const Portfolio = ({ isDarkMode }) => {
 
                                 <a href={project.link} className="btn-project">View Project</a>
                             </div>
-                        </motion.div>
+                        </Motion.div>
                     ))}
                 </div>
 

@@ -1,9 +1,9 @@
 {
   "slug": "staff",
-  "title": "Lead With Pride",
+  "title": "Be someone’s favorite counselor.",
   "audience": "staff",
   "primaryActionId": "apply",
-  "intro": "Join a chosen family. Build a sanctuary. At Camp Indigo Point, you aren't just a counselor—you are an ancestor, showing our campers a vision of what the future could and should be.",
+  "intro": "Bring your skills, your ridiculous camp spirit, and your care for kids. Help build the kind of queer community you wish you’d had growing up.",
   "heroMedia": {
     "src": "/images/gallery/camp-photo-4.jpg",
     "alt": "Staff and campers sharing an unforgettable, high-energy moment."
@@ -14,35 +14,35 @@
   },
   "cta": "apply",
   "theMagic": {
-    "heading": "The Magic: Becoming an Ancestor",
-    "body": "We are giving kids an image of the future. In a world where they are often told they don't belong, we show them a world where their heroes are like them. The counselors, the nurses, the directors—we are a living, breathing, intergenerational queer community.",
+    "heading": "You make a future visible.",
+    "body": "The way you move through the world matters here. As a queer grown-up at camp, you can become a role model simply by sharing the day: leading an activity, eating lunch, listening, and showing up again tomorrow.",
     "bullets": [
-      "Be the affirming adult that changes the trajectory of a child's life.",
-      "Help kids who live in black and white realize they can live in color.",
-      "Create an incredible, life-giving experience that you wish you had when you were their age."
+      "Help kids try something they thought they couldn’t do.",
+      "Model care, curiosity, and respect in everyday moments.",
+      "Give campers someone to look up to who understands them."
     ]
   },
   "theMud": {
-    "heading": "The Mud: The Reality of the Work",
-    "body": "Do not be mistaken: this is the hardest job you will ever love. We do not sugarcoat the reality of building a world from scratch every summer.",
+    "heading": "Great camp takes real work.",
+    "body": "This is a job caring for kids. It asks for patience, sound judgment, teamwork, and energy, including on the hot, rainy, and tired days.",
     "bullets": [
-      "You will sweat, you will get dirty, you will play in the mud, and you will live in a rustic yurt with 12 kids.",
-      "You must learn to turn on a dime, handle unpredictable weather, and turn a rainy day into an unforgettable bonding experience.",
-      "It requires deep resilience, boundless empathy, and a willingness to put the community before yourself."
+      "Share the daily responsibilities of bunk life and activities.",
+      "Help campers navigate homesickness, disagreements, and new experiences.",
+      "Take safety, boundaries, and camper care seriously.",
+      "Be ready to adapt, ask for help, and support your team."
     ]
   },
   "theCommunity": {
-    "heading": "A Chosen Family",
-    "body": "We become a family. You will work alongside 50+ queer and trans leaders who share your passion. You will laugh, you will cry, and you will create the world all over again with people who truly understand you.",
-    "rolesOverview": "Whether you are a Counselor living the daily bunk life, a Specialist teaching skills at the waterfront or arts studio, or a Unit Head mentoring the team—we are all pulling the same rope."
+    "heading": "A team that gets you.",
+    "body": "Our staff brings together queer counselors, activity leaders, and administrators. We share the work of building a camp where kids and adults can be themselves.",
+    "rolesOverview": "Bring what you know, learn from the people around you, and help make a summer worth coming back to."
   },
   "applicationProcess": {
-    "heading": "Application and Follow-Up",
+    "heading": "Let’s talk about this summer.",
     "steps": [
-      "Apply through our official Google Form for Summer 2026.",
-      "Our team will follow up using the contact info provided to schedule an interview.",
-      "If offered a role, you will receive onboarding and training documents directly from the directors.",
-      "For Nursing, Wellness, or other specific professional roles, please email Shira directly."
+      "Email Shira to ask about current openings and the application process.",
+      "Tell us about your experience, interests, and the kind of role you’re looking for.",
+      "Our team will share the next steps, including interviews and role requirements."
     ],
     "contact": "shira@campindigopoint.org"
   }

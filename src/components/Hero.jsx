@@ -1,5 +1,5 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import "./Hero.css";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="container hero-container">
 
                 {/* Text Content */}
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -52,10 +52,10 @@ const Hero = () => {
                             <MessageCircle className="ml-2 w-4 h-4" />
                         </a>
                     </div>
-                </motion.div>
+                </Motion.div>
 
                 {/* Visual / Image Area */}
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -66,7 +66,7 @@ const Hero = () => {
                         alt="Daniel Bogard"
                         className="w-full h-full object-contain object-bottom"
                     />
-                </motion.div>
+                </Motion.div>
 
             </div>
         </section>

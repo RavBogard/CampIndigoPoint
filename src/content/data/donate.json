@@ -1,9 +1,9 @@
 {
   "slug": "donate",
-  "title": "Give a Child a World in Color",
+  "title": "Marshmallows. Role models. Lives changed.",
   "audience": "donors",
   "primaryActionId": "donate",
-  "intro": "We are literally saving lives with marshmallows, campfires, and intergenerational queer community. Your gift provides the lifeline our youth need to thrive.",
+  "intro": "A friendship bracelet. A first jump into the pool. A counselor who shows you a future you hadn’t imagined. Help give LGBTQ+ kids the camp and community they deserve.",
   "cta": "donate",
   "heroMedia": {
     "src": "/images/gallery/camp-photo-2.jpg",
@@ -14,53 +14,64 @@
     "alt": "A joyful camp moment made possible by scholarships."
   },
   "impactMetrics": [
-    { "label": "Campers Served", "value": "140+", "icon": "Users" },
-    { "label": "States Represented", "value": "30", "icon": "Map" },
-    { "label": "Queer Staff", "value": "50+", "icon": "Heart" },
-    { "label": "Turned Away for Funds", "value": "0", "icon": "Sun" }
+    {
+      "label": "Campers",
+      "value": "150",
+      "icon": "Users"
+    },
+    {
+      "label": "States",
+      "value": "33",
+      "icon": "Map"
+    }
   ],
   "lifeline": {
-    "heading": "From Black and White to Color",
-    "body": "Parents tell us every year: they send us kids who live in black and white, whose only friends are strangers on the internet. In just two weeks, we send them back kids who live in color, who are confident, and who have built lifelong relationships with other campers.",
+    "heading": "A summer can stay with you.",
+    "body": "Some kids come to camp used to being the only queer or trans person in the room. Some face bullying from the very adults who should be looking out for them. At Indigo Point, they find friends like them and grown-ups they can look up to.",
     "bullets": [
-      "In a world where all too often their assistant principal is their biggest bully, Camp Indigo Point is a sanctuary.",
-      "We give kids hope and a vision of what the future could and should be.",
-      "Research shows that just one affirming adult can reduce the risk of suicide for trans youth by 40%."
+      "Give kids time to play, try new things, and make friends.",
+      "Bring together queer campers, counselors, and leaders across generations.",
+      "Help kids see queer thriving in the people around them."
     ]
   },
   "ancestors": {
-    "heading": "Building a Lineage of Joy",
-    "body": "At Indigo Point, it isn't just that every camper is like them. Their heroes are like them. The counselors are like them. The administrators, the nurses, the medical staff—they are all like them.",
+    "heading": "Heroes who are like you.",
+    "body": "Many of our staff never knew a trans person when they were kids. At camp, the person who teaches you a song, helps you climb, or introduces you to a favorite band can also be someone whose life helps you imagine your own.",
     "details": [
-      "We are giving them an image of what the future could be.",
-      "We are giving them ancestors.",
-      "Donating to scholarships is one of the easiest ways you can save a life and sustain this vital community."
+      "Queer adults are part of ordinary, everyday camp life.",
+      "Role models become real people kids know and trust.",
+      "That sense of possibility can travel home with a camper."
     ]
   },
   "impactTiers": {
-    "heading": "What Your Gift Makes Possible",
-    "summary": "Every dollar goes toward ensuring that no child is turned away for lack of funds. Here is what your support can do:",
+    "heading": "Help get a kid here.",
+    "summary": "Gifts support scholarships and the people and experiences that make camp possible.",
     "tiers": [
-      { "amount": "$100", "description": "Covers a bunk's campfires and snacks." },
-      { "amount": "$500", "description": "Supports a special unit outing or activity." },
-      { "amount": "$2,700", "description": "Provides a full, two-week scholarship for one camper." }
+      {
+        "amount": "Any amount",
+        "description": "Helps support access to camp."
+      },
+      {
+        "amount": "$3,000",
+        "description": "Matches full tuition for the two-week 2027 session."
+      }
     ]
   },
   "partnersInJoy": {
-    "heading": "Partners in Joy",
-    "body": "We are profoundly grateful for the organizations, family foundations, and faith communities that sustain our mission.",
+    "heading": "Help camp keep growing.",
+    "body": "Families, foundations, faith communities, and individual donors help make Indigo Point possible. We’d love to talk about how your support can help more kids get here.",
     "bullets": [
-      "Faith Sponsorships: Faith communities can become official sponsors of Camp Indigo Point (typically a $1,800 donation).",
-      "Major Gifts: We are actively seeking partners who can support our long-term vision with annual 5-figure donations.",
-      "To discuss foundation support or faith sponsorships, please email Dan directly at dan@campindigopoint.org."
+      "Support scholarships or camp operations.",
+      "Connect us with your foundation, congregation, or community.",
+      "Contact Dan to discuss a larger gift or partnership."
     ]
   },
   "fiscalSponsorship": {
-    "heading": "The Ashrei Foundation",
-    "body": "Camp Indigo Point is fiscally sponsored by the Ashrei Foundation, a 501(c)(3) nonprofit organization. Ashrei provides the administrative backbone that allows our team to focus entirely on the joy and safety of our campers.",
+    "heading": "Giving through Ashrei.",
+    "body": "Camp Indigo Point is fiscally sponsored by the Ashrei Foundation, a 501(c)(3) nonprofit organization.",
     "details": [
-      "When you click the donate button, you will be taken to a secure DonorPerfect form hosted by the Ashrei Foundation.",
-      "Your gift is tax-deductible to the fullest extent of the law and directly supports Camp Indigo Point scholarships and operations."
+      "The donation button opens the Ashrei Foundation’s DonorPerfect form for Camp Indigo Point.",
+      "Gifts support Camp Indigo Point scholarships and operations. Donation receipts are handled through our fiscal sponsor."
     ]
   }
 }

@@ -3,43 +3,67 @@
   "title": "Questions & Answers",
   "audience": "all",
   "primaryActionId": "register",
-  "intro": "We know that choosing a summer sanctuary for your child is a big decision. Here are the most common questions families ask about our safe haven.",
-  "categories": ["Families", "Donors", "Staff"],
+  "intro": "Choosing camp comes with questions. Here are a few answers to get started. If you want to talk about your camper or your own situation, reach out.",
+  "categories": [
+    "Families",
+    "Donors",
+    "Staff"
+  ],
   "items": [
     {
       "category": "Families",
-      "question": "Is my child \"queer enough\" for camp?",
-      "answer": "Yes! Camp Indigo Point is a sanctuary for any youth who identifies as LGBTQ+, is questioning, or simply wants the \"unconditional joy\" of a community where they don't feel like an outsider. If they want to be here, they belong here."
+      "question": "Does my child need to have their identity figured out?",
+      "answer": "No. Camp welcomes LGBTQ+ and questioning kids. There is no test of being “queer enough.” If you’re wondering whether camp is a fit, talk with our team."
     },
     {
       "category": "Families",
-      "question": "What does \"affirming\" actually mean at camp?",
-      "answer": "It means a \"beautifully liberated freedom of expression.\" Your child will be called by their correct name and pronouns by every staff member and camper. Bunking is handled with care, and identity is celebrated as a default."
+      "question": "Is this a gender education program?",
+      "answer": "It’s summer camp. Swimming, arts and crafts, games, campfires, and friendships fill our days. Queerness is centered in our community and is also something we share in the background."
     },
     {
       "category": "Families",
-      "question": "What if we can't afford the full tuition?",
-      "answer": "We believe every child deserves a \"joyful reprieve\" from the outside world. We offer scholarships to every family who asks, and no one is turned away for lack of funds. Register, pay the deposit, and we will work with you."
+      "question": "How are bunks assigned?",
+      "answer": "Bunks are organized by grade level and take camper needs into account. We do not divide campers by binary gender. Talk with our team about your camper’s comfort and needs."
     },
     {
       "category": "Families",
-      "question": "What is the \"low-tech\" policy?",
-      "answer": "We \"trade screens for sunsets\" to help kids build face-to-face friendships. Campers thrive when they can leave behind the noise of the internet for two weeks of pure camp magic."
+      "question": "What if we can’t afford tuition or the deposit?",
+      "answer": "No camper is turned away for inability to pay. If tuition or the deposit is a barrier, talk with Dan about scholarship support."
+    },
+    {
+      "category": "Families",
+      "question": "Do campers need to be Jewish?",
+      "answer": "No. Our founders drew on their experience in Jewish summer camping. Indigo Point welcomes campers of all faiths and none."
+    },
+    {
+      "category": "Families",
+      "question": "Can campers bring phones?",
+      "answer": "Campers leave phones, internet, and video games behind to spend time together in person. Music players, audiobooks, and digital cameras are allowed. Ask us about staying in touch or accessibility needs."
+    },
+    {
+      "category": "Families",
+      "question": "How do we discuss health needs or accommodations?",
+      "answer": "Email shira@campindigopoint.org before registering to discuss medication, access needs, sensory needs, and other support. Camp is an overnight summer camp rather than a therapeutic program; we can talk through whether it is a good fit."
+    },
+    {
+      "category": "Families",
+      "question": "How can we learn about the Colorado teen program?",
+      "answer": "Visit our Colorado page, then email info@campindigopoint.org for the next dates, age range, tuition, and registration information."
     },
     {
       "category": "Donors",
       "question": "How is my donation used?",
-      "answer": "Donations primarily go to our scholarship fund, ensuring that every kid can find their \"sanctuary\" at camp regardless of their family's financial situation."
+      "answer": "Gifts support scholarships and camp operations: helping kids get here and supporting the people and experiences that make camp possible."
     },
     {
       "category": "Donors",
-      "question": "Who is the Ashrei Foundation?",
-      "answer": "The Ashrei Foundation is our 501(c)(3) fiscal sponsor. They provide the administrative backbone that allows us to focus on the joy and safety of our campers."
+      "question": "Why does the donation form say Ashrei Foundation?",
+      "answer": "The Ashrei Foundation is Camp Indigo Point’s 501(c)(3) fiscal sponsor. Our donation link opens their DonorPerfect form specifically for Camp Indigo Point."
     },
     {
       "category": "Staff",
-      "question": "What is it like to work at Indigo Point?",
-      "answer": "It is hard work, deep joy, and a chance to build \"the most home our kids have ever felt.\" You'll be a role model in a community where being wholeheartedly yourself is the only requirement."
+      "question": "How do I apply to work at camp?",
+      "answer": "Email shira@campindigopoint.org to ask about current openings and the application process. Our team can share role requirements, compensation, dates, training, and next steps."
     }
   ]
 }

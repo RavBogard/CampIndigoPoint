@@ -8,6 +8,7 @@ backend:
     update: 'content: update {{collection}} “{{slug}}”'
     delete: 'content: delete {{collection}} “{{slug}}”'
 
+site_domain: camp-indigo-point.vercel.app
 local_backend: true
 
 media_folder: "public/images/gallery"
@@ -393,3 +394,52 @@ collections:
             fields:
               - {label: "Tone", name: "tone", widget: "list"}
               - {label: "Editorial Approach", name: "editorialApproach", widget: "text"}
+  - name: "programs"
+    label: "Summer & Programs"
+    description: "Current season facts, community numbers, and Colorado details. Keep the overnight host and precise location out of public copy."
+    files:
+      - name: "programs"
+        label: "Program details"
+        file: "src/content/data/programs.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Summer year", name: "season", widget: "number", value_type: "int"}
+          - {label: "Full session dates", name: "dates", widget: "string"}
+          - {label: "Full session grades", name: "grades", widget: "string"}
+          - {label: "Full session tuition", name: "tuition", widget: "string"}
+          - label: "Community"
+            name: "community"
+            widget: "object"
+            fields:
+              - {label: "Campers", name: "campers", widget: "string"}
+              - {label: "States", name: "states", widget: "string"}
+          - label: "One-week first-time camper session"
+            name: "shortSession"
+            widget: "object"
+            fields:
+              - {label: "Dates", name: "dates", widget: "string"}
+              - {label: "Grades", name: "grades", widget: "string"}
+              - {label: "Tuition", name: "tuition", widget: "string"}
+              - {label: "Eligibility", name: "eligibility", widget: "string"}
+          - label: "CIT session"
+            name: "cit"
+            widget: "object"
+            fields:
+              - {label: "Dates", name: "dates", widget: "string"}
+              - {label: "Grades", name: "grades", widget: "string"}
+              - {label: "Tuition", name: "tuition", widget: "string"}
+          - label: "Colorado teen program"
+            name: "colorado"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Introduction", name: "intro", widget: "text"}
+              - {label: "Dates", name: "dates", widget: "string", required: false}
+              - {label: "Age range or grades", name: "grades", widget: "string", required: false}
+              - {label: "Tuition", name: "tuition", widget: "string", required: false}
+              - {label: "Registration URL", name: "registrationUrl", widget: "string", required: false}
+              - {label: "Contact email", name: "contact", widget: "string"}
+              - {label: "Activities", name: "activities", widget: "list"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Next step", name: "nextStep", widget: "text"}

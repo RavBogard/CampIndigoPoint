@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion as Motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { siteSettings } from "../../content/site";
 
@@ -31,7 +31,7 @@ const StickyActionBar = () => {
   }
 
   return (
-    <motion.div
+    <Motion.div
       initial={{ y: 150 }}
       animate={{ y: isVisible ? 0 : 150 }}
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
@@ -50,7 +50,7 @@ const StickyActionBar = () => {
           {activeCta.label}
         </a>
       </div>
-    </motion.div>
+    </Motion.div>
   );
 };
 

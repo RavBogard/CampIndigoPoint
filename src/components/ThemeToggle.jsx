@@ -1,9 +1,9 @@
 import { Moon, Sun } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const ThemeToggle = ({ isDarkMode, toggleTheme }) => {
     return (
-        <motion.button
+        <Motion.button
             onClick={toggleTheme}
             className="theme-toggle"
             whileHover={{ scale: 1.1 }}
@@ -28,7 +28,7 @@ const ThemeToggle = ({ isDarkMode, toggleTheme }) => {
             }}
         >
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-        </motion.button>
+        </Motion.button>
     );
 };
 

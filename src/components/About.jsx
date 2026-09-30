@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import { PlayCircle } from "lucide-react";
 import "./About.css";
 
@@ -9,7 +9,7 @@ const About = () => {
 
                 {/* Narrative Side */}
                 <div className="about-content">
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -28,11 +28,11 @@ const About = () => {
                                 Whether I'm testifying in the state legislature or teaching a coding bootcamp for Jewish educators, my mission is the same: to empower communities to build a more just and compassionate future.
                             </p>
                         </div>
-                    </motion.div>
+                    </Motion.div>
                 </div>
 
                 {/* Media / Video Side */}
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -52,7 +52,7 @@ const About = () => {
                         ></iframe>
                     </div>
                     <p className="media-caption">Featured on MSNBC, speaking on Trans Rights in Missouri.</p>
-                </motion.div>
+                </Motion.div>
 
             </div>
         </section>

@@ -1,16 +1,16 @@
 {
   "brandValues": [
     {
-      "name": "Equity",
-      "description": "CIP recognizes that LGBTQ+ campers embody intersecting identities and aims to provide the specific tools they need to feel acknowledged, valued, and secure."
-    },
-    {
       "name": "Community",
-      "description": "CIP is founded by LGBTQ+ and adjacent adults fostering an environment where LGBTQ+ youth can thrive and connect."
+      "description": "Kids deserve peers who understand them and queer adults they can look up to. We build that community by spending our days together."
     },
     {
       "name": "Affirmation",
-      "description": "CIP strives to create a space where campers and staff feel their identities and queer journeys are supported."
+      "description": "Names and pronouns matter. So does having room to try things, change, and become yourself without being put on the spot."
+    },
+    {
+      "name": "Equity",
+      "description": "Cost and individual needs should be part of the conversation, not reasons to stop it. We work with families on scholarships and support."
     }
   ],
   "contactDirectory": [
@@ -22,7 +22,7 @@
       "phone": "314-348-6412"
     },
     {
-      "intent": "Nursing, Wellness Roles, or Accommodations",
+      "intent": "Staff, wellness, and accommodations",
       "name": "Shira Berkowitz",
       "role": "Camp Director",
       "email": "shira@campindigopoint.org"
@@ -37,23 +37,28 @@
   "pressLinks": [
     {
       "publication": "The Washington Post",
-      "title": "Camp Indigo Point is a summer safe haven for LGBTQ+ kids",
-      "url": "https://www.washingtonpost.com/photography/interactive/2024/camp-indigo-point-lgbtq-safe-haven/"
-    },
-    {
-      "publication": "Jewish Telegraphic Agency",
-      "title": "Jewish summer camp veterans are opening a camp for trans kids",
-      "url": "https://www.jta.org/2022/05/05/united-states/the-jewish-summer-camp-veterans-opening-a-summer-camp-for-trans-kids"
-    },
-    {
-      "publication": "Kveller",
-      "title": "This St. Louis Rabbi Is Fighting For His Trans Son’s Future",
-      "url": "https://www.kveller.com/this-st-louis-rabbi-is-fighting-for-his-trans-sons-future-and-hes-not-backing-down/"
+      "title": "A photo story from inside camp · 2024",
+      "url": "https://www.washingtonpost.com/style/2024/09/05/camp-indigo-point/"
     },
     {
       "publication": "Good Morning America",
-      "title": "A summer safe haven in the Midwest",
-      "url": "#"
+      "title": "Meet Camp Indigo Point · 2022",
+      "url": "https://www.youtube.com/watch?v=qgv_UbFAQUA"
+    },
+    {
+      "publication": "Terrain Magazine",
+      "title": "Local reporting on camp and Colorado · 2026",
+      "url": "https://terrain-mag.com/camp-indigo-point/"
+    },
+    {
+      "publication": "Jewish Telegraphic Agency",
+      "title": "How the idea for camp began · 2022",
+      "url": "https://jewishchronicle.timesofisrael.com/jewish-summer-camp-veterans-are-opening-a-camp-for-trans-kids/"
+    },
+    {
+      "publication": "The Washington Post",
+      "title": "The founding story · 2022",
+      "url": "https://www.washingtonpost.com/national-security/2022/05/18/trans-camp-shira-berkowitz-indigo-point/"
     }
   ],
   "socialLinks": {
@@ -66,11 +71,20 @@
     "audience": "Queer and trans youth entering grades 2nd-11th",
     "format": "Residential summer camp in the Midwest",
     "founded": 2021,
-    "foundedBy": ["Daniel Bogard", "Shira Berkowitz"],
+    "foundedBy": [
+      "Daniel Bogard",
+      "Shira Berkowitz",
+      "Dan Grabel"
+    ],
     "fiscalSponsor": "Ashrei Foundation"
   },
   "brandVoice": {
-    "tone": ["warm", "affirming", "practical"],
-    "editorialApproach": "Lightly edit for clarity without flattening trust-building detail."
+    "tone": [
+      "playful",
+      "direct",
+      "queer",
+      "caring"
+    ],
+    "editorialApproach": "Specific camp moments and plain answers. Let the people and the camp speak for themselves."
   }
 }

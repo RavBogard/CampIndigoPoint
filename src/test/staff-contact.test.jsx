@@ -1,46 +1,33 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import { describe, it, expect } from "vitest";
-import StaffRoute from "../routes/StaffRoute";
-import ContactRoute from "../routes/ContactRoute";
-import staffPage from "../content/data/staff.json";
-import brandData from "../content/data/brand.json";
-
-const { contactDirectory, pressLinks } = brandData;
-
-describe("Staff Journey", () => {
-  it("renders the Magic and Mud narrative", () => {
-    render(
-      <MemoryRouter>
-        <StaffRoute />
-      </MemoryRouter>
-    );
-    expect(screen.getByText(staffPage.theMagic.heading)).toBeInTheDocument();
-    expect(screen.getByText(staffPage.theMud.heading)).toBeInTheDocument();
-    expect(screen.getByText(staffPage.theCommunity.heading)).toBeInTheDocument();
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import { afterEach, describe, it, expect } from 'vitest';
+import { StaffPage, ContactPage, FaqPage } from '../routes/CampPages';
+import brand from '../content/data/brand.json';
+import { actionLinks } from '../content/actions';
+import { createElement } from 'react';
+afterEach(cleanup);
+const renderPage=page=>render(<MemoryRouter>{createElement(page)}</MemoryRouter>);
+describe('Staff, contact, and family answers', () => {
+  it('offers current staff inquiries and describes responsibilities', () => {
+    renderPage(StaffPage);
+    screen.getAllByRole('link',{name:'Talk to us about staff'}).forEach(link=>expect(link).toHaveAttribute('href',actionLinks.apply.href));
+    expect(screen.getByRole('heading',{name:'Great camp takes real work.'})).toBeInTheDocument();
+    expect(screen.getByRole('heading',{name:'Care & wellness'})).toBeInTheDocument();
+    expect(document.body.textContent).toMatch(/compensation/);
+    expect(document.body.textContent).not.toMatch(/Summer 2026|hardest job|ancestor/);
   });
-});
-
-describe("Contact & Press Journey", () => {
-  it("renders the explicit contact routing", () => {
-    render(
-      <MemoryRouter>
-        <ContactRoute />
-      </MemoryRouter>
-    );
-    contactDirectory.forEach((contact) => {
-      expect(screen.getByText(contact.intent)).toBeInTheDocument();
-    });
+  it('routes inquiries to the right people and provides actual press destinations', () => {
+    renderPage(ContactPage);
+    for(const contact of brand.contactDirectory) expect(screen.getByRole('link',{name:new RegExp(contact.email)})).toHaveAttribute('href',`mailto:${contact.email}`);
+    expect(screen.getByRole('link',{name:'314-348-6412'})).toHaveAttribute('href','tel:3143486412');
+    for(const press of brand.pressLinks) expect(screen.getByRole('link',{name:new RegExp(press.title)})).toHaveAttribute('href',press.url);
   });
-
-  it("renders the press links", () => {
-    render(
-      <MemoryRouter>
-        <ContactRoute />
-      </MemoryRouter>
-    );
-    pressLinks.forEach((link) => {
-      expect(screen.getByText(new RegExp(link.publication, 'i'))).toBeInTheDocument();
-    });
+  it('opens practical FAQ answers with an accessible native disclosure', () => {
+    renderPage(FaqPage);
+    const question=screen.getByText('Is this a gender education program?');
+    fireEvent.click(question);
+    // The native disclosure is operable without scripts; ensure its answer is associated.
+    expect(question.closest('details')).toHaveTextContent('It’s summer camp.');
+    expect(question.tagName).toBe('SUMMARY');
   });
 });

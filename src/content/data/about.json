@@ -1,95 +1,110 @@
 {
   "slug": "about",
-  "title": "Where Kids Can Just Be Kids",
+  "title": "A world kids can believe in.",
   "audience": "families",
   "primaryActionId": "register",
-  "intro": "Camp Indigo Point is a premier summer camp experience where queer and trans youth build friendships, explore nature, and celebrate their truest selves. It is a place that feels like \"the most home they have ever felt.\"",
+  "intro": "Summer camp, built around queer community. Kids come for the activities and friendships, and meet grown-ups who help them picture their own future.",
   "heroMedia": {
     "src": "/images/gallery/camp-photo-5.jpg",
     "alt": "Campers laughing and enjoying activities at Camp Indigo Point."
   },
   "campLifePhotos": [
-    { "src": "/images/gallery/camp-photo-6.jpg", "alt": "Campers at the lake" },
-    { "src": "/images/gallery/camp-photo-7.jpg", "alt": "Campers at a campfire" },
-    { "src": "/images/gallery/camp-photo-16.jpg", "alt": "Campers exploring nature" },
-    { "src": "/images/gallery/camp-photo-8.jpg", "alt": "Campers playing games" },
-    { "src": "/images/gallery/camp-photo-17.jpg", "alt": "A moment of deep connection" },
-    { "src": "/images/gallery/camp-photo-9.jpg", "alt": "Campers laughing together" },
-    { "src": "/images/gallery/camp-photo-18.jpg", "alt": "Celebrating identity outdoors" },
-    { "src": "/images/gallery/camp-photo-19.jpg", "alt": "The joy of summer camp" }
+    {
+      "src": "/images/gallery/camp-photo-6.jpg",
+      "alt": "Campers at the lake"
+    },
+    {
+      "src": "/images/gallery/camp-photo-7.jpg",
+      "alt": "Campers at a campfire"
+    },
+    {
+      "src": "/images/gallery/camp-photo-16.jpg",
+      "alt": "Campers exploring nature"
+    },
+    {
+      "src": "/images/gallery/camp-photo-8.jpg",
+      "alt": "Campers playing games"
+    },
+    {
+      "src": "/images/gallery/camp-photo-17.jpg",
+      "alt": "A moment of deep connection"
+    },
+    {
+      "src": "/images/gallery/camp-photo-9.jpg",
+      "alt": "Campers laughing together"
+    },
+    {
+      "src": "/images/gallery/camp-photo-18.jpg",
+      "alt": "Celebrating identity outdoors"
+    },
+    {
+      "src": "/images/gallery/camp-photo-19.jpg",
+      "alt": "The joy of summer camp"
+    }
   ],
   "campLife": {
-    "heading": "The Magic of a Camp Day",
-    "summary": "From morning polar bear plunges to evening campfires, we trade screens for sunsets. We are here to play, and to grow throughout our play, replacing the noise of the world with the soundtrack of laughter.",
+    "heading": "From breakfast to the last campfire song.",
+    "summary": "Swim. Make something. Try archery. Sing too loudly. Read in a hammock. Indigo Point is a summer camp where LGBTQ+ kids get to spend their days being kids.",
     "schedule": [
       {
         "time": "Morning",
-        "title": "Wake Up & Plunge",
-        "description": "Morning polar bear plunges in the lake, followed by breakfast with a community that understands you."
+        "title": "Start together.",
+        "description": "Breakfast, time with your bunk, and the first activities of the day."
       },
       {
-        "time": "Mid-Day",
-        "title": "Activity Rotations",
-        "description": "A beautifully liberated freedom of expression across all-camp activities and bunk rotations. Trading screens for friendship bracelets and face-to-face fun."
+        "time": "Midday",
+        "title": "Try something new.",
+        "description": "Activities with your bunk and choices that fit your interests, from the waterfront to the arts."
       },
       {
         "time": "Afternoon",
-        "title": "Rest Hour",
-        "description": "Daily 'Rest Hour' for reading, writing, and recharging in a sanctuary of peers."
+        "title": "Take a breather.",
+        "description": "Rest time for reading, writing, and recharging, with more activities to follow."
       },
       {
         "time": "Evening",
-        "title": "Camp Traditions",
-        "description": "Evening activities like Capture the Flag, Silent Discos, and our legendary Queer Prom."
+        "title": "The whole camp gets in on it.",
+        "description": "Campfires, capture the flag, silent discos, bunk nights, and camp traditions."
       }
     ]
   },
-  "testimonials": [
-    {
-      "quote": "The most home I have ever felt.",
-      "source": "Camper"
-    },
-    {
-      "quote": "It’s hard to put into words what it is to know that there’s a space for your kid not to feel like an outsider, but to be one of a group.",
-      "source": "Camp Parent (via Kveller)"
-    }
-  ],
+  "testimonials": [],
   "belonging": {
-    "heading": "A Home for Every Identity",
-    "body": "We don't just \"accept\" our campers—we celebrate them. Every detail is built on the foundations of affirmation, so every child can be \"wholeheartedly themselves.\"",
+    "heading": "Room to be yourself.",
+    "body": "Names and pronouns are respected. Queer adults are part of everyday camp life. Kids can spend more time making friends and less time explaining themselves.",
     "details": [
-      "Campers are always called by their correct names and pronouns by every staff member.",
-      "Bunking is grade-based and affirming, ensuring no child feels like an outsider in their own cabin.",
-      "A community where you can be unabashedly queer in the great outdoors.",
-      "A \"Community Care Team\" dedicated to the mental, emotional, and social health of every camper."
+      "Cabins and yurts bring campers together with peers and counselors.",
+      "Bunk assignments take grade level and campers’ needs into account.",
+      "Private shower stalls and all-gender restrooms are available.",
+      "Talk with our team about accommodations and support before camp."
     ]
   },
   "activities": {
-    "heading": "Adventure & Traditions",
-    "summary": "Whether you're a lake lover, an artist, or a gaga champion, camp is a place to grow through play.",
+    "heading": "Full days. Your kind of fun.",
+    "summary": "Swim. Make something. Try archery. Sing too loudly. Read in a hammock. Indigo Point is a summer camp where LGBTQ+ kids get to spend their days being kids.",
     "highlights": [
-      "Water Joy: Canoeing, kayaking, swimming, and the water trampoline.",
-      "Creative Arts: Drama, dance, pottery, and our popular queer book club.",
-      "Camp Classics: Archery, rock climbing, hiking, and zip-lining.",
-      "Indigo Traditions: Scavenger hunts, bunk nights, and the magic of the closing campfire."
+      "Swimming, canoeing, and kayaking.",
+      "Arts and crafts, music, drama, and dance.",
+      "Archery, climbing, hiking, and camp games.",
+      "Campfires, bunk nights, and Queer Prom."
     ]
   },
   "communityCare": {
-    "heading": "Community Care",
-    "summary": "We provide a safe haven where physical and emotional health are cared for with expertise and compassion.",
+    "heading": "Care is part of camp.",
+    "summary": "Our community care team supports the mental, emotional, and social side of being away from home.",
     "bullets": [
-      "Licensed on-site medical providers specialized in LGBTQ+ care.",
-      "Staff trained in trauma-informed care and identity affirmation.",
-      "A supportive environment where kids can face new experiences with confidence."
+      "Counselors are part of campers’ daily lives.",
+      "Rest time and quieter spaces help campers recharge.",
+      "Discuss health needs and accommodations with our team before registering."
     ]
   },
   "history": {
-    "heading": "Our Story",
-    "body": "Founded in 2021 by a team of parents, rabbis, and activists, Camp Indigo Point was created to be a sanctuary for youth across the Midwest and beyond.",
+    "heading": "Our story.",
+    "body": "Indigo Point began with people who loved camp and wanted queer and trans kids to have a community of their own. Our first summer was in 2022. The idea was simple: give kids the fun of summer camp, and heroes and role models who are like them.",
     "milestones": [
-      "Started in 2022 to provide a \"joyful reprieve\" for queer and trans youth.",
-      "Grown to serve 140+ campers from 30 states with a staff of 50+ queer leaders.",
-      "Rooted in the values of the Jewish summer camp movement and open to all."
+      "First summer: 2022.",
+      "A community of 150 campers from 33 states.",
+      "Rooted in Jewish summer camping; open to all faiths and none."
     ]
   },
   "cta": "register"

@@ -1,5 +1,6 @@
 import { actionLinks, announcementActionIds } from './actions'
 import brandData from './data/brand.json'
+import programs from './data/programs.json'
 
 const { brandValues, brandVoice, contactDirectory, organizationFacts, socialLinks } = brandData;
 
@@ -11,15 +12,15 @@ export const siteSettings = {
   shellLead:
     'Families, donors, and future staff should be able to spot their path and take the next right action right away.',
   season: {
-    year: 2026,
-    dates: 'June 6 - 19, 2026',
+    year: programs.season,
+    dates: programs.dates,
     registrationStatus: 'open',
   },
   announcement: {
     enabled: true,
     theme: 'registration',
-    eyebrow: 'Summer 2026',
-    title: 'Registration is open for June 6 - 19, 2026',
+    eyebrow: `Summer ${programs.season}`,
+    title: `Registration is open for ${programs.dates}`,
     body: 'Save your spot, pay the deposit, and reach out if affordability support would help your family.',
     action: actionLinks.register,
     allowedActionIds: announcementActionIds,

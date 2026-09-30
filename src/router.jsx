@@ -3,23 +3,20 @@ import {
   createMemoryRouter,
   Navigate,
 } from "react-router-dom";
-import SiteLayout from "./components/site/SiteLayout";
-import AboutRoute from "./routes/AboutRoute";
-import ContactRoute from "./routes/ContactRoute";
-import DonateRoute from "./routes/DonateRoute";
-import FaqRoute from "./routes/FaqRoute";
-import HomeRoute from "./routes/HomeRoute";
-import RegistrationRoute from "./routes/RegistrationRoute";
-import StaffRoute from "./routes/StaffRoute";
+import SiteLayout from "./components/site/PosterLayout";
+import { AboutPage, CampLifePage, ColoradoPage, ContactPage, DonatePage, FamiliesPage, FaqPage, HomePage, NotFoundPage, RegistrationPage, StaffPage } from "./routes/CampPages";
 
 const primaryRoutes = [
-  { path: "/", element: <HomeRoute /> },
-  { path: "/about", element: <AboutRoute /> },
-  { path: "/registration", element: <RegistrationRoute /> },
-  { path: "/donate", element: <DonateRoute /> },
-  { path: "/staff", element: <StaffRoute /> },
-  { path: "/faq", element: <FaqRoute /> },
-  { path: "/contact", element: <ContactRoute /> },
+  { path: "/", element: <HomePage /> },
+  { path: "/about", element: <AboutPage /> },
+  { path: "/camp-life", element: <CampLifePage /> },
+  { path: "/registration", element: <RegistrationPage /> },
+  { path: "/colorado", element: <ColoradoPage /> },
+  { path: "/families", element: <FamiliesPage /> },
+  { path: "/donate", element: <DonatePage /> },
+  { path: "/staff", element: <StaffPage /> },
+  { path: "/faq", element: <FaqPage /> },
+  { path: "/contact", element: <ContactPage /> },
 ];
 
 export const siteRouteChildren = [
@@ -29,8 +26,16 @@ export const siteRouteChildren = [
     element: route.element,
   })),
   {
+    path: "history",
+    element: <Navigate to="/about" replace />,
+  },
+  {
+    path: "counselors",
+    element: <Navigate to="/staff" replace />,
+  },
+  {
     path: "*",
-    element: <Navigate to="/" replace />,
+    element: <NotFoundPage />,
   },
 ];
 

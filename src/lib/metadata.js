@@ -54,7 +54,7 @@ export const usePageMetadata = (pageKey) => {
     const metadata = resolvePageMetadata(pageKey);
     const canonicalUrl = new URL(
       metadata.canonicalPath ?? "/",
-      window.location.origin,
+      'https://www.campindigopoint.org',
     ).toString();
 
     document.title = metadata.title;
@@ -64,7 +64,7 @@ export const usePageMetadata = (pageKey) => {
     ensureOgTag("og:title").setAttribute("content", metadata.title);
     ensureOgTag("og:description").setAttribute("content", metadata.description);
     ensureOgTag("og:url").setAttribute("content", canonicalUrl);
-    ensureOgTag("og:image").setAttribute("content", metadata.ogImage);
+    ensureOgTag("og:image").setAttribute("content", new URL(metadata.ogImage, 'https://www.campindigopoint.org').toString());
     ensureOgTag("og:site_name").setAttribute("content", metadata.siteName);
   }, [pageKey]);
 };

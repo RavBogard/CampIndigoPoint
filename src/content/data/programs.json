@@ -1,0 +1,21 @@
+{
+  "season": 2027,
+  "dates": "June 12–25, 2027",
+  "grades": "Rising grades 2–11",
+  "tuition": "$3,000",
+  "community": { "campers": "150", "states": "33" },
+  "shortSession": { "dates": "June 12–19, 2027", "grades": "Rising grades 2–4", "tuition": "$1,700", "eligibility": "First-time Indigo Point campers" },
+  "cit": { "grades": "Rising grade 12", "dates": "June 12–25, 2027", "tuition": "$3,000" },
+  "colorado": {
+    "title": "Take camp to the mountains.",
+    "intro": "A different adventure for older campers. The same chance to find your people.",
+    "dates": null,
+    "grades": null,
+    "tuition": null,
+    "registrationUrl": null,
+    "contact": "info@campindigopoint.org",
+    "activities": ["Whitewater rafting", "Hiking", "Rock climbing"],
+    "description": "Our Colorado teen program takes the Indigo Point community into the mountains. Past adventures have included whitewater rafting, hiking, and rock climbing. Together, teens get to try new things and spend time with peers and queer adults who get them.",
+    "nextStep": "Get in touch for the next program’s dates, eligibility, tuition, and travel details."
+  }
+}

@@ -3,7 +3,7 @@ export const actionLinks = {
     id: 'register',
     label: 'Register for Camp',
     shortLabel: 'Register',
-    href: 'https://campscui.active.com/orgs/CampManitowa?orglink=camps-registration',
+    href: 'https://campscui.active.com/orgs/CampManitowa?orglink=camps-registration#/selectSessions/3834431',
     platform: 'Active Camps',
     audience: 'families',
     description:
@@ -21,13 +21,13 @@ export const actionLinks = {
   },
   apply: {
     id: 'apply',
-    label: 'Apply for Summer 2026',
-    shortLabel: 'Apply',
-    href: 'https://docs.google.com/forms/d/e/1FAIpQLSeMd2mXgub9yq6d5kAAVGcFIX4omnPHdAbqPy0q3_2daeC8Sg/viewform?usp=dialog',
-    platform: 'Google Forms',
+    label: 'Talk to us about staff',
+    shortLabel: 'Staff inquiry',
+    href: 'mailto:shira@campindigopoint.org?subject=Working%20at%20Indigo%20Point',
+    platform: 'Email',
     audience: 'staff',
     description:
-      'Open the official Camp Indigo Point staff application form for counselors, specialists, and unit heads.',
+      'Ask the camp team about current roles and the staff application process.',
   },
 }
 

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import "./SocialProof.css";
 
 const publications = [
@@ -18,7 +18,7 @@ const SocialProof = () => {
                 <p className="social-proof-label">As Seen In</p>
                 <div className="social-proof-grid">
                     {publications.map((pub, index) => (
-                        <motion.div
+                        <Motion.div
                             key={index}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 0.6 }}
@@ -33,7 +33,7 @@ const SocialProof = () => {
                             ) : (
                                 <div className="social-proof-text-logo">{pub.name}</div>
                             )}
-                        </motion.div>
+                        </Motion.div>
                     ))}
                 </div>
             </div>

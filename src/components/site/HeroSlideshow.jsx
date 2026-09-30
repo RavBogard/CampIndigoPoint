@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 
 const HeroSlideshow = ({ images, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +21,7 @@ const HeroSlideshow = ({ images, interval = 5000 }) => {
   return (
     <div className="relative w-full h-full min-h-[300px] md:min-h-[400px] lg:min-h-[500px] rounded-[2rem] overflow-hidden shadow-2xl md:-rotate-2 bg-[var(--color-camp-sand)]">
       <AnimatePresence mode="sync">
-        <motion.img
+        <Motion.img
           key={currentIndex}
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
